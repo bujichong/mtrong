@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>个人信息</title>
+</head>
+
+<body>
+
+<header>
+    <a href="4-fileInfo.html" class="a-headBack">返回</a>
+    <h1 class="h1-title">个人信息</h1>
+</header>
+
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li id="nav-index" class="wp3-1 li-nav li-now"><a href="#" class="a-nav">我的档案</a></li>
+        <li id="nav-cart" class="wp3-1 li-nav"><a href="#" class="a-nav">面试管理</a></li>
+        <li id="nav-about" class="wp3-1 li-nav"><a href="#" class="a-nav">人才库</a></li>
+    </ul>
+</nav>
+
+<div class="all-main">
+    <div class="cont-verify">
+        <p class="p-item">
+            <label class="lab-rl lab-email">邮箱</label>
+            <span class="s-item s-itemTxt s-readEmail">XXy@163.com</span>
+            <span class="s-item s-itemInput s-repairEmail none"><input type="text" class="txt" name="name" validate="{required:'请填写邮箱',email:true}" placeholder="邮箱" value="XXXXX@163.com" /></span>
+            <!-- <span class="s-op s-itemTxt green">已验证</span> --><span class="s-op s-itemTxt red">未验证</span>
+        </p>
+        <p class="p-item p-fn-validateEmail">
+            <a class="btn-c a-sendMail" href="#">发送验证邮件</a><span class="btn-c a-repairEmail" href="#">修改邮箱</span>
+        </p>
+        <p class="p-item">
+            <label class="lab-rl lab-phone">手机</label>
+            <span class="s-item s-itemTxt s-readPhone">18684785447</span>
+            <span class="s-item s-itemInput s-repairPhone none"><input type="text" class="txt txt-userPhone" name="name" placeholder="手机号码" /></span>
+            <span class="s-op s-itemTxt green">已验证</span>
+            <!-- <span class="s-op"><a class="btn-c a-getPhoneValidCode" href="#">获取验证码</a><span class="s-getedValidCode none">发送计时(<em class="em-second" rel="30">30</em>)</span></span> -->
+        </p>
+        <p class="p-item p-phoneValidCode none">
+            <label class="lab-rl lab-code">校验码</label><span class="s-item s-itemInput"><input type="text" class="txt" name="name" validate="{required:'请填写验证码'}" placeholder="验证码" /></span>
+            <span class="s-op"><a class="btn-c" href="#">验证</a></span>
+        </p>
+        <p class="p-item p-fn-validatePhone">
+           <span class="btn-c a-repairPhone">修改手机</span>
+        </p>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+
+</html>

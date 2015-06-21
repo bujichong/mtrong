@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>资金管理 - 其他结算单详情 -后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/easyui-repair.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+
+<!-- head begin-->
+<div id="all-head" region="north">
+	<div class="headlogo"><img src="images/logo.png" height="40" width="200" alt="" /></div>
+	<div class="headtools">
+		<p class="p-tools">欢迎你，<strong class="strong-user">admin</strong> <span rel="form.html" class="s-tools a-userSetting">账号设置</span><span class="s-tools s-loginout">退出</span></p>
+		<div class="headmes">
+			<span class="s-message">消息<small class="small-num">3</small></span>
+			<ul class="ul-mesInfo">
+				<li class="li-sj">&nbsp;</li>
+				<li class="li-nomes">暂无新的消息！</li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="咨询处理">有1个咨询需要您处理。</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="订单发货">有2个订单需要您发货</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="结算订单">有2个新订单需要您结算</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- head end -->
+
+<!-- side begin -->
+<div id="all-side">
+	<div id="nav">
+		<ul class="ul-nav">
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="prolist.html">
+					<em class="em-icon"><img src="images/icon/stack-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">商品</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">商品管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="prolist.html">商品列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proDetails.html">商品新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="buylist.html">
+					<em class="em-icon"><img src="images/icon/shopping_cart-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">采购</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">采购管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needlist.html">采购需求</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needNotelist.html">采购跟催</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buylist.html">采购列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buyDetails.html">采购新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/layers-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">订单</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">订单管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookinglist.html">订单列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookingDetails.html">订单新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="manageIndex.html">
+					<em class="em-icon"><img src="images/icon/pawn-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">官网</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">官网管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="manageIndex.html">首页管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proShow.html">商品展示</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="proSorting.html">商品排序</a></li> -->
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="managePromotion.html">促销管理</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/group-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">客户</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">客户管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="customerlist.html">客户列表</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="customerDetails.html">客户新增</a></li> -->
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="moneyImport.html">
+					<em class="em-icon"><img src="images/icon/wallet-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">资金</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">资金管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyClaim.html">收款认领</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyPay.html">支付列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCheckout.html">订单结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCancel.html">退货结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCost.html">其他结算</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="account.html">
+					<em class="em-icon"><img src="images/icon/settings-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">系统</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">系统管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="account.html">账号管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="role.html">角色管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="power.html">权限管理</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- side end -->
+<div class="crumb"><span class="s-title">资金管理 - 其他结算单详情 </span></div>
+
+<!-- main begin -->
+<div id="page-DetailsMainBox">
+
+	<div class="pageMain">
+
+		<form role="form" class="form-horizontal form-valite" method="post" action="">
+			<div class="navbar navbar-default searchbar" >
+				<div class="fl pad-l10 pad-t5 btn-group">
+					<input class="btn btn-primary" type="submit" value="保 存" />
+				      <button class="btn btn-default grid-del" type="button"><span class="glyphicon glyphicon-remove"></span>删除</button>
+				      <button class="btn btn-default grid-confirm" type="button"><span class="glyphicon glyphicon-ok"></span>审核</button>
+				      <button class="btn btn-default grid-unconfirm" type="button"><span class="glyphicon glyphicon-remove"></span>取消审核</button>
+				      <button class="btn btn-default grid-pay" type="button"><span class="glyphicon glyphicon-ok"></span>支付</button>
+				      <button class="btn btn-default grid-cancelPay" type="button"><span class="glyphicon glyphicon-remove"></span>取消支付</button>
+			    </div>
+			 </div>
+			<div class="pad-t20 pad-b20">
+				<div class="formbox-a">
+					<div class="grid">
+						<div class="col_5">
+							<div class="form-group">
+								<label class="col_3 control-label right">费用编号：</label>
+								<div class="col_9 mag-t8"><b>13201</b> <b class="blue mag-l10">待审核</b></div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">金额：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control txt-number w150" name="money" value="514" /> 元</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">客户名称：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control wp80" name="customerName" value="韩国名品" readonly="readonly" validate="{required:'请填写客户名称'}"> <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button></div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">开户行：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control" name="paybank" value="支付宝" /></div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">订单编号：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control wp80" name="bookingNo" value="14875587888" readonly="readonly"> <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button></div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">原因：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control" name="reason" value="" /></div>
+							</div>
+						</div>
+
+
+						<div class="col_5">
+
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">费用类型：</label>
+								<div class="col_9 item-txt">
+									<select class="form-control input-sm" name="costType">
+										<option value="1">应付-线下退款</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">结算方式：</label>
+								<div class="col_9 item-txt">
+									<select class="form-control input-sm" name="payStyle">
+										<option value="0">钱包</option>
+										<option value="1">支付宝</option>
+										<option value="2">银行转账</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">开户名：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control" name="accountName" value="66sdf@163.com" /></div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">账 号：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control" name="payAccountNumber" value="zhangzi@163.com" /></div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">备注：</label>
+								<div class="col_9 item-txt"><textarea rows="3" class="form-control" name="remarks"></textarea></div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="clearfix"><br /><br /></div>
+					<div class="grid">
+						<div class="col_5">
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">创建人：</label>
+								<div class="col_9 item-txt mag-t8">斯大林</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">审核人：</label>
+								<div class="col_9 item-txt mag-t8">斯大林</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">支付人：</label>
+								<div class="col_9 item-txt mag-t8">斯大林</div>
+							</div>
+						</div>
+
+						<div class="col_5">
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">创建时间：</label>
+								<div class="col_9 item-txt mag-t8">2015-2-12 15:14</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">审核时间：</label>
+								<div class="col_9 item-txt mag-t8">2015-2-12 15:14</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">支付时间：</label>
+								<div class="col_9 item-txt mag-t8"></div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</form>
+		</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/datagrid-detailview.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jsrender.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+var $formA = $('.form-valite').soValidate({
+	inputPar:'.item-txt',
+	submit : function (form) {
+		window.console && console.log(form.serializeObject());
+		//alert('success');
+	},
+	fail : function (form,failInputs) {
+		window.console && console.log(failInputs);
+		var $failF = $(failInputs[0]);
+		$("html,body").stop().animate({'scrollTop': $failF.offset().top});//定位到第一个验证失败的对象
+		$failF.focus();
+	}
+});
+
+$('.txt-number').keyup(function() {//数字框只能输入数字
+	$T.setNumVal(this,null,0);
+})
+
+</script>
+
+
+</body>
+</html>

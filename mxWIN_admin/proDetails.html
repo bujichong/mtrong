@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>商品管理 - 商品新增 -后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/easyui-repair.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+
+<!-- head begin-->
+<div id="all-head">
+	<div class="headlogo"><img src="images/logo.png" height="40" width="200" alt="" /></div>
+	<div class="headtools">
+		<p class="p-tools">欢迎你，<strong class="strong-user">admin</strong> <span rel="form.html" class="s-tools a-userSetting">账号设置</span><span class="s-tools s-loginout">退出</span></p>
+		<div class="headmes">
+			<span class="s-message">消息<small class="small-num">3</small></span>
+			<ul class="ul-mesInfo">
+				<li class="li-sj">&nbsp;</li>
+				<li class="li-nomes">暂无新的消息！</li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="咨询处理">有1个咨询需要您处理。</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="订单发货">有2个订单需要您发货</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="结算订单">有2个新订单需要您结算</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- head end -->
+
+<!-- side begin -->
+<div id="all-side">
+	<div id="nav">
+		<ul class="ul-nav">
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="prolist.html">
+					<em class="em-icon"><img src="images/icon/stack-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">商品</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">商品管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="prolist.html">商品列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proDetails.html">商品新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="buylist.html">
+					<em class="em-icon"><img src="images/icon/shopping_cart-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">采购</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">采购管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needlist.html">采购需求</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needNotelist.html">采购跟催</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buylist.html">采购列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buyDetails.html">采购新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/layers-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">订单</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">订单管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookinglist.html">订单列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookingDetails.html">订单新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="manageIndex.html">
+					<em class="em-icon"><img src="images/icon/pawn-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">官网</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">官网管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="manageIndex.html">首页管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proShow.html">商品展示</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="proSorting.html">商品排序</a></li> -->
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="managePromotion.html">促销管理</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/group-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">客户</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">客户管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="customerlist.html">客户列表</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="customerDetails.html">客户新增</a></li> -->
+					</ul>
+				</div>
+			</li>
+
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="moneyImport.html">
+					<em class="em-icon"><img src="images/icon/wallet-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">资金</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">资金管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyClaim.html">收款认领</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyPay.html">支付列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCheckout.html">订单结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCancel.html">退货结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCost.html">其他结算</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="account.html">
+					<em class="em-icon"><img src="images/icon/settings-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">系统</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">系统管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="account.html">账号管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="role.html">角色管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="power.html">权限管理</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- side end -->
+<div class="crumb"><span class="s-title">商品管理 - 商品新增</span></div>
+
+<!-- main begin -->
+<div id="page-DetailsMainBox">
+
+	<div class="pageMain">
+	<form role="form" class="form-horizontal form-valite" method="post" action="">
+			<div class="navbar navbar-default searchbar" >
+			<div class="fl pad-l10 pad-t5 btn-group">
+			      <input class="btn btn-primary" type="submit" value="保存基础信息" /><!-- <input class="btn btn-default" type="reset" value="清 空" /> -->
+			      <!-- <button class="btn btn-default grid-setMark" type="button"><span class="glyphicon glyphicon-bookmark"></span>打标签</button> -->
+		    </div>
+		 </div>
+
+		<div class="pad-t20 pad-b20">
+				<div class="formbox-a">
+					<div class="grid">
+						<div class="col_5">
+							<div class="form-group">
+								<label class="col_3 control-label right" for="username">款号：</label>
+								<div class="col_9 mag-t8">140993845147</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="company">商品名称：</label>
+								<div class="col_9 item-txt"><input type="text" class="form-control" name="proname" id="proname" validate="{required:'请输入商品名称'}"></div>
+							</div>
+
+							<div class="form-group">
+								<label class="col_3 control-label right" for="inputSuccess4">商品分类：</label>
+								<div class="col_9 item-txt">
+									<select class="form-control">
+										<option value="1">服装-男装-羽绒服</option>
+										<option value="2">服装-女装-裙子</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col_5">
+
+							<div class="form-group">
+								<label class="col_3 control-label right" for="phone">清货：</label>
+								<div class="col_3 item-txt">
+									<label class="checkbox-inline"><input type="checkbox" class="chk" value="option1" name="clearStocks"></label>
+								</div>
+
+								<label class="col_3 control-label right" for="phone">是否快定制：</label>
+								<div class="col_3 item-txt">
+									<label class="checkbox-inline"><input type="checkbox" class="chk" value="option2" name="clearKStocks"></label>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col_3 control-label right" for="inputSuccess4">采购部门：</label>
+								<div class="col_9 item-txt">
+									<select class="form-control">
+										<option value="1">当前用户部门</option>
+										<option value="2">部门2</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col_3 control-label right" for="inputSuccess4">采购员：</label>
+								<div class="col_9 item-txt">
+									<select class="form-control">
+										<option value="1">当前用户</option>
+										<option value="2">用户2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="tabgroup mag-l10 mag-r10">
+			<ul class="nav nav-tabs" role="tablist">
+				  <li role="presentation" class="active"><a href="#taba1" role="tab" data-toggle="tab">类别属性</a></li>
+				  <li role="presentation"><a href="#taba2" role="tab" data-toggle="tab">SKU规格</a></li>
+				  <li role="presentation"><a href="#taba3" role="tab" data-toggle="tab">供应方式及价格</a></li>
+				  <li role="presentation"><a href="#taba4" role="tab" data-toggle="tab">标签</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+			  <div role="tabpanel" class="tab-pane active" id="taba1">
+				<form role="form" class="form-horizontal form-valite" method="post" action="">
+					<div class="btn-group pad-t10">
+						<input class="btn btn-primary btn-saveSale" type="submit" value="保 存" />
+					</div>
+					<div class="formbox-a pad-t20 pad-b20">
+						<div class="grid">
+
+							<div class="col_5">
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">版型：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style" validate="{required:'请输入版型'}"></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">风格：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style" validate="{required:'请输入风格'}"></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">材质：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style"></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">面料：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style"></div>
+								</div>
+
+							</div>
+
+							<div class="col_5">
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">广告卖点：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style"></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">材质卖点：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style"></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">人群：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style"></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">厚薄：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="style"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</form>
+
+			  </div>
+
+			  <div role="tabpanel" class="tab-pane" id="taba2">
+				<div class="btn-group pad-t10">
+					<input class="btn btn-primary btn-saveSale" type="submit" value="保 存" />
+				      <button class="btn btn-default grid-upSale" type="button"><span class="glyphicon glyphicon-chevron-up"></span>上架</button>
+				      <button class="btn btn-default grid-downSale" type="button"><span class="glyphicon glyphicon-chevron-down"></span>下架</button>
+				</div>
+				<div class="selSizeColorBox">
+					<div class="selSizeBox">款式：<span class="s-selsc s-selSize">暂无</span></div>
+					<div class="selColorBox">款式：<span class="s-selsc s-selColor">暂无</span></div>
+					<button class="btn btn-default btn-selSizeColor" type="button"><span class="glyphicon glyphicon-plus"></span>选择颜色尺码</button>
+				</div>
+
+				<div id="skuSelData">
+					<form class="form-skuData">
+						<table id="skuSelDataTable" class="dataTableS" cellspacing="0" cellpadding="0">
+	<!-- 							<tr>
+								<th><input type="checkbox" class="chk chk-allcolor" name="allSel"></th>
+								<th>SKU编码</th>
+								<th>颜色</th>
+								<th>颜色名</th>
+								<th>系统尺码</th>
+								<th>尺码名</th>
+								<th>可销售库存</th>
+								<th>未发货库存</th>
+								<th>
+									<select class="form-control">
+										<option value="0">选择供应商</option>
+										<option value="1">供应商1</option>
+										<option value="2">供应商2</option>
+										<option value="3">供应商3</option>
+									</select>
+								</th>
+								<th><input type="text" class="form-control txt-kh" name="txt" value="生产款号" /></th>
+								<th>上架状态</th>
+							</tr> -->
+						</table>
+					</form>
+				</div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane" id="taba3">
+				<form class="form-valite">
+					<div class="btn-group addnewOne">
+						<button class="btn btn-default btn-addNewSale" type="button"><span class="glyphicon glyphicon-plus"></span>新增</button>
+						<input class="btn btn-primary btn-saveSale" type="submit" value="保 存" />
+					</div>
+					<div class="autoAddOne saleInfoCont">
+						<ul class="ul-autoAdd">
+							<li class="li-title"><span class="w120 s-title">类型</span><span class="w120 s-title">市场价</span><span class="w120 s-title">成本价</span><span class="w120 s-title">销售价</span><span class="w120 s-title">* 促销价</span><span class="w120 s-title">操作</span></li>
+							<li class="li-one item-txt li-first">
+								<span class="w120 s-val item-txt"><input type="text" class="form-control" name="ss-0" value="现货" /></span>
+								<span class="w120 s-val item-txt"><input type="text" class="form-control" name="spp-0" value="1200" /></span>
+								<span class="w120 s-val item-txt"><input type="text" class="form-control" name="smp-0" value="100" /></span>
+								<span class="w120 s-val item-txt"><input type="text" class="form-control" name="snp-0" value="" /></span>
+								<span class="w120 s-val item-txt"><input type="text" class="form-control" name="scp-0" value="" /></span>
+							</li>
+						</ul>
+					</div>
+				</form>
+			  </div>
+
+			  <div role="tabpanel" class="tab-pane" id="taba4">
+				<form class="form-valite form-setMark">
+					<div class="btn-group mag-t10">
+						<input class="btn btn-primary btn-saveSetMark" type="submit" value="保 存" />
+					</div>
+
+					<div class="grid pad-t10 pad-b15 pad-l20">
+						请选择： <label class="checkbox-inline"><input type="checkbox" class="chk chk-mark" value="all" name="radSetMark">全选</label> <br />
+						<label class="checkbox-inline"><input type="checkbox" class="chk chk-mark" value="new" name="mark"><img src="/images/mark-new.png" height="16" width="16" alt="" /></label>
+						<label class="checkbox-inline"><input type="checkbox" class="chk chk-mark" value="bao" name="mark"><img src="/images/mark-bao.png" height="16" width="16" alt="" /></label>
+						<label class="checkbox-inline"><input type="checkbox" class="chk chk-mark" value="hot" name="mark"><img src="/images/mark-hot.png" height="16" width="16" alt="" /> </label>
+					</div>
+<!-- 					<p class="pad-l20 pad-b15">
+
+						<label class="radio-inline red"><input type="radio" class="rad rad-allmark" value="0" name="radSetMark">清除商品现有标签【谨慎选择】</label>
+					</p> -->
+
+				</form>
+			  </div>
+
+		</div>
+
+
+	</div>
+
+
+
+
+
+</div>
+<!-- main end -->
+
+
+
+
+
+<!-- 隐藏区域 -->
+<div class="none">
+
+	<!-- 打标签 -->
+<!-- 	<div id="popSetMark">
+		<form class="form-setMark">
+			<div class="grid pad-t10 pad-b15 pad-l20">
+				请选择：
+				<label class="checkbox-inline"><input type="checkbox" class="chk chk-mark" value="new" name="mark"><img src="/images/mark-new.png" height="16" width="16" alt="" /></label>
+				<label class="checkbox-inline"><input type="checkbox" class="chk chk-mark" value="bao" name="mark"><img src="/images/mark-bao.png" height="16" width="16" alt="" /></label>
+				<label class="checkbox-inline"><input type="checkbox" class="chk chk-mark" value="hot" name="mark"><img src="/images/mark-hot.png" height="16" width="16" alt="" /> </label>
+			</div>
+		</form>
+		<p class="pad-l20 pad-b15"><label class="radio-inline"><input type="radio" class="rad rad-allmark" value="1" name="radSetMark">全选</label>
+				<label class="radio-inline red"><input type="radio" class="rad rad-allmark" value="0" name="radSetMark">清除商品现有标签【谨慎选择】</label></p>
+		<p class="center">
+			<input class="btn btn-primary btn-popSetMark" type="button" value="确 定" />
+		</p>
+	</div> -->
+
+	<!-- 尺寸及颜色选择内容 -->
+	<div class="pop-colorSize" id="pop-colorSize">
+		<h3 class="h3-title">请选择颜色 <span class="s-selall"><label class="checkbox-inline"><input type="checkbox" class="chk chk-allcolor" name="allcolor">全选</label></span></h3>
+		<div class="grid selOptBox">
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="红色" name="red">红色</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="黄色" name="yellow">黄色</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="蓝色" name="blue">蓝色</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="绿色" name="green">绿色</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="灰色" name="grey">灰色</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="粉色" name="pink">粉色</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="黑色" name="black">黑色</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-color" value="白色" name="white">白色</label></div>
+		</div>
+
+		<h3 class="h3-title">请选择尺码 <span class="s-selall"><label class="checkbox-inline"><input type="checkbox" class="chk chk-allsize" name="allsize">全选</label></span></h3>
+		<div class="grid selOptBox">
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="28" name="28">28</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="29" name="29">29</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="30" name="30">30</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="XL" name="XL">XL</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="XXL" name="XXL">XXL</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="SL" name="SL">SL</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="31" name="31">31</label></div>
+			<div class="col_2"><label class="checkbox-inline"><input type="checkbox" class="chk chk-size" value="36" name="36">36</label></div>
+		</div>
+		<p class="center">
+			<input class="btn btn-primary btn-popSelColorSize" type="button" value="选 择" />
+			<!-- <input class="btn btn-default btn-popCancel" type="button" value="取 消" /> -->
+		</p>
+	</div>
+
+</div>
+
+
+
+<script id="skuSelDataTr" type="text/x-jsrender">
+	<tr>
+		<th><input type="checkbox" class="chk chk-allCS" name="allSel"></th>
+		<th>SKU编码</th>
+		<th>颜色</th>
+		<th width="100px">颜色名</th>
+		<th>系统尺码</th>
+		<th width="100px">尺码名</th>
+		<th width="100px">共享图片</th>
+		<th>可销售库存</th>
+		<th>未发货库存</th>
+		<th>
+			<select class="form-control sel-aller">
+				<option value="0">选择供应商</option>
+				<option value="1">供应商1</option>
+				<option value="2">供应商2</option>
+				<option value="3">供应商3</option>
+			</select>
+		</th>
+		<th width="160px"><input type="text" class="form-control txt-allkh" name="txt" value="生产款号" style="width:150px;"/></th>
+		<th>上架状态</th>
+		<th width="180px">是否促销			
+			<select class="form-control sel-alltwoer" style="width:100px;">
+				<option value="0">否</option>
+				<option value="1">是</option>
+			</select>
+		</th>
+	</tr>
+
+{{for onesData }}
+	<tr class="tr-one">
+		<td><input type="checkbox" class="chk chk-oneCS" name="oneSel"><input type="hidden" class="txt" name="no-{{: #index}}" /></td>
+		<td>sku01245{{: #index}}</td>
+		<td>{{>colorText}}</td>
+		<td><input type="text" class="form-control txt-color" name="colorName-{{: #index}}" /></td>
+		<td>{{>sizeText}}</td>
+		<td><input type="text" class="form-control txt-size" name="sizeName-{{: #index}}" /></td>
+		<td><input type="text" class="form-control txt-size" name="phoshare" /></td>
+
+		<td><div><b>9</b></div><div class="grey">嘉兴仓:4</div><div class="grey">广州仓:5</div></td>
+		<td><div><b>2</b></div><div class="grey">嘉兴仓:2</div></td>
+		<td>
+			<select class="form-control sel-oneer">
+				<option value="0">选择供应商</option>
+				<option value="1">供应商1</option>
+				<option value="2">供应商2</option>
+				<option value="3">供应商3</option>
+			</select>
+		</td>
+		<td><input type="text" class="form-control txt-onekh" name="txt" value="生产款号" style="width:150px;"/></td>
+		<td>上架</td>
+		<td>
+			<select class="form-control sel-twoer" style="width:170px;">
+				<option value="0">否</option>
+				<option value="1">是</option>
+			</select>
+		</td>
+	</tr>
+{{/for}}
+</script>
+
+
+<script id="autoOneSale" type="text/x-jsrender">
+<li class="item-txt li-one">
+	<span class="w120 s-val"><input type="text" class="form-control" name="ss-{{>index}}" value="现货" /></span>
+	<span class="w120 s-val"><input type="text" class="form-control" name="spp-{{>index}}" value="" validate="{number:'市场价必须为数字'}" /></span>
+	<span class="w120 s-val"><input type="text" class="form-control" name="smp-{{>index}}" value="" validate="{number:'成本价必须为数字'}" /></span>
+	<span class="w120 s-val"><input type="text" class="form-control" name="snp-{{>index}}" value="" validate="{number:'销售价必须为数字'}" /></span>
+	<span class="w120 s-val"><input type="text" class="form-control" name="scp-{{>index}}" value="" validate="{number:'促销价必须为数字'}" /></span>
+	<span class="w120 s-val"><a class="op-grid op-gridDel" href="#"><span class="glyphicon glyphicon-remove"></span>删除</a></span>
+</li>
+</script>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jsrender.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+
+var $formA = $('.form-valite').soValidate({
+	inputPar:'.item-txt',
+	submit : function (form) {
+		window.console && console.log(form.serializeObject());
+		//alert('success');
+	},
+	fail : function (form,failInputs) {
+		window.console && console.log(failInputs);
+		var $failF = $(failInputs[0]);
+		$("html,body").stop().animate({'scrollTop': $failF.offset().top});//定位到第一个验证失败的对象
+		$failF.focus();
+	}
+});
+
+var saveSetMark ={
+	init : function  () {
+		var me = this;
+		//me.popE();
+		me.selMark();
+		me.submitRepair();
+	},
+	// popO : null,
+	// popE : function () {
+	// 	var me= this;
+	// 	$('.grid-setMark').click(function () {
+	// 		me.popO = $.sobox.pop({
+	// 			type : 'target',
+	// 			target : '#popSetMark',
+	// 			title : '商品标签',
+	// 			width:400
+	// 		});
+	// 	});
+	// },
+	selMark : function () {
+		$('.rad-allmark').click(function() {
+			var v = $(this).val();
+			$('.chk-mark').prop('checked',!!(v*1));
+		});
+	},
+	submitRepair : function () {
+		var me = this;
+		$('.btn-saveSetMark').click(function () {
+			var sendData = $('.form-setMark').serializeObject();
+			window.console && console.log(sendData);
+			$.reqUrlEx({//异步提交
+				url : 'js/true.json',
+				//url : 'js/false.json',
+				data : sendData,
+				type : 'get',//默认不设置为post
+				success : function (data) {
+				//data中需带success参数，判断是否请求成功，{success:true}
+				//{"success":false,"message":"提交失败！"}
+					window.console && console.log(data,'请求成功~');
+					//me.popO.removePop();
+				}
+			});
+		});
+	}
+
+}
+
+var selColorSize  = {//选择颜色尺寸事件
+	init : function () {
+		var me = this;
+		me.popE();//弹窗操作(包含render后事件)
+		me.selKindsAll('.chk-allcolor','.chk-color');//可多选
+		me.selKindsAll('.chk-allsize','.chk-size');//可多选
+	},
+	pop : null,
+	sizeArr : [],
+	colorArr : [],
+	colorSizeData : {},
+	popE : function () {
+		var me = this;
+		$('.btn-selSizeColor').click(function() {//弹窗
+			me.pop = $.sobox.pop({
+				type : 'target',
+				target : '#pop-colorSize',
+				title : '选择颜色尺码',
+				width:680
+			});
+		});
+		// $('.btn-popCancel').click(function () {//中断选择
+		// 	me.pop.removePop();
+		// });
+
+		$('.btn-popSelColorSize').click(function() {//选择事件
+			var colorHtml = '',sizeHtml = '';
+			me.colorArr = [],me.sizeArr = [];
+			var $colorChked = $('.chk-color:checked');
+			var $sizeChked = $('.chk-size:checked');
+			if ($colorChked.length==0||$sizeChked==0) {
+				$.sobox.alert('提示','请至少选择一种尺码和一种颜色！');
+			}else{
+				$colorChked.each(function (i,v) {
+					var text = $(v).val();
+					var val = $(v).attr('name');
+					me.colorArr.push({text:text,val : val});
+					colorHtml += '<em class="em-sel-color" rel="'+val+'">'+text+'</em>,';
+				});
+				$sizeChked.each(function (i,v) {
+					var text = $(v).val();
+					var val = $(v).attr('name');
+					me.sizeArr.push({text:text,val : val});
+					sizeHtml += '<em class="em-sel-size" rel="'+val+'">'+text+'</em>,';
+				});
+				me.creatColorSizeData();
+				window.console && console.log(me.colorSizeData);
+				$('#skuSelDataTable').html(
+					$('#skuSelDataTr').render(me.colorSizeData)
+				);
+				me.afterRender($('#skuSelDataTable'));
+
+				$('.s-selSize').html(sizeHtml.substring(0,sizeHtml.length-1));
+				$('.s-selColor').html(colorHtml.substring(0,colorHtml.length-1));
+				me.pop.removePop();
+			};
+
+		});
+	},
+	creatColorSizeData : function () {
+		var me =this;
+		var colorData = me.colorArr;
+		var sizeData = me.sizeArr;
+		me.colorSizeData.onesData = [];
+		$.each(colorData,function (i,v) {
+			var tColor = v;
+			$.each(sizeData,function (i,v) {
+				me.colorSizeData.onesData.push({colorText: tColor.text , colorVal:tColor.val , sizeText:v.text , sizeVal:v.val})
+			});
+		});
+	},
+	selKindsAll : function (all,ones) {
+		var  $all = $(all);
+		var $ones = $(ones);
+		$all.click(function () {
+                if ($(ones+':checked').length == $ones.length) {//如果已经都全选则反选
+                    $ones.prop('checked',false);
+                } else {//全选
+                    $ones.prop('checked', true);
+                };
+		});
+		$ones.click(function () {
+                if ($(ones+':checked').length == $ones.length) {//如果都选中则设置全选为真
+                    $all.prop('checked', true);
+                }else{
+                    $all.prop('checked',false);
+                };
+		});
+	},
+	afterRender : function ($parent) {
+		var me = this;
+		var $selAll = $parent.find('.chk-allCS');
+		var $selOne = $parent.find('.chk-oneCS');
+		var $tr = $parent.find('tr.tr-one');
+
+		$selAll.click(function() {//全部选择框
+                if ($parent.find('.chk-oneCS:checked').length == $selOne.length) {//如果已经都全选则反选
+                    $selOne.prop('checked',false);
+				$tr.removeClass('tr-checked');
+                } else {//全选
+                    $selOne.prop('checked', true);
+				$tr.addClass('tr-checked');
+                };
+		});
+		$selOne.click(function() {//单多选框
+			if ($(this).prop("checked")) {
+				$(this).parents('.tr-one').addClass('tr-checked');
+			}else{
+				$(this).parents('.tr-one').removeClass('tr-checked');
+			}
+                if ($parent.find('.chk-oneCS:checked').length == $selOne.length) {//如果都选中则设置全选为真
+                    $selAll.prop('checked', true);
+                }else{
+                    $selAll.prop('checked',false);
+                };
+		});
+		$parent.find('.sel-aller').change(function() {
+			var v = $(this).val();
+			$parent.find('.sel-oneer').val(v);
+		});
+
+		$parent.find('.sel-alltwoer').change(function() {
+			var v = $(this).val();
+			$parent.find('.sel-twoer').val(v);
+		});
+
+		$parent.find('.txt-allkh').keyup(function() {
+			var v = $(this).val();
+			$parent.find('.txt-onekh').val(v);
+		});
+	}
+}
+
+var saleTypeManage = {
+	init : function () {
+		var me = this;
+		me.addNewOne();
+	},
+	index : 1,
+	parent : '.saleInfoCont',
+	addNewOne : function () {
+		var me = this;
+		$('.btn-addNewSale').click(function() {
+			$(me.parent).find('.ul-autoAdd').append(
+				$('#autoOneSale').render({index:me.index})
+			);
+			me.bindDel();
+			me.index++;
+		});
+	},
+	bindDel : function () {
+		var me = this;
+		$(me.parent).find('.li-one:last').find('.op-gridDel').click(function() {
+			$(this).parents('.li-one').remove();
+		});
+	}
+};
+
+$('.txt-number').keyup(function() {//数字框只能输入数字
+	$T.setNumVal(this,null,0);
+});
+
+saveSetMark.init();//初始化打标签
+selColorSize.init();//初始化颜色尺寸选择操作
+saleTypeManage.init();//初始化供应方式操作
+</script>
+
+
+</body>
+</html>

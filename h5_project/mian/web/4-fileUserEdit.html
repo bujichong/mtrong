@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="bg-ddd">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/plus.css" />
+    <title>档案编辑-用户资料编辑</title>
+</head>
+
+<body>
+
+<header>
+    <a href="4-fileInfo.html" class="a-headBack">返回</a>
+    <h1 class="h1-title">用户资料</h1>
+</header>
+
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li id="nav-index" class="wp3-1 li-nav li-now"><a href="#" class="a-nav">我的档案</a></li>
+        <li id="nav-cart" class="wp3-1 li-nav"><a href="#" class="a-nav">面试管理</a></li>
+        <li id="nav-about" class="wp3-1 li-nav"><a href="#" class="a-nav">人才库</a></li>
+    </ul>
+</nav>
+
+<div class="all-main">
+    <div class="formcont formcont-c">
+        <form class="form-validate" action="test.html">
+            <div class="upPhotoBox">
+                <div class="div-upPhoto">
+                    <span class="s-upPic s-selPic imgauto"><img class="img-photo" src="images/addphoto.png" height="196" width="196" alt="" /></span>
+                    <span class="s-upprocess">编辑头像</span>
+                </div>
+            </div>
+
+            <!-- <p><span class="s-photo"><img src="images/" alt="" /></span><span class="s-editPhoto">编辑头像</span></p> -->
+            <p class="p-item">
+                <input type="text" class="txt" name="name" validate="{required:'请填写姓名'}" placeholder="姓名" />
+            </p>
+            <p class="p-item">
+                <label class="lab-title">性别</label>
+                <label class="lab-item"><input type="radio" class="rad" name="rad-1" /> 男</label> <label class="lab-item"><input type="radio" class="rad" name="rad-1" /> 女</label>
+            </p>
+            <p class="p-item">
+                <input type="hidden" id="province" name="province" value="" /><!-- 地址有默认值则填写，否则3个隐藏域value都为空 -->
+                <input type="hidden" id="city" name="city" value=""/>
+                <input type="hidden" id="district" name="district" value="" />
+                <select class="fl drop wp49 drop-province" name="drop" validate="{required:'请选择省'}">
+                    <option value="" selected="selected" >请选择省</option>
+                </select>
+                <select class="fr drop wp49 drop-city" name="drop" validate="{required:'请选择省市'}">
+                    <option value="" selected="selected">请选择市</option>
+                </select>
+            </p>
+            <p class="p-item">
+                <select class="fl drop wp100 drop-distinct" name="drop" validate="{required:'请选择地区'}">
+                    <option value="" selected="selected">请选择区</option>
+                </select>
+            </p>
+            <p class="p-item">
+                <input type="text" class="txt" name="name" validate="{required:'请填写手机号码',mobile:true}" placeholder="电话" />
+            </p>
+            <p class="p-item">
+                <input type="text" class="txt" name="name" validate="{required:'请填写邮箱',email:true}" placeholder="邮箱" />
+            </p>
+
+            <a href="4-fileEdit.html" class="a-headOk btnValidate">提交</a>
+        </form>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/iscroll5.js"></script>
+<script type="text/javascript" src="js/lrz.mobile.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/region.js"></script>
+<script type="text/javascript" src="js/plus.js"></script>
+<script type="text/javascript">
+
+$('.s-selPic').soUploadImg({
+    afterLoadBack : function (data) {
+        window.console && console.log(data);
+        $('.img-photo').attr('src',data.src);
+        var imgCls = (data.width>=data.height)?'imgauto':'imgheightauto';
+        data.me.removeClass('imgauto').removeClass('imgheightauto').addClass(imgCls);
+        $('.s-upprocess').html('图片上传完成100%');
+    }
+});
+
+</script>
+</body>
+
+</html>

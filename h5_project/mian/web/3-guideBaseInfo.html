@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="html-hasbg-a">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/plus.css" />
+    <title>引导页-基本信息</title>
+</head>
+
+<body class="body-reglogin">
+
+<div class="reglogin-main">
+
+    <div class="cont-hasbg">
+
+        <div class="formcont formcont-b">
+            <form class="form-validate" action="test.html">
+                <div class="guideMark"><span class="s-guideM s-guideNow"></span><span class="s-guideM"></span><span class="s-guideM"></span></div>
+                <h3 class="h3-c"><span class="s-title">基本信息</span></h3>
+                <p class="p-item">
+                    <label class="lab-title">姓名</label>
+                    <input type="text" class="txt" name="name" validate="{required:'请填写姓名'}" />
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">所在地</label>
+                    <input type="hidden" id="province" name="province" value="" /><!-- 地址有默认值则填写，否则3个隐藏域value都为空 -->
+                    <input type="hidden" id="city" name="city" value=""/>
+                    <input type="hidden" id="district" name="district" value="" />
+                    <select class="fl drop wp49 drop-province" name="drop" validate="{required:'请选择省'}">
+                        <option value="" selected="selected" >请选择省</option>
+                    </select>
+                    <select class="fr drop wp49 drop-city" name="drop" validate="{required:'请选择省市'}">
+                        <option value="" selected="selected">请选择市</option>
+                    </select>
+                </p>
+                <p class="p-item">
+                    <select class="fl drop wp100 drop-distinct" name="drop" validate="{required:'请选择地区'}">
+                        <option value="" selected="selected">请选择区</option>
+                    </select>
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">性别</label>
+                    <span class="s-item"><label class="lab-item"><input type="radio" class="rad" name="rad-1" /> 男</label><label class="lab-item"><input type="radio" class="rad" name="rad-1" /> 女</label></span>
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">生日</label>
+                    <input type="text" class="txt txt-date" name="name" validate="{required:'请填写生日'}" value="1986-06-01" />
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">电话</label>
+                    <input type="text" class="txt" name="name" validate="{required:'请填写手机号码',mobile:true}" />
+                </p>
+                <p class="p-btn"><a class="btn-d btnValidate" href="#">下一步</a><a class="a-link" href="3-guideCareerInfo.html">跳过</a></p>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="div-signByIn">
+        <!-- <p class="p-signByIn"><a href="#" class="a-signByIn">Sign in with LinkedIn</a></p> -->
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/iscroll5.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/region.js"></script>
+<script type="text/javascript" src="js/plus.js"></script>
+
+</body>
+
+</html>

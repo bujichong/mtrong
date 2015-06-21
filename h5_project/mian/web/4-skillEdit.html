@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="bg-ddd">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>档案编辑-技能信息</title>
+</head>
+
+<body>
+
+<header>
+    <a href="#" class="a-headBack">返回</a>
+    <h1 class="h1-title">技能信息</h1>
+</header>
+
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li id="nav-index" class="wp3-1 li-nav li-now"><a href="#" class="a-nav">我的档案</a></li>
+        <li id="nav-cart" class="wp3-1 li-nav"><a href="#" class="a-nav">面试管理</a></li>
+        <li id="nav-about" class="wp3-1 li-nav"><a href="#" class="a-nav">人才库</a></li>
+    </ul>
+</nav>
+
+<div class="all-main">
+    <div class="formcont formcont-c pad-t1">
+        <form class="form-validate" action="test.html">
+            <p class="p-item">
+                <span class="s-skillTxt">平面设计</span>
+                <span class="s-skillInput none"><input type="text" class="txt txt-skillName" name="name" validate="{required:'请填写技能名称'}" placeholder="技能名称" vaule="" /></span>
+            </p>
+            <!-- <div class="p-item prosBox prosMarkBox"> -->
+            <div class="p-item prosBox">
+                <span class="s-pro s-pro-4"><em class="em-pro em-pro-1"></em><em class="em-pro em-pro-2"></em><em class="em-pro em-pro-3"></em><em class="em-pro em-pro-4"></em><em class="em-pro em-pro-5"></em></span><span class="s-info">(熟练)</span>
+                <input type="hidden" class="txt-hide" name="txt" value="4"  validate="{required:'请点击评定技能水平'}" />
+            </div>
+
+            <div class="addNewSkillBox"></div>
+
+            <a href="4-worksEdit.html" class="a-headOk btnValidate a-submitSkill none">提交</a>
+        </form>
+
+        <p class="p-btn bg-fff">
+            <span class="a-block-del"><span class="s-i-del"></span>删除</span><span class="a-block-edit a-editSkill"><span class="s-i-edit"></span>修改</span>
+        </p>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</body>
+
+</html>

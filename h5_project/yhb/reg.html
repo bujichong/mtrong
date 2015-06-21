@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="bodybg-a">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>注册</title>
+</head>
+
+<body class="bodybg-a">
+
+<header>
+    <a href="#" class="a-headBack">返回</a>
+    <div class="headLogo"><img id="logo" src="images/logo.png" height="42" width="324" alt="好.好卖 微终端管家" /></div>
+    <a class="a-toSearch" href="#">请输入您的用品以搜索</a>
+    <a href="cart.html" class="a-headCart">购物车</a>
+</header>
+
+<div class="all-main">
+    <div class="cont-a">
+        <div class="formcont formcont-b">
+            <form class="form-validate" action="test.html">
+                <h3 class="h3-title-a">新客户注册 <em class="em-tip">(加"*"为必填项)</em></h3>
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写联系人/收货人'}" placeholder="联系人/收货人 *" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写手机号',mobile:true}" placeholder="手机号码 *" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="name"  placeholder="固定电话" />
+                </p>
+                <p class="p-item">
+                    <input type="password" id="regPassword" class="txt require" name="regPassword" validate="{required:'请输入密码',number:'密码必须为数字',len:{opt:[5,7],msg:'密码长度为6'}}" placeholder="设置密码 * 6位数字" />
+                </p>
+                <p class="p-item">
+                    <input type="password" class="txt require" name="regAgainPassword" validate="{required:'请再次输入密码',equalTo:{opt:'#regPassword'}}" placeholder="再次输入密码 * 6位数字" />
+                </p>
+                <p class="p-item">
+                    <input type="text" id="inviteCode" class="txt" name="inviteCode" placeholder="销售员代码" />
+                </p>
+                <p class="p-item"><label class="lab-item">收货地址</label>
+                    <input type="hidden" id="province" name="province" value="" /><!-- 地址有默认值则填写，否则3个隐藏域value都为空 -->
+                    <input type="hidden" id="city" name="city" value=""/>
+                    <input type="hidden" id="district" name="district" value="" />
+                    <span class="s-item">
+                        <select class="fl drop wp49 drop-province" name="drop" validate="{required:'请选择省'}">
+                            <option value="" selected="selected" >请选择省</option>
+                        </select>
+                        <select class="fr drop wp49 drop-city" name="drop" validate="{required:'请选择省市'}">
+                            <option value="" selected="selected">请选择市</option>
+                        </select>
+                    </span>
+                </p>
+                <p class="p-item">
+                    <span class="s-item">
+                        <select class="fl drop wp100 drop-distinct" name="drop" validate="{required:'请选择地区'}">
+                            <option value="" selected="selected">请选择区</option>
+                        </select>
+                    </span>
+                </p>
+                <p class="p-item">
+                    <span class="s-item"><textarea class="txta" validate="{required:'请输入名+门牌号+店招牌名+近XX路'}" placeholder="请输入名+门牌号+店招牌名+近XX路"></textarea></span>
+                </p>
+                <p class="p-btn"><a class="btn-b bg-pink btnValidate btnReg" href="#">注册</a></p>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/region.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="bg-eee">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>注册登录 - 麦动</title>
+</head>
+
+<body>
+<!-- <body class="body-app"> -->
+
+<!-- header -->
+<header>
+    <h1 class="h1-siteInfo"><a class="a-logo" href="#"><img src="images/logo.png" height="33" width="150" alt="麦动" title="麦动" /></a></h1>
+    <p class="p-headQuick">
+        <a href="#" class="a-cartNum">15</a>
+        <a href="#" class="a-quick a-quick-cart" title="购物车">购物车</a>
+        <a href="#" class="a-quick a-quick-user" title="用户">用户</a>
+        <a href="#" class="a-quick a-quick-search" title="搜索">搜索</a>
+    </p>
+</header>
+<div class="regloginbanner"><img class="img-auto" src="images/regbanner.jpg" height="325" width="640" alt="" /></div>
+
+
+<div class="cont-a">
+        <p class="p-btn mar-t5"><a class="col_6 btn-a tabTitle tabTitleNow" href="#">客户登录</a><a class="col_6 btn-a tabTitle" href="#">新客注册</a>
+        </p>
+        <div class="formcont">
+            <form class="form-validate" action="test.html">
+                <input type="hidden" id="regloginType" class="txt" name="regloginType" value="1" />
+                <p class="p-item p-tab p-type0">
+                    <input type="text" class="txt" name="loginname" validate="{required:'请填写手机号',mobile:true}" placeholder="请输入您的手机号码" />
+                </p>
+                <p class="p-item p-tab p-type0">
+                    <input type="password" class="txt" name="password" validate="{required:'请输入密码'}" placeholder="请输入密码" />
+                </p>
+                <p class="p-item p-tab p-type1 hide">
+                    <input type="text" class="txt" name="regname" validate="{required:'请填写手机号',mobile:true,remote:{opt:{url : 'js/validate.json', key: 'regname',msg:'手机号码已存在'}}}" placeholder="请输入您的手机号码" />
+                </p>
+                <p class="p-item p-tab p-type1 hide">
+                    <input type="password" id="regPassword" class="txt require" name="regPassword" validate="{required:'请设置密码'}" placeholder="设置密码" />
+                </p>
+                <p class="p-item p-tab p-type1 hide">
+                    <input type="password" class="txt require" name="regAgainPassword" validate="{required:'请再次输入密码',equalTo:{opt:'#regPassword'}}" placeholder="再次输入密码" />
+                </p>
+                <p class="p-item p-tab p-type1 hide">
+                    <input type="text" class="txt require" name="invitCode" validate="{required:'请输入邀请码'}" placeholder="请输入邀请码" />
+                </p>
+                <p class="p-btn p-tab p-type0"><a class="btn-b bg-pink btnValidate btnLogin" href="#">登录</a></p>
+                <p class="p-btn p-tab p-type1 hide"><a class="btn-b bg-pink btnValidate btnReg" href="#">立即注册</a></p>
+            </form>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+</html>

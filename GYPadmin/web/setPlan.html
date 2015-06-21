@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="main">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<title>设置计划 - 一品云管家</title>
+<link type="text/css" rel="stylesheet" media="all" href="css/style.css" />
+<script type="text/javascript">
+var YMG = {};
+YMG.baseInfo = {
+	username : 'test'
+}
+</script>
+</head>
+<body class="main">
+<div class="wrapper">
+
+	<!-- header -->
+	<div class="header">
+      <div class="companyInfo">
+        <span class="s-logo"><img class="img-logo" src="images/logo.png" height="32" width="136" alt="一品云管家" /></span>
+        <span class="s-companyName">浙江海丰志诚投资管理有限公司 <em class="em-pt">设备管理平台</em></span>
+      </div>
+
+	  <div class="headQuick"><p class="p-quick"><a href="#" class="a-q a-q-home">Home</a><a href="#" class="a-q a-q-message">message</a><a href="#" class="a-q a-q-cloud">cloud</a><a href="#" class="a-q a-q-opt">opt</a></p><p class="p-userInfo">欢迎您 <span class="s-uer">admin</span>，<a href="#" class="a-loginout">退出</a></p></div>
+
+	</div>
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="ul-sidenav">
+			<li><a href="index.html">设备档案</a></li>
+			<li><a href="form.html">巡检与保养</a></li>
+			<li><a href="index.html">设备保修</a></li>
+			<li><a href="form.html">耗材采购</a></li>
+		</ul>
+	</div>
+
+	<!-- mainC -->
+	<div class	="mainC">
+		<!-- crumb -->
+		<div class="crumb"><a href="index.html">首页</a>&gt;<a href="#">设备档案</a>&gt;<span class="now">存放位置</span></div>
+		<ul class="ul-tabtitle">
+			<li class="li-tabtitle li-now"><a href="setPlan.html">设置计划</a></li>
+			<li class="li-tabtitle"><a href="watchPlan.html">巡检计划</a></li>
+			<li class="li-tabtitle"><a href="carePlan.html">保养计划</a></li>
+		</ul>
+		<div class="tabCont">
+			<h3 class="h3-title">您的设备库中总共有108台设备，经过一品云管家的分析，您的设备巡检与保养建议如下：</h3>
+			<table class="table-list" cellspacing="0" cellpadding="0">
+				<tr><th>设备分类</th><th>设备数量</th><th>巡检与保养周期建议</th><th>计划状态</th><th>操作</th></tr>
+				<tr><td>空压机</td><td>5 <a href="#">[浏览]</a></td><td><a href="#">查看建议保养</a> <a href="#">[相关知识]</a></td><td><span class="grey">未设置</span></td><td><a class="a-op a-op-btn" href="newPlan.html">建立计划</a></td></tr>
+				<tr><td>电焊机</td><td>5 <a href="#">[浏览]</a></td><td><a href="#">查看建议保养</a> <a href="#">[相关知识]</a></td><td><span class="blue">执行中</span></td><td><a class="a-op a-op-a" href="#">巡检</a><a class="a-op a-op-a" href="#">保养</a><a class="a-op a-op-a" href="#">编辑</a></td></tr>
+				<tr><td>磨床</td><td>5 <a href="#">[浏览]</a></td><td><a href="#">查看建议保养</a> <a href="#">[相关知识]</a></td><td><span class="blue">执行中</span></td><td><a class="a-op a-op-a" href="#">巡检</a><a class="a-op a-op-a" href="#">保养</a><a class="a-op a-op-a" href="#">编辑</a></td></tr>
+				<tr><td>未分类</td><td>5 <a href="#">[浏览]</a></td><td>系统分析中，查询进度可联系0573-39876543</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+			</table>
+
+			<!-- p-page -->
+			<p class="p-page">
+			<a class="a-first" href="#">首页</a><a class="a-prev" href="#">上一页</a><a href="#">1</a><a href="#">2</a><a class="now" href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a class="a-next" href="#">下一页</a><a class="a-last" href="#">末页</a>
+			</p>
+
+		</div>
+
+		<p>如何批量导入部门信息？第一步：点这里下载excel部门信息模板。第二步：点这里导入填写完成的部门信息excel文件。</p>
+
+	</div>
+
+
+</div>
+
+<div class="none">
+
+	<!-- popEx -->
+	<div id="device_addPos" class="popForm">
+		<form class="form-item" method="post" action="js/test.json">
+			<p class="p-item">
+				<label class="lab-item col_2"><em class="em-rq">*</em>位置名称：</label><input type="text" class="txt" name="pos" validate="{required:'请填写位置名称'}" /><em class="em-tip">例如：第一车间</em>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2"><em class="em-rq">*</em>负责人：</label><input type="text" class="txt w100" name="person" validate="{required:'请填写负责人姓名'}" /><em class="em-tip">例如：该部门设备负责人或部门负责人</em>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2"><em class="em-rq">*</em>联系电话：</label><input type="text" class="txt w100" name="phone" validate="{required:'请填写联系电话',mobile:true}" /><em class="em-tip">例如：负责人的联系电话</em>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2">备注：</label><textarea class="txta" name="remarks"></textarea>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2">排序：</label><input type="text" class="txt w50" name="no" />数字越大，在列表中排列越考前
+			</p>
+			<p class="p-item p-formbtn"><input type="submit" value="确认" class="btn btn-formSubmit"><span class="s-formbtn s-popCancel">取消</span></p>
+		</form>
+	</div>
+
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/easyui/jquery.easyui.packer.js"></script>
+<script type="text/javascript" src="js/easyui/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/source/jquery.soValidate.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/popOpt.js"></script>
+<script type="text/javascript" src="js/runing.js"></script>
+
+</body>
+</html>

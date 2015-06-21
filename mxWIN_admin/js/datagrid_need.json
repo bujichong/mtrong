@@ -1,0 +1,68 @@
+{"total":46,
+"rows":[
+	{
+		"no" : "20150114578",
+		"skuNo":"14110841",
+		"pic":"images/demoPic-1.png",
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"蓝色",
+		"size":"XXL",
+		"proer":"EMD",
+		"kind":"箱包-女包",
+		"number":12,
+		"need":[
+			{"during":"大于T+3","number":2,"no":"11542"},
+			{"during":"T+3","number":2,"no":"12342"},
+			{"during":"T+2","number":4,"no":"12457"},
+			{"during":"T+0","number":4,"no":"11252"}
+		]
+	},
+	{
+		"no" : "20150111547",
+		"skuNo":"14114521",
+		"pic":"images/demoPic-2.png",
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"红色",
+		"size":"XL",
+		"kind":"箱包-女包",
+		"number":12,
+		"need":[
+			{"during":"大于T+3","number":2,"no":"11542"},
+			{"during":"T+2","number":4,"no":"12457"},
+			{"during":"T+0","number":4,"no":"11252"}
+		]
+	},
+	{
+		"no" : "20150114578",
+		"skuNo":"14110841",
+		"pic":"images/demoPic-1.png",
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"蓝色",
+		"size":"XXL",
+		"proer":"EMD",
+		"kind":"箱包-女包",
+		"number":12,
+		"need":[
+			{"during":"大于T+3","number":2,"no":"11542"},
+			{"during":"T+3","number":2,"no":"12342"},
+			{"during":"T+2","number":4,"no":"12457"},
+			{"during":"T+0","number":4,"no":"11252"}
+		]
+	},
+	{
+		"no" : "20150111547",
+		"skuNo":"14114521",
+		"pic":"images/demoPic-2.png",
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"红色",
+		"size":"XL",
+		"kind":"箱包-女包",
+		"number":12,
+		"need":[
+			{"during":"大于T+3","number":2,"no":"11542"},
+			{"during":"T+2","number":4,"no":"12457"},
+			{"during":"T+0","number":4,"no":"11252"}
+		]
+	}
+]
+}

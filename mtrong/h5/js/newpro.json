@@ -1,0 +1,86 @@
+[{
+	"colorname": "白色",
+	"itemImg": "http://cdn.mtrong.com/2007/200772/2007720148/1.jpg?imageView2/2/w/100/h/100/q/92",
+	"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+	"list": [{
+		"colorname": "白色",
+		"itemImg": "http://cdn.mtrong.com/2007/200772/2007720148/1.jpg?imageView2/2/w/100/h/100/q/92",
+		"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+		"list": [],
+		"saleprice": "55.00",
+		"sizename": "M",
+		"sku": "2007720148",
+		"spu": "200772",
+		"stock": "99999"
+	},
+	{
+		"colorname": "白色",
+		"itemImg": "http://cdn.mtrong.com/2007/200772/2007720148/1.jpg?imageView2/2/w/100/h/100/q/92",
+		"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+		"list": [],
+		"saleprice": "65.00",
+		"sizename": "L",
+		"sku": "2007720150",
+		"spu": "200772",
+		"stock": "99999"
+	},
+	{
+		"colorname": "白色",
+		"itemImg": "http://cdn.mtrong.com/2007/200772/2007720148/1.jpg?imageView2/2/w/100/h/100/q/92",
+		"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+		"list": [],
+		"saleprice": "55.00",
+		"sizename": "XL",
+		"sku": "2007720152",
+		"spu": "200772",
+		"stock": "99999"
+	}],
+	"saleprice": "55.00",
+	"sizename": "M",
+	"sku": "2007720148",
+	"spu": "200772",
+	"stock": "99999"
+},
+{
+	"colorname": "黑色",
+	"itemImg": "http://cdn.mtrong.com/2007/200772/2007722248/1.jpg?imageView2/2/w/100/h/100/q/92",
+	"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+	"list": [{
+		"colorname": "黑色",
+		"itemImg": "http://cdn.mtrong.com/2007/200772/2007722248/1.jpg?imageView2/2/w/100/h/100/q/92",
+		"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+		"list": [],
+		"saleprice": "55.00",
+		"sizename": "M",
+		"sku": "2007722248",
+		"spu": "200772",
+		"stock": "99999"
+	},
+	{
+		"colorname": "黑色",
+		"itemImg": "http://cdn.mtrong.com/2007/200772/2007722248/1.jpg?imageView2/2/w/100/h/100/q/92",
+		"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+		"list": [],
+		"saleprice": "55.00",
+		"sizename": "L",
+		"sku": "2007722250",
+		"spu": "200772",
+		"stock": "99999"
+	},
+	{
+		"colorname": "黑色",
+		"itemImg": "http://cdn.mtrong.com/2007/200772/2007722248/1.jpg?imageView2/2/w/100/h/100/q/92",
+		"itemname": "超日系范，颗粒雪纺质感性价比七分小阔腿裤",
+		"list": [],
+		"saleprice": "55.00",
+		"sizename": "XL",
+		"sku": "2007722252",
+		"spu": "200772",
+		"stock": "99999"
+	}],
+	"saleprice": "55.00",
+	"sizename": "M",
+	"sku": "2007722248",
+	"spu": "200772",
+	"stock": "99999"
+}]

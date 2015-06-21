@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>资金管理 - 支付列表 - 后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/easyui-repair.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+
+<!-- head begin-->
+<div id="all-head" region="north">
+	<div class="headlogo"><img src="images/logo.png" height="40" width="200" alt="" /></div>
+	<div class="headtools">
+		<p class="p-tools">欢迎你，<strong class="strong-user">admin</strong> <span rel="form.html" class="s-tools a-userSetting">账号设置</span><span class="s-tools s-loginout">退出</span></p>
+		<div class="headmes">
+			<span class="s-message">消息<small class="small-num">3</small></span>
+			<ul class="ul-mesInfo">
+				<li class="li-sj">&nbsp;</li>
+				<li class="li-nomes">暂无新的消息！</li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="咨询处理">有1个咨询需要您处理。</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="订单发货">有2个订单需要您发货</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="结算订单">有2个新订单需要您结算</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- head end -->
+
+<!-- side begin -->
+<div id="all-side">
+	<div id="nav">
+		<ul class="ul-nav">
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="prolist.html">
+					<em class="em-icon"><img src="images/icon/stack-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">商品</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">商品管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="prolist.html">商品列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proDetails.html">商品新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="buylist.html">
+					<em class="em-icon"><img src="images/icon/shopping_cart-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">采购</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">采购管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needlist.html">采购需求</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needNotelist.html">采购跟催</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buylist.html">采购列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buyDetails.html">采购新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/layers-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">订单</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">订单管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookinglist.html">订单列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookingDetails.html">订单新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="manageIndex.html">
+					<em class="em-icon"><img src="images/icon/pawn-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">官网</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">官网管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="manageIndex.html">首页管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proShow.html">商品展示</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="proSorting.html">商品排序</a></li> -->
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="managePromotion.html">促销管理</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/group-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">客户</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">客户管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="customerlist.html">客户列表</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="customerDetails.html">客户新增</a></li> -->
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="moneyImport.html">
+					<em class="em-icon"><img src="images/icon/wallet-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">资金</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">资金管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyClaim.html">收款认领</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyPay.html">支付列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCheckout.html">订单结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCancel.html">退货结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCost.html">其他结算</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="account.html">
+					<em class="em-icon"><img src="images/icon/settings-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">系统</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">系统管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="account.html">账号管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="role.html">角色管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="power.html">权限管理</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- side end -->
+<div class="crumb"><span class="s-title">资金管理 - 支付列表</span></div>
+
+<div class="navbar navbar-default searchbar listSearchbar" >
+	<div class="fl pad-l10 pad-t5 btn-group">
+	      <button class="btn btn-default grid-check" type="button"><span class="glyphicon glyphicon-ok"></span>支付</button>
+	      <button class="btn btn-default grid-uncheck" type="button"><span class="glyphicon glyphicon-remove"></span>取消支付</button>
+    </div>
+
+	<div class="fr pad-r10 pad-t5 search-keycont">
+		<form role="form" class="form-inline form-search">
+			<input type="text" name="no" placeholder="编号" class="form-control input-sm w120">
+			<select class="form-control input-sm" name="costType">
+				<option value="0">费用类型</option>
+				<option value="1">应收-线下退款</option>
+				<option value="2">应收-店铺费用</option>
+				<option value="3">应收-办公费用</option>
+				<option value="4">应收-订单货款</option>
+				<option value="5">应收-订单货款</option>
+				<option value="6">应付-线下退款</option>
+				<option value="7">应付-店铺费用</option>
+				<option value="8">应付-办公费用</option>
+
+			</select>
+			<select class="form-control input-sm" name="reason">
+				<option value="0">原因</option>
+				<option value="0">产品</option>
+				<option value="0">产品质量问题</option>
+				<option value="0">宝贝描述错误</option>
+				<option value="0">售后</option>
+				<option value="0">售后-未处理投诉</option>
+				<option value="0">发货</option>
+				<option value="0">发货-实物不符</option>
+				<option value="0">物流</option>
+				<option value="0">物流-快递不到</option>
+				<option value="0">物流-丢件</option>
+				<option value="0">物流-超时退件</option>
+			</select>
+			<input type="text" name="bookingNo" placeholder="订单编号" class="form-control input-sm w120">
+			<input type="text" name="customerName" placeholder="客户名称" class="form-control input-sm w80">
+
+			<input class="btn btn-sm btn-primary btn-gridListSearch" type="button" value="搜 索" />
+			<button type="button" class="btn btn-sm btn-default btn-showMoreSearch">高级搜索<span class="caret"></span></button>
+		</form>
+	</div>
+</div>
+
+<!-- 更多搜索选项 -->
+<div id="searchmoreCont" class="searchmore searchListMore none">
+	<div class="bg-warning pad5">
+		<form class="form-moreSearch form-listMoreSearch">
+			<div class="grid pad-b5">
+				<div class="col_4">
+					<label class="control-label">创 建 人：</label>
+					<input type="text" name="creater" placeholder="" class="form-control input-sm w220">
+				</div>
+				<div class="col_4">
+					<label class="control-label">审 核 人：</label>
+					<input type="text" name="checker" placeholder="" class="form-control input-sm w220">
+				</div>
+				<div class="col_4">
+					<label class="control-label">付 款 人：</label>
+					<input type="text" name="payer" placeholder="" class="form-control input-sm w220">
+				</div>
+			</div>
+
+			<div class="grid pad-b5">
+				<div class="col_4">
+					<label class="control-label">创建时间：</label><span><input type="text" name="createStarttime" placeholder="" class="form-control input-sm hk-time"> - <input type="text" name="createEndtime" placeholder="" class="form-control input-sm hk-time"></span>
+				</div>
+				<div class="col_4">
+					<label class="control-label">审核时间：</label><span><input type="text" name="checkStarttime" placeholder="" class="form-control input-sm hk-time"> - <input type="text" name="checkEndtime" placeholder="" class="form-control input-sm hk-time"></span>
+				</div>
+				<div class="col_4">
+					<label class="control-label">付款时间：</label><span><input type="text" name="payStarttime" placeholder="" class="form-control input-sm hk-time"> - <input type="text" name="payEndtime" placeholder="" class="form-control input-sm hk-time"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+<!-- main begin -->
+<div id="page-mainBox" region="center" style="overflow-y:hidden;">
+
+	<div id="mainLayoutBox" class="easyui-layout" style="overflow-y: hidden;"  fit="true" scroll="no">
+
+		<div data-options="region:'center'" border="false">
+			<!-- 嵌套布局 -->
+			<div class="easyui-layout" data-options="fit:true">
+				<!-- 嵌套头 north -->
+				<div data-options="region:'north',border:false" style="height:38px">
+
+					<div class="searchQuickBar clearfix">
+						<p class="p-quick p-quick-a"><span class="s-one s-now" data-opt={"kinds":""}>全部</span>|<span class="s-one" data-opt={"pay":false} >待支付(8)</span>|<span class="s-one" data-opt={"pay":true}>已完结</span></p>
+					</div>
+
+				</div>
+				<!-- 嵌套 center -->
+				<!-- 数据grid表格 -->
+				<div class="tableGridbox" data-options="region:'center'">
+					<div id="dataListGrid" data-options="border:false" fit="true"></div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+	</div>
+
+
+
+
+
+</div>
+<!-- main end -->
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/datagrid-detailview.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+
+$('#dataListGrid').datagrid({
+	//title:'DataGrid',
+	url:'js/datagrid_moneyPay.json',
+	 //url:'js/datagrid_data_empty.json',
+	method : 'get',//默认是post
+	//width:700,
+	// height:500,
+	//fitColumns:true,
+	nowrap : false,
+	pagination:true,
+	//singleSelect : true,
+	loadMsg : '玩命加载中...',
+	view: myview,
+	emptyMsg: '暂无数据...',
+	pageSize :25,
+	pageList :[25,50,100],
+	checkOnSelect : false,
+	columns:[[
+		{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+		//{field:'no',title:"编号",hidden:true},
+		{field:'op',title:'操作',width:80,align:'center',formatter : function (value,row,index) {
+			var no = row.no;
+			return '<a class="gridPay" data-opt={"no":'+no+'} href="#"><span class="glyphicon glyphicon-ok"></span>支付</a><br />'+
+			'<a class="gridUnPay" data-opt={"no":'+no+'} href="#"><span class="glyphicon glyphicon-remove"></span>取消支付</a>';
+		//return value;
+		}},
+		{field:'no',title:'单据编号',width:80,align:'center',formatter:function (value,row,index) {
+			var no=row.no;
+			if (no=="T201045"){
+				return  '<div><a href="cancelDetails.html?'+no+'" target="_blank">'+value+'</a></div>'+
+				'<div>'+row.status+'</div>';}
+			else{
+				return  '<div><a href="costDetails.html?'+no+'" target="_blank">'+value+'</a></div>'+
+				'<div>'+row.status+'</div>';
+			}
+		}},
+		{field:'type',title:'状态',width:100,align:'center'},
+		{field:'payMoney',title:'金额',width:100,align:'center',formatter:function (value,row,index) {
+			return  '<div>'+value+'元</div>'+
+			'<div>'+row.remitStyle+'</div>';
+		}},
+		{field:'customerNo',title:'客户',width:100,align:'center',formatter:function (value,row,index) {
+			return  '<div>'+value+'</div>'+
+			'<div>'+row.customerName+'</div>';
+		}},
+		{field:'account',title:'开户信息',width:180,align:'center',formatter:function (value,row,index) {
+			var rhtml = '';
+			if (value) {
+				rhtml += '<div>开户名：'+value.name+'</div>'+
+				'<div>开户行：'+value.bank+'</div>'+
+				'<div>账　号：'+value.number+'</div>';
+			};
+			return rhtml;
+		}},
+		{field:'bookingNo',title:'订单编号',width:120,align:'center'},
+		//{field:'reason',title:'原因',width:120,align:'center'},
+		{field:'Remarks',title:'备注',width:125,align:'center'}
+  	]],
+	onClickRow:function (rowIndex, rowData) {
+		//nowSel = rowData;
+	},
+	onLoadSuccess : function () {
+		var $tableBox = $('.tableGridbox');
+		$tableBox.find('.gridRemove').click(function () {//删除操作
+			var no= $(this).data('opt').no;
+			var sendData = {"no" : no};
+			//window.console && console.log(sendData);
+			$.reqUrlEx({//异步提交
+				url : 'js/true.json',
+				//url : 'js/false.json',
+				data : sendData,
+            		msg: '您确定要删除这条记录吗?',
+				type : 'get',//默认不设置为post
+				success : function (data) {
+				//data中需带success参数，判断是否请求成功，{success:true}
+				//{"success":false,"message":"提交失败！"}
+					window.console && console.log(data,'请求成功~');
+					me.popO.removePop();
+					$T.gridRefresh('#dataListGrid');
+				}
+			});
+			return false;
+		});
+	}
+});
+
+
+var addPop = null;
+
+var $formA = $('.form-valite').soValidate({
+	inputPar:'.item-txt',
+	submit : function (form) {
+		var formData = form.serializeObject();
+		window.console && console.log(formData);
+
+		$.reqUrlEx({//增加型ajax请求，带等待状态和成功提示框
+			url : 'js/true.json',
+			data : formData,
+			//url : 'js/false.json',
+			type : 'get',//默认不设置为post
+			success : function (data) {
+			//data中需带success参数，判断是否请求成功，{success:true}
+			//{"success":false,"message":"无法删除此记录！"}
+				window.console && console.log(data,'请求成功~');
+				addPop.removePop();
+				$T.gridRefresh('#dataListGrid');//操作完后刷新数据表
+			}
+		});
+		//alert('success');
+	},
+	fail : function (form,failInputs) {
+		window.console && console.log(failInputs);
+		var $failF = $(failInputs[0]);
+		$("html,body").stop().animate({'scrollTop': $failF.offset().top});//定位到第一个验证失败的对象
+		$failF.focus();
+	}
+});
+
+$('.btn-cancel').click(function () {
+	addPop.removePop();
+});
+
+/* 增加 */
+$('.grid-addNew').click(function () {
+	window.location.href="buyDetails.html";
+});
+
+$('.searchQuickBar').find('.s-one').click(function() {
+	$(this).parent('.p-quick').find('.s-one').removeClass('s-now');
+	$(this).addClass('s-now');
+	var quickData = {};
+	$('.searchQuickBar').find('.s-now').each(function () {
+		quickData = $.extend(quickData,$(this).data('opt'));
+	});
+	$('#dataListGrid').datagrid('load',quickData);
+});
+
+$T.gridSearchAndMoreEvent();//初始化更多搜索
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="bg-ddd">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/plus.css" />
+    <title>面试管理-添加邀请</title>
+</head>
+
+<body>
+<div class="wrapper">
+
+
+<header>
+    <a href="5-viewList.html" class="a-headBack">返回</a>
+    <h1 class="h1-title">添加邀请</h1>
+</header>
+
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li id="nav-index" class="wp3-1 li-nav"><a href="#" class="a-nav">我的档案</a></li>
+        <li id="nav-cart" class="wp3-1 li-nav li-now"><a href="#" class="a-nav">面试管理</a></li>
+        <li id="nav-about" class="wp3-1 li-nav"><a href="#" class="a-nav">人才库</a></li>
+    </ul>
+</nav>
+
+<div class="all-main">
+    <div class="formcont formcont-c">
+        <form class="form-validate" action="test.html">
+            <fieldset class="field-group">
+                <p class="p-item">
+                    <select class="fl drop wp100" name="drop" validate="{required:'请选择岗位类型'}">
+                        <option value="" selected="selected">选择岗位类型</option>
+                        <option value="1">销售</option>
+                        <option value="2">技术</option>
+                        <option value="3">经理</option>
+                    </select>
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写岗位名称'}" placeholder="岗位名称" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写公司名称'}" placeholder="公司名称" />
+                </p>
+            </fieldset>
+
+            <fieldset class="field-group">
+                <p class="p-item">
+                    <input type="text" class="txt-inline txt-time wp39" name="name" validate="{required:'请选择时间'}" value="05-26 10:00" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写工作地址'}" placeholder="地址" />
+                </p>
+            </fieldset>
+
+            <fieldset class="field-group">
+                <p class="p-item">
+                    <select class="fl drop wp100" name="drop" validate="{required:'请选择备注模板'}">
+                        <option value="" selected="selected">选择备注模板</option>
+                        <option value="1">模板1</option>
+                        <option value="2">模板2</option>
+                        <option value="3">模板3</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset class="field-group">
+                <p class="p-btn">
+                    <span class="a-block-add fn-add-viewee"><span class="s-i-add"></span>添加候选人</span>
+                </p>
+                <ul id="ul-vieweeList" class="ul-m">
+                    <li class="li-m">
+                        <div id="viewee-11" class="a-arrowTo fn-edit-viewee">
+                            <h4 class="h4-title">王XX</h4>
+                            <p class="p-abs"><span class="s-info">15784781447</span><span class="s-date">cccccc@163.com</span></p>
+                            <input type="hidden" class="v-id" name="id" value="11">
+                            <input type="hidden" class="v-name" name="name" value="王XX">
+                            <input type="hidden" class="v-phone" name="phone" value="15784781447">
+                            <input type="hidden" class="v-email" name="email" value="cccccc@163.com">
+                        </div>
+                    </li>
+                    <li class="li-m">
+                        <div id="viewee-12" class="a-arrowTo fn-edit-viewee">
+                            <h4 class="h4-title">李XX</h4>
+                            <p class="p-abs"><span class="s-info">15784781447</span><span class="s-date">dddddd@163.com</span></p>
+                            <input type="hidden" class="v-id" name="id" value="12">
+                            <input type="hidden" class="v-name" name="name" value="李XX">
+                            <input type="hidden" class="v-phone" name="phone" value="15784781447">
+                            <input type="hidden" class="v-email" name="email" value="dddddd@163.com">
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="field-group">
+                <p class="p-btn">
+                    <span class="a-block-add fn-add-viewer"><span class="s-i-add"></span>添加面试官</span>
+                </p>
+                <ul id="ul-viewerList" class="ul-m">
+                    <li class="li-m">
+                        <div id="viewer-13" class="a-arrowTo fn-edit-viewer">
+                            <h4 class="h4-title">刘XX</h4>
+                            <p class="p-abs"><span class="s-info">15784781447</span><span class="s-date">aaaaaa@163.com</span></p>
+                            <input type="hidden" class="v-id" name="id" value="13">
+                            <input type="hidden" class="v-name" name="name" value="刘XX">
+                            <input type="hidden" class="v-phone" name="phone" value="15784781447">
+                            <input type="hidden" class="v-email" name="email" value="aaaaaa@163.com">
+                        </div>
+                    </li>
+                    <li class="li-m">
+                        <div id="viewer-14" class="a-arrowTo fn-edit-viewer">
+                            <h4 class="h4-title">张XX</h4>
+                            <p class="p-abs"><span class="s-info">15784781448</span><span class="s-date">bbbbbb@163.com</span></p>
+                            <input type="hidden" class="v-id" name="id" value="14">
+                            <input type="hidden" class="v-name" name="name" value="张XX">
+                            <input type="hidden" class="v-phone" name="phone" value="15784781448">
+                            <input type="hidden" class="v-email" name="email" value="bbbbbb@163.com">
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="field-group">
+                <p class="p-item">
+                    <select class="fl drop wp100" name="drop" validate="{required:'请选择通知模板'}">
+                        <option value="" selected="selected">选择通知模板</option>
+                        <option value="1">模板1</option>
+                        <option value="2">模板2</option>
+                        <option value="3">模板3</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <p class="p-btn pad-b10"><a class="btn-b btn-validate" href="#">预览</a></p>
+
+            <a href="#" class="a-headOk btnValidate">提交</a>
+        </form>
+    </div>
+
+</div>
+
+</div>
+
+<div class="so-openmask"></div>
+<div class="so-popbox popAddFormBox"></div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/iscroll5.js"></script>
+<script type="text/javascript" src="js/Elapse.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/plus.js"></script>
+
+<script id="formTem" type="text/jsrender">
+    <div class="popHead">
+        <span class="a-headBack a-viewBack">返回</span>
+        <h1 class="h1-title">${#typeATxt}${#typeBTxt}</h1>
+    </div>
+    <div class="formcont formcont-c formcont-viewScroll">
+        <form class="form-popValidate" action="test.html">
+            <fieldset class="field-group">
+                ${if #typeA==1}
+                <input type="hidden" name="id" value="${#id}">
+                ${/if}
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写${#typeBTxt}姓名'}" placeholder="${#typeBTxt}姓名" value="${#name}" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="phone" validate="{required:'请填写${#typeBTxt}电话',mobile:true}" placeholder="${#typeBTxt}电话" value="${#phone}" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="email" validate="{required:'请填写${#typeBTxt}邮箱',email:true}" placeholder="${#typeBTxt}邮箱" value="${#email}" />
+                </p>
+            </fieldset>
+
+            ${if #typeA==0}
+            <div id="more-field-group"></div>
+            <p class="p-btn bg-fff">
+                <a href="#" class="a-block-add btn-pop-validate"><span class="s-i-add"></span>添加${#typeBTxt}</a>
+            </p>
+            ${else}
+            <p class="p-btn bg-fff">
+                <span class="a-block-del a-long-del"><span class="s-i-del"></span>删除</span>
+            </p>
+            ${/if}
+            <span class="a-headOk btnPopValidate">确定</span>
+        </form>
+    </div>
+</script>
+
+<script id="formMoreTem" type="text/jsrender">
+<fieldset class="field-group">
+    <p class="p-item"> <span class="a-oneDel"><span class="s-i-del"></span>删除</span></p>
+    <p class="p-item">
+        <input type="text" class="txt" name="name" validate="{required:'请填写${#typeBTxt}姓名'}" placeholder="${#typeBTxt}姓名" value="${#name}" />
+    </p>
+    <p class="p-item">
+        <input type="text" class="txt" name="phone" validate="{required:'请填写${#typeBTxt}电话',mobile:true}" placeholder="${#typeBTxt}电话" value="${#phone}" />
+    </p>
+    <p class="p-item">
+        <input type="text" class="txt" name="email" validate="{required:'请填写${#typeBTxt}邮箱',email:true}" placeholder="${#typeBTxt}邮箱" value="${#email}" />
+    </p>
+</fieldset>
+</script>
+
+<script id="liOneTem" type="text/jsrender">
+${forarr #list as one}
+<li class="li-m">
+    <a href="#" id="${#prefix}-${one.id}" class="a-arrowTo fn-edit-${#prefix}">
+        <h4 class="h4-title">${one.name}</h4>
+        <p class="p-abs"><span class="s-info">${one.phone}</span><span class="s-date">${one.email}</span></p>
+        <input type="hidden" class="v-id" name="id" value="${one.id}">
+        <input type="hidden" class="v-name" name="name" value="${one.name}">
+        <input type="hidden" class="v-phone" name="phone" value="${one.phone}">
+        <input type="hidden" class="v-email" name="email" value="${one.email}">
+    </a>
+</li>
+${/forarr}
+</script>
+
+<script type="text/javascript">
+
+var viewPopE = {
+    init : function () {
+        var me = this;
+        me.touchE('.fn-add-viewee',{//添加候选人
+            typeA : 0,//0为增加，1为编辑
+            typeB : 0//0候选人，1为面试官
+        });
+        me.touchE('.fn-add-viewer',{//添加面试官
+            typeA : 0,//0为增加，1为编辑
+            typeB : 1//0候选人，1为面试官
+        });
+        me.touchE('.fn-edit-viewee',{//编辑候选人
+            typeA : 1,//0为增加，1为编辑
+            typeB : 0//0候选人，1为面试官
+        });
+        me.touchE('.fn-edit-viewer',{//编辑面试官
+            typeA : 1,//0为增加，1为编辑
+            typeB : 1//0候选人，1为面试官
+        });
+    },
+    touchE : function ($o,data) {
+        var me= this;
+        data.typeATxt = data.typeA?'编辑':'增加';
+        data.typeBTxt = data.typeB?'面试官':'候选人';
+        $($o).on('tap',function () {
+            if(data.typeA == 1){
+                data.id = $(this).find('.v-id').val();
+                data.name = $(this).find('.v-name').val();
+                data.phone = $(this).find('.v-phone').val();
+                data.email = $(this).find('.v-email').val();
+            }
+            me.popE(data);
+            return false;
+        });
+    },
+    scrollTop : null,
+    popShow : function () {
+        var me = this;
+        me.scrollTop = $(window).scrollTop();
+        // window.console && console.log();
+        $('.wrapper').height($(window).height()).addClass('body-fixed');
+        $('.so-openmask').css({'bottom':0,'zIndex':1001});
+        $(".popAddFormBox").show();
+    },
+    popHide : function () {
+        var me = this;
+        $('.wrapper').height('auto').removeClass('body-fixed');
+        window.scrollTo(0,me.scrollTop);
+        $('.so-openmask').css({'bottom':'3000px'});
+        $(".popAddFormBox").hide().html('');
+    },
+    popOtherE : function (data) {//弹窗除提交外的其他操作
+        var me = this;
+        $('.a-viewBack').on('touchend',function () {//返回操作
+            me.popHide();
+            return false;
+        });
+        $('.a-long-del').on('tap',function () {//删除操作
+            var aId = data.id;
+            var prefix = data.typeB?'viewer':'viewee';
+            var $a = $('#'+prefix+'-'+aId);//找到对应的a
+            var $li = $a.parent();
+            $li.remove();//移除对应li
+            me.popHide();
+            return false;
+        });
+    },
+    formV : null,
+    addMoreField : function (data) {//增加状态下，增加多条输入项
+        var me = this;
+        var $tem = $('#formMoreTem').html();
+        Elapse.renderFromSource({
+            source: $tem,
+            data: data,
+            complete: function (_tem) {
+                $("#more-field-group").append(_tem);
+                var $newField = $('#more-field-group').find('.field-group').last();
+                me.removeAddOne($newField);//点击删除，删除当前field
+                me.formV.addArea($newField);//把当前新增添加到单验证区域
+            }
+        });
+    },
+    removeAddOne : function  ($field) {
+        var me = this;
+        $field.find('.a-oneDel').on('tap',function () {
+            me.formV.clearArea($field);
+            $(this).parents('.field-group').remove();
+        });
+    },
+    submitE : function (data,formData) {//提交后处理事件
+        var me = this;
+        //window.console && console.log(data,formData);
+        var prefix = data.typeB?'viewer':'viewee';
+        newData = me.transData(formData);
+        newData.prefix = prefix;
+        //window.console && console.log(newData);
+        var $ul = $('#ul-'+prefix+'List');
+        var $tem = $('#liOneTem').html();
+        Elapse.renderFromSource({
+            source: $tem,
+            data: newData,
+            complete: function (_tem) {
+                //window.console && console.log(data);
+                if (data.typeA) {//为1，编辑返回
+                    var aId = newData.list[0].id;
+                    var $a = $('#'+prefix+'-'+aId);
+                    var $li = $a.parent();
+                    var ix = $ul.find('li').index($li);
+                    $li.after(_tem);
+                    $li.remove();
+                    $a = $('#'+prefix+'-'+aId);
+                    me.touchE($a,{
+                        typeA : 1,//0为增加，1为编辑
+                        typeB : data.typeB//0候选人，1为面试官
+                    });
+                }else{//为0，新增添加
+                    $ul.append(_tem);
+                    var $a =$ul.find('.a-arrowTo');
+                    var aLen = $a.length-1;
+                    for (var i = 0; i < newData.len; i++) {
+                        me.touchE($a.eq(aLen-i),{
+                            typeA : 1,//0为增加，1为编辑
+                            typeB : data.typeB//0候选人，1为面试官
+                        });
+                    };
+                };
+
+            }
+        });
+    },
+    transData : function (data) {
+        var newData = {};
+        if(typeof data.name=='string'){
+            data.id = data.id || data.phone;
+            newData.list =  [data];
+            newData.len = 1;
+        }else{
+            var len = data.name.length;
+            var arr = [];
+            for (var i = 0; i < len; i++) {
+                arr.push({
+                    "id" : data.phone[i],//只有增加才会有多条，增加时，用手机号码作为id
+                    "name" : data.name[i],
+                    "phone" : data.phone[i],
+                    "email" : data.email[i]
+                });
+            };
+            newData.list =  arr;
+            newData.len = len;
+        }
+        return newData;
+    },
+    popE : function (data) {
+        var me = this;
+        var $tem = $('#formTem').html();
+        Elapse.renderFromSource({
+            source: $tem,
+            data: data,
+            complete: function (_tem) {
+                me.popShow();
+                $(".popAddFormBox").html(_tem);
+                me.popOtherE(data);
+                me.formV = $('.form-popValidate').soValidate({//验证登录弹窗里的表单
+                    validateBtn : '.btn-pop-validate',
+                    submitBtn : '.btnPopValidate',
+                    submit : function (form) {//默认验证成功提交submit事件
+                        var formData = form.serializeObject();
+                        //window.console && console.log(formData);
+                        me.submitE(data,formData);//提交后处理事件
+                        me.popHide();
+                        return false;
+                    },
+                    validateBack : function () {
+                        me.addMoreField(data);//添加更多 候选人/面试官
+                    },
+                    fail : function (form,failInputs) {//验证失败
+                        var $failF = $(failInputs[0]);
+                        //$("html,body").stop().animate({'scrollTop': $failF.offset().top});//定位到第一个验证失败的对象
+                        $failF.focus();
+                    }
+                });
+            }
+        });
+    }
+};
+
+
+viewPopE.init();
+
+
+</script>
+
+</body>
+
+</html>

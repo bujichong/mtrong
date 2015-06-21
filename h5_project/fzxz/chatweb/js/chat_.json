@@ -1,0 +1,20 @@
+{"success":true,
+"data":[
+{"chatRecordId":1,
+"roomId":1001,
+"content":"康恺进入聊天室", //消息内容
+"contentType":2,//消息类型1普通消息；2进入聊天室记录；
+"memberId":4033461,
+"avatarImageFileId":"",//用户头像
+"userName":"13718803485",//用户名称或昵称
+"ipAddress":"127.0.0.1",
+"addTime":1398840766131,//消息发送时间
+"displayFlag":1
+},
+
+{"chatRecordId":2,"roomId":1001,"content":"这款商品有什么用？","contentType":1,"memberId":4033461,"avatarImageFileId":"","userName":"13718802385","ipAddress":"127.0.0.1","addTime":1398840766131,"displayFlag":1},
+{"chatRecordId":3,"roomId":1001,"content":"怎么购买","contentType":1,"memberId":4033461,"avatarImageFileId":"","userName":"13718803485","ipAddress":"127.0.0.1","addTime":1398840766131,"displayFlag":1},
+{"chatRecordId":4,"roomId":1001,"content":"貌似很不错","contentType":1,"memberId":4033461,"avatarImageFileId":"","userName":"13718802385","ipAddress":"127.0.0.1","addTime":1398840766131,"displayFlag":1}
+],
+"message":null,
+"totalCount":0}

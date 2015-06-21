@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>引导页-基本信息</title>
+</head>
+
+<body>
+
+<div class="all-main">
+    <header><img id="logo" src="images/logo.png" height="28" width="214" alt="面" /></header>
+    <div class="cont-a">
+        <div class="formcont">
+            <form class="form-validate" action="test.html">
+                <div class="guideMark"><span class="s-guideM s-guideNow"></span><span class="s-guideM"></span><span class="s-guideM"></span></div>
+                <h3 class="h3-c">基本信息</h3>
+                <p class="p-item">
+                    <label class="lab-title">姓名</label>
+                    <input type="text" class="txt" name="name" validate="{required:'请填写姓名'}" />
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">所在地</label>
+                    <input type="text" class="txt" name="name" validate="{required:'请填写姓名'}" />
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">性别</label>
+                    <label class="lab-item"><input type="radio" class="rad" name="rad-1" /> 男</label><label class="lab-item"><input type="radio" class="rad" name="rad-1" /> 女</label>
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">生日</label>
+                    <input type="text" class="txt" name="name" validate="{required:'请填写生日'}" />
+                </p>
+                <p class="p-item">
+                    <label class="lab-title">电话</label>
+                    <input type="text" class="txt" name="name" validate="{required:'请填写手机号码',mobile:true}" />
+                </p>
+                <p class="p-btn"><a class="btn-b bg-pink btnValidate btnReg" href="#">下一步</a><a href="#">跳过</a></p>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+
+</html>

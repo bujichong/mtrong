@@ -1,0 +1,48 @@
+﻿{"total":46,
+"rows":[
+	{
+		"no" : "201501100001",
+		"status":"待认领",
+		"customerName":"张三",
+		"remitStyle":"支付宝",
+		"accountName":"叶子",
+		"accountNumber":"625541455789914",
+		"payAccountName":"张强",
+		"payAccountNumber":"62554145214555",
+		"payMoney" :264,
+		"payNo" : "20151214154514",
+		"payDate" : "2015-12-14 15:14:20",
+		"Remarks" : "支付宝账号： 22145524512"
+	},
+	{
+		"no" : "201501100002",
+		"status":"待审核",
+		"customerName":"韩国名品",
+		"remitStyle":"支付宝",
+		"accountName":"叶子",
+		"accountNumber":"yewei@163.com",
+		"payAccountName":"张强",
+		"payAccountNumber":"18684802554",
+		"payMoney" :30,
+		"payDate" : "2015-12-14 15:14:20",
+		"payNo" : "20151214154555",
+		"Remarks" : ""
+	},
+	{
+		"no" : "201501100003",
+		"status":"已生效",
+		"customerName":"张三",
+		"remitStyle":"支付宝",
+		"accountName":"叶子",
+		"accountNumber":"yewei@163.com",
+		"payAccountName":"张强",
+		"payAccountNumber":"18684802554",
+		"account":"yewei@163.com",
+		"payAccount":"186848025545",
+		"payMoney" :1000,
+		"payNo" : "20151214154594",
+		"payDate" : "2015-12-14 15:14:20",
+		"Remarks" : "到帐请回复信息，谢谢"
+	}
+]
+}

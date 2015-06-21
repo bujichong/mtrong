@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="main">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<title>存放位置 - 一品云管家</title>
+<link rel="stylesheet" type="text/css" href="js/easyui/themes/default/easyui.css">
+<link type="text/css" rel="stylesheet" media="all" href="css/style.css" />
+<script type="text/javascript">
+var YMG = {};
+YMG.baseInfo = {
+	username : 'test'
+}
+</script>
+</head>
+<body class="main">
+<div class="wrapper">
+
+	<!-- header -->
+	<div class="header">
+	  <h1 class="h1-siteInfo">一品云管家</h1>
+	  <div class="searchbox">
+		<input type="text" class="txt" name="txt" /><input type="submit" class="btn btn-search" name="btnSubmit" value="搜索" />
+	  </div>
+	</div>
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="ul-sidenav">
+			<li id="sidenav-0"><a href="index.html">设备档案</a></li>
+			<li id="sidenav-1"><a href="form.html">巡检与保养</a></li>
+			<li id="sidenav-2"><a href="index.html">设备保修</a></li>
+			<li id="sidenav-3"><a href="form.html">耗材采购</a></li>
+		</ul>
+	</div>
+
+	<!-- mainC -->
+	<div class	="mainC">
+		<!-- crumb -->
+		<div class="crumb"><a href="index.html">首页</a>&gt;<a href="#">设备档案</a>&gt;<span class="now">存放位置</span></div>
+		<ul class="ul-tabtitle">
+			<li class="li-tabtitle li-now"><a href="storehouse.html">存放位置</a></li>
+			<li class="li-tabtitle"><a href="deviceFile.html">设备档案</a></li>
+		</ul>
+		<div class="tabCont">
+
+			<h2 class="h2-tabtitle"><span class="s-title">所有设备存放位置</span></h2>
+<!--
+
+              <p class="pad10 pad-l20">
+                <select class="drop" name="drop1">
+                <option value="0" selected="selected">分类</option>
+                <option value="1">分类1</option>
+                <option value="2">分类2</option>
+              </select>
+                <select class="drop" name="drop2">
+                <option value="0" selected="selected">存放位置</option>
+                <option value="1">存放位置1</option>
+                <option value="2">存放位置2</option>
+              </select>
+                <select class="drop" name="drop3">
+                <option value="0" selected="selected">设备状态</option>
+                <option value="1">设备状态1</option>
+                <option value="2">设备状态2</option>
+              </select>
+            </p>
+            <p class="pad-l20 h30 lh30">
+                <select class="drop" name="drop3">
+                <option value="0" selected="selected">巡检状态</option>
+                <option value="1">巡检状态1</option>
+                <option value="2">巡检状态2</option>
+              </select>
+                <select class="drop" name="drop3">
+                <option value="0" selected="selected">保养状态</option>
+                <option value="1">保养状态1</option>
+                <option value="2">保养状态2</option>
+              </select>
+                <select class="drop" name="drop3">
+                <option value="0" selected="selected">档案编码</option>
+                <option value="1">档案编码1</option>
+                <option value="2">档案编码2</option>
+              </select>
+              <input type="text" class="txt" name="txt" />
+              <input type="submit" class="btn h25 pad-l15 pad-r15" name="btnSubmit" value="搜 索" />
+            </p>
+
+			<p class="p-titlebtn"><a class="a-titlebtn fn-popBtn" href="#" rel="device.addPos">+ 新增存放位置</a></p>
+
+			<div class="tableGridbox">
+				<div id="dataListGrid" data-options="fit:true, border:false"></div>
+			</div> -->
+
+
+<div id="searchbar" data-options="region:'north'" style="height:auto;" border="false">
+  <!-- 搜索栏-->
+  <div id="searchbox" class="head-seachbox">
+                <select class="drop" name="drop1">
+                <option value="0" selected="selected">分类</option>
+                <option value="1">分类1</option>
+                <option value="2">分类2</option>
+              </select>
+                <select class="drop" name="drop2">
+                <option value="0" selected="selected">存放位置</option>
+                <option value="1">存放位置1</option>
+                <option value="2">存放位置2</option>
+              </select>
+                <select class="drop" name="drop3">
+                <option value="0" selected="selected">设备状态</option>
+                <option value="1">设备状态1</option>
+                <option value="2">设备状态2</option>
+              </select>
+
+    <div class="w-p98 marauto searchCont">
+      <form class="form-search" action="doForm" method="post" name="form_search">
+       <!--搜索内容表单内容-->
+<a href="javascript:void(0);" id="searchBtn" class="btn a-searchSubimt a-btn-blue" iconCls="icon-search">搜索</a>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="mainbox" data-options="region:'center'" border="false">
+     <!-- 数据grid表格  -->
+      <table id="dataListGrid"></table>
+      <!-- 数据grid工具栏 -->
+      <div id="gridTools">
+          <a id="a-gridAddMenu" href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="girdAdd();">快速添加分类</a>
+      <a id="a-gridEditMenu" href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="girdEdit();">快速编辑分类</a>
+      <a id="a-gridEditMenu" href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-search" plain="true" onclick="cateTree();">查看分类树</a>
+      <a id="a-gridEditMenu" href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="batchAdd();">批量导入</a>
+      </div>
+</div>
+
+
+		</div>
+
+		<p>如何批量导入部门信息？第一步： <a class="green" href="#">点这里下载excel部门信息模板</a>。第二步： <a class="blue fn-popBtn" rel="other.upload" href="#">点这里导入填写完成的部门信息excel文件</a>。</p>
+
+	</div>
+
+
+</div>
+
+<div class="none">
+
+	<!-- popEx -->
+	<div id="device_addPos" class="popForm">
+		<form class="form-item" method="post" action="js/test.json" data-submit ={"url":"js/test.json","confirm":true,"type":"post","msg":"确定修改设备信息？","successMsg":"设备信息已更新","errMsg":"","reqErrMsg":"请检查网络或联系管理员..."} >
+<!--
+//以下均为默认值，如果相同不需修改,使用data-submit注意格式的正确，字符串必须全部双引号，字符间不能有空格
+url: "url地址", //form提交地址，如果填写将覆盖form的 action 链接
+type: 'post',//数据提交方式
+confirm: true,//提交是否需要确认
+msg: '您确定要提交吗?',//确认提示内容
+successMsg: '信息提交成功',//数据提交成功提示
+errMsg: null,//数据提交失败提示（虽然服务器端也返回失败信息message，但此处如果填写将覆盖服务器端提示）
+reqErrMsg : '请检查网络或联系管理员...'//数据提交网络失败提交
+-->
+			<p class="p-item">
+				<label class="lab-item col_2"><em class="em-rq">*</em>位置名称：</label><input id="dropPosList" class="drop easyui-combobox" name="drop" validate="{easydrop:'请选择位置名称'}" style="height:26px;width:150px;" /><!-- 在最下方初始化 --><em class="em-tip">例如：第一车间</em>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2"><em class="em-rq">*</em>负责人：</label><input type="text" class="txt w100" name="person" validate="{required:'请填写负责人姓名',remote:{opt:{url : 'js/test2.json', key: 'person',data : {id:$('#txt-id').val()}},msg:'负责人姓名已存在'}}" /><em class="em-tip">例如：该部门设备负责人或部门负责人</em>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2"><em class="em-rq">*</em>联系电话：</label><input type="text" class="txt w100" name="phone" validate="{required:'请填写联系电话',mobile:true}" /><em class="em-tip">例如：负责人的联系电话</em>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2">备注：</label><textarea class="txta" name="remarks"></textarea>
+			</p>
+			<p class="p-item">
+				<label class="lab-item col_2">排序：</label><input type="text" class="txt w50" name="no" /><em class="em-tip">数字越大，在列表中排列越考前</em>
+			</p>
+			<p class="p-item p-formbtn"><input type="submit" value="确认" class="btn btn-formSubmit"><span class="s-formbtn s-popCancel">取消</span></p>
+		</form>
+	</div>
+
+
+	<div id="other_upload" class="pad10 pad-r0">
+         <form id="importForm" name="importForm" method="post" enctype="multipart/form-data">
+
+              <p class="p-item p-errTip pad-l15"></p>
+              <p class="p-item pad-b10">
+                  <label class="lab-item col_2"><em class="em-rq">*</em>上传文件：</label>
+                  <input type='text' readonly="readonly" name='textfield' e id='textfield' class='txt' style="width:200px;"/>
+                  <input type='button'  id="uploadButton" class="s-upload-button" value='选择excel文件' />
+                  <a class="green mag-l10 fs14" href="#">下载Excel模板</a>
+              </p>
+              <p class="p-item p-formbtn"><input type="button" id="uploadSubmit" value="导入" class="btn btn-formSubmit"><span class="s-formbtn s-popCancel">取消</span></p>
+
+<style type="text/css">
+.ul-sa{line-height: 1.6em;padding:5px 0 10px 2px;}
+.ul-sa li{list-style:circle inside;color:#2E4670; }
+.table-sa{display: none;border-collapse:collapse;border:1px solid #95b8e7;width:98%;margin:6px auto 0 0;}
+.table-sa th{padding:3px 10px;border:1px solid #95b8e7;background-color: #D5E6EE;font-weight: bold;}
+.table-sa td{padding:3px 10px;border:1px solid #95b8e7;background-color: #eee;}
+.p-showExample{cursor:hand;cursor:pointer;}
+</style>
+          <p class="orange"><b>说明：</b></p>
+          <ul class="ul-sa">
+            <li>只支持Excel 2003(<strong>xls</strong>),上传中请不要关闭浏览器.</li>
+            <li>请下载Excel模板，严格按照模板格式填写，注意:</li>
+            <li>Excel模板分三列，分别为一级分类名称，二级分类名称，三级分类名称,要求必须填写;</li>
+            <li>Excel模板三级分类允许填写多个分类名称,多个分类名称请用英文分号(;)分隔</li>
+          </ul>
+          <p class="p-showExample orange"><b>▼示例：(点击展开)</b></p>
+          <table class="table-sa table-example" border="0" cellspacing="0" cellpadding="0" >
+          <tr><th>一级分类</th><th>二级分类</th><th>三级分类</th></tr>
+          <tr><td>五金工具</td><td>手动工具</td><td>扳手/手用套筒</td></tr>
+          <tr><td>五金工具</td><td>气动工具</td><td>电钻</td></tr>
+          <tr><td>五金工具</td><td>液压工具</td><td>液压分离器</td></tr>
+          </table>
+
+     </form>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/easyui/jquery.easyui.packer.js"></script>
+<script type="text/javascript" src="js/easyui/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<!-- <script type="text/javascript" src="js/source/jquery.sobox.js"></script> --> <!-- 已在base.js中包含 -->
+<!-- <script type="text/javascript" src="js/source/jquery.soValidate.js"></script> --> <!-- 已在base.js中包含 -->
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/popOpt.js"></script>
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+//using('datagrid', function(){
+	$('#dataListGrid').datagrid({
+		//title:'DataGrid',
+		url:'js/datagrid_data1.json',
+		 //url:'js/datagrid_data_empty.json',
+		method : 'get',//默认是post
+		//width:700,
+		height:500,
+		fitColumns:true,
+		pagination:true,
+		singleSelect : true,
+		pageSize:10,
+		loadMsg : '玩命加载中...',
+            toolbar : '#gridTools',
+		columns:[[
+		//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+	        //{field:'no',title:'编号',hidden:true},
+	        {field:'pos',title:'设备存放位置',width:100,align:'center'},
+	        {field:'person',title:'负责人',width:100},
+	        {field:'phone',title:'联系电话',width:100,align:'center'},
+	        {field:'number',title:'设备数量',width:100,align:'center'},
+	        {field:'remarks',title:'工作备注',width:100,align:'center'},
+	        {field:'no',title:'操作',width:100,align:'center',hidden:false,formatter : function (value,row,index) {
+	        	return '<a class="a-op a-op-b fn-popBtn" href="#" rel="device.watchPos" data-opt={"no":'+value+'} >查看</a><a class="a-op a-op-b fn-popBtn" href="#" rel="device.repairPos" data-opt={"no":'+value+'} >修改</a><a class="a-op a-op-del" href="#" data-opt={"id":'+value+',"name":"小强"} >删除</a>';
+	        	//return value;
+	        }}
+    		]],
+		view: myview,
+           emptyMsg: '暂无数据...',
+    		onLoadSuccess : function () {
+    			//window.console && console.log($('.tableGridbox').find('.fn-popBtn').length);
+    			$('.tableGridbox').find('.fn-popBtn').clickPop({optAll : YMG.popOpt});
+    			// var $a = $('.tableGridbox').find('.a-dy');
+    			// $a.click(function () {
+    			// 	var href = $(this).attr('href');
+    			// 	var id = $(this).attr('dataId');
+    			// 	$.post(href,{id:id},function (data) {
+    			// 		if (data.success) {
+    			// 			window.location.href = 'xxx';
+    			// 		};
+    			// 	});
+    			// 	return false;
+    			// });
+    			$('.tableGridbox').find('.a-op-del').click(function () {
+    				var id = $(this).attr('optId');
+                      var data = $(this).data('opt');
+                            window.console && console.log(eval(data));
+    				$.sobox.confirm('提示','你是否删除此条信息？',function () {
+    					window.console && console.log(id);//通过id去异步然后刷新datagrid
+    					$('#dataListGrid').datagrid('load');
+    				});
+    				return false;
+    			});
+    		}
+	});
+//});
+
+$('#dropPosList').combobox({
+    url:'js/drop.json',
+    valueField:'id',
+    textField:'posName'
+});
+
+//var uploading = null;
+var tUpLoad = $.soUpload({
+    action : 'testIframe.html',//提交地址，返回json格式的文本，参考 testIframe.html
+    //action : 'testIframeFail.html',
+    fileName : 'file',//为上传框命名，不在页面dom中，只要不冲突可以不修改
+    upBtn :'#uploadButton',//上传按钮
+    nameText : '#textfield',//存放上传文件名text
+    submitBrn : '#uploadSubmit',//提交按钮
+    emptyMsg : '请上传excel文件',//当没有上传时的提示
+    msgPos :'.p-errTip',
+	accept : ['.xls','.xlsx'],//只接受excel格式
+	errAcceptMsg : '上传文件格式不正确！',//错误提示
+	submit : function () {
+		//uploading =  $.sobox.loading({showMask:false});
+		$.messager.progress();
+	},
+    complete : function (data) {
+      if (data) {
+        if (data.success) {
+        	$.messager.progress('close');
+        	//uploading.close();
+            YMG.popOpt.$pop.removePop();//关闭弹窗
+            $('.p-errTip').text('');
+            $.sobox.alert('提示','文件已导入成功！');
+        }else{
+          //window.console && console.log(data);
+          $('.p-errTip').text(data.message);//服务器端报错提示
+        };
+      };
+    }
+});
+
+
+$('.p-showExample').click(function() {
+  $('.table-example').show();
+  $(this).html('<b>示例：</b>');
+});
+
+</script>
+
+</body>
+</html>

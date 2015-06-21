@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>后台管理系统-登录</title>
+<link type="text/css" rel="stylesheet" media="all" href="css/login.css" />
+</head>
+<body>
+<form action="doLogin.htm" method="post" id="loginFrm">
+	<div class="loginBox">
+		<h1 class="h1-logo">麦动业务管理系统</h1>
+
+		<div class="loginC loginForm">
+			<h2 class="h2-title">用户登录</h2>
+			<div class="loginCont">
+				<p id="errorMsg"></p>
+				<p class="p-item"><label class="lab-item">用户名：</label><input type="text" class="txt-login txt-user" name="user_code" id="uname" /></p>
+				<p class="p-item"><label class="lab-item">密　码：</label><input type="password" class="txt-login txt-pass" name="password" id="password" /></p>
+				<!-- <p class="p-item"><label class="lab-item">验证码：</label><input type="text" class="txt txt-login txt-code" name="txt" /><img class="img-code" src="images/login/code.png" alt="" /></p> -->
+				<p class="p-item p-btn"><input type="submit" class="btn" name="btnSubmit" value="登 录" /></p>
+			</div>
+		</div>
+
+	</div>
+
+</form>
+
+<div class="copyrightInfo">
+	<p><span class="s-copyright">麦云科技 Copyright©2015 All Rights Reserved. </span><a class="a-icp" href="http://www.miitbeian.gov.cn/" target="_blank"></a></p>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+<script type="text/javascript">
+if(window.top !== window.self){window.top.location = window.location;}
+var $errMsg = $('#errorMsg');
+$('#loginFrm').submit(function(){
+	$errMsg.show();
+	var user_code=$("#uname").val() , p=$('#p').val() , password=$('#password').val();
+	if(!user_code){
+		$errMsg.removeClass('validateOk').text("请输入用户名!");
+		$("#uname").focus();
+		return false;
+	}
+	if(!password){
+		$errMsg.removeClass('validateOk').text("请输入密码!");
+		$("#password").focus();
+		return false;
+	}
+	$errMsg.addClass('validateOk').text('登录中，请稍候...');
+	var s=md5(md5(password)+p);
+	$.ajax({
+		url : '/doLogin.htm',
+		dataType : 'json',
+		type : 'post',
+		data : {user_code:user_code,s:s},
+		success : function(rst){
+			if(rst.state){
+				$errMsg.addClass('validateOk').text('登录成功！转向中...');
+				window.location.href="/index.htm";
+				//$util.goTo("/index.htm");
+			}else{
+				$errMsg.text(rst.msg);
+			}
+		},
+		error : function(XMLHttpRequest, textStatus, errorThrown){
+			$errMsg.removeClass('validateOk').text("网络连接失败，请重新点击登录或联系管理员...");
+		}
+	});
+	return false;
+});
+
+</script>
+
+</body>
+</html>

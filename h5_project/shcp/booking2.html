@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>填写订单</title>
+</head>
+
+<body>
+
+
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li class="wp4-1 li-nav li-now"><a href="#" class="a-nav">全部商品</a></li>
+        <li class="wp4-1 li-nav"><a href="#" class="a-nav">特价抢购</a></li>
+        <li class="wp4-1 li-nav"><a href="#" class="a-nav">提交订单</a></li>
+        <li class="wp4-1 li-nav"><span class="s-nav fn-subnav">采购服务</span>
+            <ul class="ul-subnav">
+                <li class="li-subnav"><a href="#" class="a-subnav">采购车</a></li>
+                <li class="li-subnav"><a href="#" class="a-subnav">我的订单</a></li>
+                <li class="li-subnav"><a href="#" class="a-subnav">我的常用料</a></li>
+                <li class="li-subnav"><a href="#" class="a-subnav">帮助中心</a></li>
+                <li class="li-subnav"><a href="#" class="a-subnav">注册/登录</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="miniCart"><a href="#" class="a-miniCart">我的购物车</a></div>
+
+<div class="all-main">
+    <!-- ul-tab -->
+    <h3 class="h3-headTitle"><span class="s-title">填写订单</span><a href="#" class="a-more">修改数量</a></h3>
+
+    <div class="cont-a">
+        <ul class="ul-list ul-list-c">
+            <li class="li-list li-list-c">
+                <span class="imgauto s-thumb"><img src="images/demo/pic-1.jpg" height="120" width="120" alt="" /></span>
+                <div class="list-cont">
+                    <h4 class="h4-title"><span href="#" class="s-title">紫林 厚道醋1.9L</span></h4>
+                    <p class="p-abs"><span class="s-abs">单位：箱(每箱6桶)</span></p>
+                </div>
+                <p class="p-op"><span class="s-price">￥1500.00</span><span class="s-num">x<em class="em-num">1</em></span></p>
+            </li>
+
+            <li class="li-list li-list-c">
+                <span class="imgauto s-thumb"><img src="images/demo/pic-1.jpg" height="120" width="120" alt="" /></span>
+                <div class="list-cont">
+                    <h4 class="h4-title"><span href="#" class="s-title">紫林 厚道醋1.9L</span></h4>
+                    <p class="p-abs"><span class="s-abs">单位：箱(每箱6桶)</span></p>
+                </div>
+                <p class="p-op"><span class="s-price">￥1500.00</span><span class="s-num">x<em class="em-num">1</em></span></p>
+            </li>
+
+            <li class="li-list li-list-c">
+                <span class="imgauto s-thumb"><img src="images/demo/pic-1.jpg" height="120" width="120" alt="" /></span>
+                <div class="list-cont">
+                    <h4 class="h4-title"><span href="#" class="s-title">紫林 厚道醋1.9L</span></h4>
+                    <p class="p-abs"><span class="s-abs">单位：箱(每箱6桶)</span></p>
+                </div>
+                <p class="p-op"><span class="s-price">￥1500.00</span><span class="s-num">x<em class="em-num">1</em></span></p>
+            </li>
+            <li class="li-list li-list-c li-total">
+                <span class="s-title">订单金额总计：</span><span class="s-price">￥3000.00</span>
+            </li>
+            <li class="li-list li-list-c li-delivery">
+                配送方式： 货到付款
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="cont-b formcont-b">
+        <form class="form-validate" action="xx">
+            <p class="p-item"><label class="lab-item">收货人姓名</label>
+                <span class="s-item"><input type="text" class="txt" name="txt" validate="{required:'请填写收货人姓名'}" placeholder="请填写真实姓名" /></span>
+            </p>
+            <p class="p-item"><label class="lab-item">手机号码</label>
+                <span class="s-item"><input type="text" class="txt" name="txt" validate="{required:'请填写手机号',mobile:true}" placeholder="收货人电话，11位手机号" /></span>
+            </p>
+            <p class="p-item"><label class="lab-item">收货地址</label>
+                <input type="hidden" id="province" name="province" />
+                <input type="hidden" id="city" name="city" />
+                <input type="hidden" id="district" name="district" />
+                <!-- <span class="s-item"><input type="text" class="fl txt wp49" name="txt" placeholder="请选择省" /><input type="text" class="fr txt wp49" name="txt" placeholder="请选择市" /></span> -->
+                <span class="s-historyPCD"><em class="em-historyPCD"><b id="b-p">上海</b> <b id="b-c">上海市</b> <b id="b-d"></b></em><em class="em-repairPCD">修改省市区</em></span>
+                <span class="s-item dropPCD">
+                    <select class="fl drop wp49 drop-province" name="drop" validate="{required:'请选择省'}">
+                        <option value="" selected="selected" >请选择省</option>
+                        <option value="1">北京</option>
+                        <option value="2">天津</option>
+                    </select>
+                    <select class="fr drop wp49 drop-city" name="drop" validate="{required:'请选择省市'}">
+                        <option value="" selected="selected">请选择市</option>
+                        <option value="1">北京</option>
+                    </select>
+                </span>
+            </p>
+            <p class="p-item dropPCD">
+                <span class="s-item">
+                    <select class="fl drop wp100 drop-distinct" name="drop" validate="{required:'请选择地区'}">
+                        <option value="" selected="selected">请选择区</option>
+                        <option value="1">海淀区</option>
+                        <option value="2">崇文区</option>
+                    </select>
+                </span>
+            </p>
+            <p class="p-item">
+                <span class="s-item"><textarea class="txta" validate="{required:'请填写详细的街道地址，以便我们联系您！'}" placeholder="路名或街道地址，门牌号"></textarea></span>
+            </p>
+            <p class="p-totalPrice">定金金额：<span class="s-totalPrice">￥4758.00</span></p>
+            <!-- <p class="p-item p-btn"><input type="submit" class="btn btn-submit" name="btnSubmit" value="确认订单" /></p> -->
+            <p class="p-btn"><a class="bg-pink btn-b btnValidate" href="#">确认订单</a></p>
+        </form>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/region.js"></script>
+<script type="text/javascript" src="js/base2.js"></script>
+</body>
+
+</html>

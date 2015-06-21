@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表页-后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="themes/icon.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/easyui-repair.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+
+<div class="none">
+
+</div>
+
+<!-- 23.订单修改运费 -->
+<div id="popPostCost">
+
+	<div class="grid">
+
+		<div class="col_6">
+			<div class="form-group">
+				<label class="col_3 control-label right" for="username">订单编号：</label>
+				<div class="col_9 mag-t8"><b>13520</b></div>
+			</div>
+		</div>
+		<div class="col_5">
+			<div class="form-group">
+				<label class="col_3 control-label right" for="username">原运费：</label>
+				<div class="col_9 mag-t8"><b>15</b>元</div>
+			</div>
+		</div>
+		<div class="col_12">
+			<label class="col_2 control-label right" for="username">修改为：</label>
+			<div class="col_9">
+				<label><input type="radio" class="rad" name="radPostCost" />取消修改【<span class="s-scost">15元</span>】</label> <br />
+				<label><input type="radio" class="rad" name="radPostCost" />免邮</label><br />
+				<label><input type="radio" class="rad" name="radPostCost" />修改为 <input type="text" class="form-control w40" disabled="disabled" name="newCost" value="" /></label>
+			</div>
+		</div>
+
+	</div>
+	<p class="center">
+		<input class="btn btn-primary" type="submit" value="提 交" />
+		<input class="btn btn-default btn-cancel" type="reset" value="取 消" />
+	</p>
+</div>
+
+
+
+<!-- 24.订单修改数量 -->
+<div id="popRepairNum">
+
+	<div class="col_12">
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">SKU编码：</label>
+			<div class="col_9 mag-t8"><b>1441112314</b><br />S0211014</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">当前数量：</label>
+			<div class="col_9 mag-t8"><b>8</b></div>
+		</div>
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">修改为：</label>
+			<div class="col_9">
+				<input type="text" class="form-control" name="newNumber" value="" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">修改理由：</label>
+			<div class="col_9">
+				<textarea name="reason" class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+	</div>
+	<p class="center">
+		<input class="btn btn-primary" type="submit" value="提 交" />
+		<input class="btn btn-default btn-cancel" type="reset" value="取 消" />
+	</p>
+</div>
+
+
+<!-- 25.订单修改数量记录 -->
+<div id="popWatchRNote">
+	<div class="popRNoteGrid">
+		<div id="popRNoteListGrid" data-options="border:false"></div>
+	</div>
+	<p class="center">
+		<input class="btn btn-primary" type="submit" value="确 定" />
+	</p>
+</div>
+
+
+<!-- 26.订单详情_添加商品 -->
+	<div id="popProAdd">
+		<div id="searchbar" class="navbar navbar-default" >
+			<div class="pad10">
+				<form role="form" class="form-inline form-popSearch">
+					<p class="pad-b5">
+						　类型：<select class="form-control input-sm" name="proKind">
+							<option value="1">商品类型</option>
+						</select>
+						　编　码：<input type="text" name="no" class="form-control input-sm">
+						名称：<input type="text" name="proname" class="form-control input-sm">
+					</p>
+					<p class="pad-b5">
+						供应商：<select class="form-control input-sm" name="supplier">
+							<option value="1">供应商1</option>
+							<option value="2">供应商2</option>
+						</select>
+						 生产款号：<input type="text" name="kh" class="form-control input-sm">
+						<input class="btn btn-sm btn-primary btn-popSearch" type="button" value="搜 索" />
+					</p>
+				</form>
+			</div>
+		</div>
+
+		<div class="popTableGrid">
+			<div id="popProListGrid" data-options="border:false"></div>
+		</div>
+		<p class="center">
+			<input class="btn btn-primary btn-proSubmit" type="button" value="添 加" />
+			<input class="btn btn-default btn-popCancel" type="button" value="取 消" />
+		</p>
+	</div>
+
+</div>
+
+<!-- 27.订单到货计划 -->
+<div id="popWatchPlan">
+	<div class="popPlaneGrid">
+		<div id="popPlanListGrid" data-options="border:false"></div>
+	</div>
+	<p class="center">
+		<input class="btn btn-primary" type="submit" value="确 定" />
+	</p>
+</div>
+
+
+<!-- 28.订单调整库存 -->
+<div id="popRepairStock">
+	<div class="popRStockGrid">
+		<div>
+			<label class="control-label">订单编号：</label><span>1110215</span>
+			<label class="control-label">SKU缺货数量：</label><span>2</span>
+		</div>
+		<div id="popRStockListGrid" data-options="border:false"></div>
+	</div>
+	<p class="center">
+		<input class="btn btn-primary" type="submit" value="确 定" />
+	</p>
+</div>
+
+
+<!-- 29.订单取消数量 -->
+<div id="popRepairNum">
+
+	<div class="col_12">
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">SKU编码：</label>
+			<div class="col_9 mag-t8"><b>1441112314</b><br />S0211014</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">当前数量：</label>
+			<div class="col_9 mag-t8"><b>8</b></div>
+		</div>
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">本次取消：</label>
+			<div class="col_9">
+				<input type="text" class="form-control" name="newNumber" value="" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col_3 control-label right" for="username">取消理由：</label>
+			<div class="col_9">
+				<textarea name="reason" class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+	</div>
+	<p class="center">
+		<input class="btn btn-primary" type="submit" value="提 交" />
+		<input class="btn btn-default btn-cancel" type="reset" value="取 消" />
+	</p>
+</div>
+
+
+
+
+</body>
+</html>

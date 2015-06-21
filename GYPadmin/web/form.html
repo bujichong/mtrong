@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="main">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<title>一品云管家</title>
+<link rel="stylesheet" type="text/css" href="js/easyui/themes/default/easyui.css">
+<link type="text/css" rel="stylesheet" media="all" href="css/style.css" />
+<script type="text/javascript">
+var YMG = {};
+YMG.baseInfo = {
+	username : 'test'
+}
+</script>
+</head>
+<body class="main">
+<div class="wrapper">
+
+	<!-- header -->
+	<div class="header">
+	  <h1 class="h1-siteInfo">一品云管家</h1>
+	  <div class="searchbox">
+		<input type="text" class="txt" name="txt" /><input type="submit" class="btn btn-search" name="btnSubmit" value="搜索" />
+	  </div>
+	</div>
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="ul-sidenav">
+			<li id="sidenav-0"><a href="index.html">设备档案</a></li>
+			<li id="sidenav-1"><a href="form.html">巡检与保养</a></li>
+			<li id="sidenav-2"><a href="index.html">设备保修</a></li>
+			<li id="sidenav-3"><a href="form.html">耗材采购</a></li>
+		</ul>
+	</div>
+
+	<!-- mainC -->
+	<div class	="mainC">
+		<!-- crumb -->
+		<div class="crumb"><a href="index.html">首页</a>&gt;<a href="#">设备档案</a>&gt;<span class="now">存放位置</span></div>
+		<ul class="ul-tabtitle">
+			<li class="li-tabtitle li-now"><a href="#">存放位置</a></li>
+			<li class="li-tabtitle"><a href="#">设备档案</a></li>
+		</ul>
+		<div class="tabCont">
+			<h2 class="h2-tabtitle"><span class="s-title">所有设备存放位置</span></h2>
+			<input id="vv" class="easyui-validatebox" data-options="required:true" validType="mobile" />
+			<form class="form-item" method="post" action="js/test.json" rel="form.test">
+				<p class="p-item"><label class="lab-item col_4"><em class="em-rq">*</em>位置名称：</label><input type="text" id="dropPos" class="txt" name="pos" validate="{easydrop:'请选择位置名称'}"/><em class="em-tip">例如：第一车间</em></p>
+				<p class="p-item"><label class="lab-item col_4"><em class="em-rq">*</em>负责人：</label><input type="text" class="txt w100" name="person" validate="{required:'请填写负责人姓名'}" /><em class="em-tip">例如：该部门设备负责人或部门负责人</em></p>
+				<p class="p-item"><label class="lab-item col_4"><em class="em-rq">*</em>联系电话：</label><input type="text" class="txt w100" name="phone" validate="{required:'请填写联系电话',mobile:true}" /><em class="em-tip">例如：负责人的联系电话</em></p>
+				<p class="p-item"><label class="lab-item col_4">备注：</label><textarea class="txta" name="remarks"></textarea></p>
+				<p class="p-item"><label class="lab-item col_4">排序：</label><input type="text" class="txt w50" name="no" />数字越大，在列表中排列越考前</p>
+				<p class="p-item p-formbtn"><input type="submit" value="确认" class="btn btn-formSubmit"><span class="s-formbtn s-popCancel">取消</span></p>
+			</form>
+
+
+
+		</div>
+
+
+	</div>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/easyui/jquery.easyui.packer.js"></script>
+<script type="text/javascript" src="js/easyui/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/jquery.validate.ext.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/popOpt.js"></script>
+<script type="text/javascript" src="js/runing.js"></script>
+<script type="text/javascript">
+$('#dropPos').combobox({
+    url:'js/drop.json',
+    valueField:'id',
+    textField:'posName',
+    //multiple:true,//多选
+    onSelect  : function (data) {
+		window.console && console.log(data);
+		//load与reload方法的区别参考api:一个是刷新回第一页的列表，另一个是刷新当前页列表，返回项总数有变，一定采用load
+		$('#dataListGrid').datagrid('load',{
+			id: data.id
+		});
+    }
+});
+</script>
+</body>
+</html>

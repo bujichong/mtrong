@@ -1,0 +1,10 @@
+{
+	"success": true,
+	"data": {
+		"type":2,
+		"content": "images/demo/pic-5.jpg",
+		"photoImg": "images/p-2.png",
+		"addTime": 1398840766131
+	},
+	"message": null
+}

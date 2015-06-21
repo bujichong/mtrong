@@ -1,0 +1,42 @@
+{
+    "total": 46,
+    "rows": [{
+        "no": "14110841",
+        "mark":["new","hot"],
+        "pic": "images/demoPic-1.png",
+        "bigpic": "images/demoPic-1.png",
+        "name": "居家新款官网同步，双侧抽绳单肩斜挎包",
+        "price1": 50,
+        "price2": 120,
+        "color":"红色",
+        "size":"S码",
+        "kindText": "箱包-女包",
+        "number": 4,
+        "producter": "MK",
+        "style":"聚生产",
+        "kno": "S2024",
+        "clearStocks": true,
+        "createPerson": "笃笃",
+        "upTime": "2014-12-20 15:45:36",
+        "status": "上架"
+    }, {
+        "no": "14110338",
+        "mark":"",
+        "pic": "images/demoPic-2.png",
+        "bigpic": "images/demoPic-2.png",
+        "name": "居家新款官网同步，双侧抽绳单肩斜挎包",
+        "kindText": "箱包-女包",
+        "number": 6,
+         "price1": 50,
+        "price2": 120,
+        "color":"红色",
+        "size":"S码",
+        "style":"快定制",
+        "producter": "MK",
+        "kno": "S2024",
+        "clearStocks": false,
+        "createPerson": "笃笃",
+        "upTime": "2014-12-20 15:45:36",
+        "status": "部分上架"
+    }]
+}

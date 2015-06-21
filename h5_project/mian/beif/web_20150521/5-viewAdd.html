@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>面试管理-添加邀请</title>
+</head>
+
+<body>
+
+<header>
+    <a href="#" class="a-headBack">返回</a>
+    <h1 class="h1-title">添加邀请</h1>
+</header>
+
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li id="nav-index" class="wp3-1 li-nav"><a href="#" class="a-nav">我的档案</a></li>
+        <li id="nav-cart" class="wp3-1 li-nav li-now"><a href="#" class="a-nav">面试管理</a></li>
+        <li id="nav-about" class="wp3-1 li-nav"><a href="#" class="a-nav">人才库</a></li>
+    </ul>
+</nav>
+
+<div class="all-main">
+    <div class="cont-a">
+
+        <div class="formcont">
+            <form class="form-validate" action="test.html">
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写岗位信息'}" placeholder="岗位-临时" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt txt-date" name="txt" /><input type="text" class="txt txt-time" name="txt" />
+                </p>
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写工作地址'}" placeholder="地址" />
+                </p>
+
+                <fieldset class="field-group">
+                    <h3 class="h3-title">候选人</h3>
+                    <p class="p-item">
+                        <input type="text" class="txt" name="name" validate="{required:'请填写姓名'}" placeholder="姓名" />
+                    </p>
+                    <p class="p-item">
+                        <input type="text" class="txt" name="name" validate="{required:'请填写电话',mobile:true}" placeholder="电话" />
+                    </p>
+                    <p class="p-item">
+                        <input type="text" class="txt" name="name" validate="{required:'请填写邮箱',email:true}" placeholder="邮箱" />
+                    </p>
+                </fieldset>
+
+                <fieldset class="field-group">
+                    <h3 class="h3-title">面试官</h3>
+                    <p class="p-item">
+                        <input type="text" class="txt" name="name" validate="{required:'请填写姓名'}" placeholder="姓名" />
+                    </p>
+                    <p class="p-item">
+                        <input type="text" class="txt" name="name" validate="{required:'请填写电话',mobile:true}" placeholder="电话" />
+                    </p>
+                    <p class="p-item">
+                        <input type="text" class="txt" name="name" validate="{required:'请填写邮箱',email:true}" placeholder="邮箱" />
+                    </p>
+                </fieldset>
+
+                <p class="p-item">
+                    <a href="#" class="a-add">添加其它</a>
+                </p>
+
+                <a href="#" class="a-headSubmit btnValidate">提交</a>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="searchPop">
+    <span class="s-exin">收缩</span>
+    <div class="search"><input type="text" class="txt txt-search" name="txt" /><button>搜索</button></div>
+    <div class="dropC"><select class="drop" name="drop">
+        <option value="0" selected="selected">筛选</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select></div>
+    <div class="dropC"><select class="drop" name="drop">
+        <option value="0" selected="selected">排序</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select></div>
+    <p class="p-btn"><a href="#" class="a-add">面试邀请</a></p>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+
+</html>

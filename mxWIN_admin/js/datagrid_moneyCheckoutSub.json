@@ -1,0 +1,22 @@
+﻿{"total":46,
+"rows":[
+	{
+		"no" : "201501100001",
+		"type" : "发货单",
+		"status":"待结算",
+		"bookingNo" :"245145765",
+		"bookingStatus" :"已发货",
+		"date" : "2015-12-14 15:14:20",
+		"payMoney" :1000
+	},
+	{
+		"no" : "201501100002",
+		"type" : "发货单",
+		"status":"待结算",
+		"bookingNo" :"245145767",
+		"bookingStatus" :"已发货",
+		"date" : "2015-12-14 15:35:15",
+		"payMoney" :25
+	}
+]
+}

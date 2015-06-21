@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>一品云管家for工厂 - 巡检保养</title>
+</head>
+
+<body>
+
+<header><h1 class="h1-title">设备身份证</h1></header>
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li class="wp3-1 li-nav"><a href="deviceInfo.html" class="a-nav">设备身份证</a></li>
+        <li class="wp3-1 li-nav"><a href="check.html" class="a-nav">巡检保养</a></li>
+        <li class="wp3-1 li-nav li-now"><a href="repair.html" class="a-nav">设备报修</a></li>
+    </ul>
+</nav>
+
+<div id="allMain" class="all-main">
+    <div id="scroller" class="contbox">
+        <div class="cont-a cont-c">
+            <div class="deviceCont">
+                <div class="device-photo imgauto wp30"><img src="images/dfpic.png" height="196" width="196" alt="" /></div>
+                <div class="device-intro wp65">
+                    <ul class="ul-device">
+                        <li class="li-i li-no"><span class="s-title">设备编号：</span>1209983</li>
+                        <li class="li-i li-name">奥突斯空压机</li>
+                        <li class="li-i"><span class="s-title">型号：</span>OTS-750-30L</li>
+                        <li class="li-i"><span class="s-title">功率：</span>730KW</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="p-to"><a href="repairForm.html" class="a-to">立即报修</a></p>
+            <p>历史维修记录：</p>
+
+            <dl class="dl-check">
+                <dt class="dt-check"><span class="s-date">2014年1月15日</span> <span class="s-checker">维修人：高胡伟</span></dt>
+                <dd class="dd-check">
+                    <p class="p-checkInfo">故障描述： <br />
+                        空压机无法正常运行</p>
+                    <p class="p-checkInfo">维修措施： <br />
+                        更换空压机阀门和管路</p>
+                </dd>
+            </dl>
+
+
+            <dl class="dl-check">
+                <dt class="dt-check"><span class="s-date">2014年1月15日</span> <span class="s-checker">维修人：高胡伟</span></dt>
+                <dd class="dd-check">
+                    <p class="p-checkInfo">故障描述： <br />
+                        空压机无法正常运行</p>
+                    <p class="p-checkInfo">维修措施： <br />
+                        更换空压机阀门和管路</p>
+                </dd>
+            </dl>
+
+
+            <dl class="dl-check">
+                <dt class="dt-check"><span class="s-date">2014年1月15日</span> <span class="s-checker">维修人：高胡伟</span></dt>
+                <dd class="dd-check">
+                    <p class="p-checkInfo">故障描述： <br />
+                        空压机无法正常运行</p>
+                    <p class="p-checkInfo">维修措施： <br />
+                        更换空压机阀门和管路</p>
+                </dd>
+            </dl>
+
+        </div>
+        <p class="p-loadMore">点击加载更多</p>
+    </div>
+</div>
+
+<script id="messageTem" type="text/x-jsrender">
+    <dl class="dl-check">
+        <dt class="dt-check"><span class="s-date">{{>finishTime}}</span> <span class="s-checker">维修人：{{>jiedanPerson}}</span></dt>
+        <dd class="dd-check">
+            <p class="p-checkInfo">故障描述： <br />
+                {{>faultDesc}}</p>
+            <p class="p-checkInfo">维修措施： <br />
+                {{>repairScheme}}</p>
+        </dd>
+    </dl>
+</script>
+
+<script type="text/javascript">
+var loadOpt = {
+    url : 'js/repair.json',
+    cellLen :3
+}
+</script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/jsrender.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+</html>

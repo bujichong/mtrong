@@ -1,0 +1,42 @@
+{"total":46,
+"rows":[
+	{
+		"no" : "20150114578",
+		"T" : "",
+		"fast" : false,
+		"bookingTime":"12-23 12:24",
+		"checkTime": "12-25 14:14",
+		"bookingStatus" : "待审核",
+		"payStatus" : "未支付",
+		"bookingNumber":12,
+		"money":1000,
+		"postcost":15,
+		"postRemarks" : "减免5元",
+		"receiver" : {
+			"name" :"常建",
+			"phone" : "13457845784",
+			"provincial" : "浙江省 嘉兴市 南湖区",
+			"address" : "文贤路134号电子商务产业园2号园麦动"
+		}
+	},
+	{
+		"no" : "205478478",
+		"T" : "T+0",
+		"fast" : true,
+		"bookingTime":"12-14 12:24",
+		"checkTime": "12-25 15:14",
+		"bookingStatus" : "未发货",
+		"payStatus" : "已支付",
+		"bookingNumber":24,
+		"money":1000,
+		"postcost":10,
+		"postRemarks" : "减免5元",
+		"receiver" : {
+			"name" :"常建",
+			"phone" : "13457845784",
+			"provincial" : "浙江省 嘉兴市 南湖区",
+			"address" : "文贤路134号电子商务产业园2号园麦动"
+		}
+	}
+]
+}

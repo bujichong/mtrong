@@ -1,0 +1,1159 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>客户管理 - 客户详情 -后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/easyui-repair.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+
+<!-- head begin-->
+<div id="all-head" region="north">
+	<div class="headlogo"><img src="images/logo.png" height="40" width="200" alt="" /></div>
+	<div class="headtools">
+		<p class="p-tools">欢迎你，<strong class="strong-user">admin</strong> <span rel="form.html" class="s-tools a-userSetting">账号设置</span><span class="s-tools s-loginout">退出</span></p>
+		<div class="headmes">
+			<span class="s-message">消息<small class="small-num">3</small></span>
+			<ul class="ul-mesInfo">
+				<li class="li-sj">&nbsp;</li>
+				<li class="li-nomes">暂无新的消息！</li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="咨询处理">有1个咨询需要您处理。</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="订单发货">有2个订单需要您发货</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="结算订单">有2个新订单需要您结算</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- head end -->
+
+<!-- side begin -->
+<div id="all-side">
+	<div id="nav">
+		<ul class="ul-nav">
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="prolist.html">
+					<em class="em-icon"><img src="images/icon/stack-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">商品</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">商品管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="prolist.html">商品列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proDetails.html">商品新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="buylist.html">
+					<em class="em-icon"><img src="images/icon/shopping_cart-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">采购</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">采购管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needlist.html">采购需求</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needNotelist.html">采购跟催</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buylist.html">采购列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buyDetails.html">采购新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/layers-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">订单</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">订单管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookinglist.html">订单列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookingDetails.html">订单新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="manageIndex.html">
+					<em class="em-icon"><img src="images/icon/pawn-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">官网</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">官网管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="manageIndex.html">首页管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proShow.html">商品展示</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="proSorting.html">商品排序</a></li> -->
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="managePromotion.html">促销管理</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/group-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">客户</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">客户管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="customerlist.html">客户列表</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="customerDetails.html">客户新增</a></li> -->
+					</ul>
+				</div>
+			</li>
+
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="moneyImport.html">
+					<em class="em-icon"><img src="images/icon/wallet-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">资金</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">资金管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyClaim.html">收款认领</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyPay.html">支付列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCheckout.html">订单结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCancel.html">退货结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCost.html">其他结算</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="account.html">
+					<em class="em-icon"><img src="images/icon/settings-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">系统</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">系统管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="account.html">账号管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="role.html">角色管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="power.html">权限管理</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- side end -->
+<div class="crumb"><span class="s-title">客户管理 - 客户详情</span></div>
+
+<!-- main begin -->
+<div id="page-DetailsMainBox">
+
+	<div class="pageMain">
+
+	<div class="infoWarp-a">
+		<span class="s-item mag-r20"><labe class="label-item">客户ID：</label><b>14875487</b></span>
+		<span class="s-item mag-r20"><labe class="label-item">登录手机：</label><b>13895478447</b></span>
+		<span class="s-item mag-r20"><labe class="label-item">客户名称：</label><b>张伦硕</b></span>
+	</div>
+
+		<div class="tabgroup mag-l10 mag-r10">
+			<ul class="nav nav-tabs" role="tablist">
+				  <li role="presentation" class="active"><a href="#taba5" id="tabtitle-services" role="tab" data-toggle="tab">跟进记录</a></li>
+				  <li role="presentation"><a href="#taba3" id="tabtitle-hisBooking" role="tab" data-toggle="tab">历史订单</a></li>
+				  <li role="presentation"><a href="#taba1" role="tab" data-toggle="tab">基本信息</a></li>
+				  <li role="presentation"><a href="#taba2" role="tab" data-toggle="tab">业务信息</a></li>
+				  <li role="presentation"><a href="#taba4" id="tabtitle-pay" role="tab" data-toggle="tab">钱包记录</a></li>
+				  <li role="presentation"><a href="#taba8" role="tab" data-toggle="tab">账户列表</a></li>
+				  <li role="presentation"><a href="#taba6" id="tabtitle-address" role="tab" data-toggle="tab">收货地址</a></li>
+				  <li role="presentation"><a href="#taba7" id="tabtitle-note" role="tab" data-toggle="tab">操作记录</a></li>
+			</ul>
+			<div class="tab-content">
+			  <div role="tabpanel" class="tab-pane" id="taba1">
+
+
+				<form role="form" class="form-horizontal form-valite" method="post" action="">
+					<div class="pad-l5 pad-t5 btn-group">
+						<input class="btn btn-primary" type="submit" value="保 存" />
+					      <!-- <button class="btn btn-default grid-save" type="button"><span class="glyphicon glyphicon-pencil"></span>编辑</button> -->
+					      <button class="btn btn-default grid-confirm" type="button"><span class="glyphicon glyphicon-ok"></span>审核</button>
+					      <button class="btn btn-default grid-unconfirm" type="button"><span class="glyphicon glyphicon-remove"></span>取消审核</button>
+					      <button class="btn btn-default grid-unconfirm" type="button"><span class="glyphicon glyphicon-ok"></span>启用</button>
+					      <button class="btn btn-default grid-unconfirm" type="button"><span class="glyphicon glyphicon-remove"></span>禁用</button>
+					      <button class="btn btn-default grid-unconfirm" type="button"></span>客户分组</button>
+					      <button class="btn btn-default grid-unconfirm" type="button"></span>分配代理商</button>
+					      <button class="btn btn-default grid-unconfirm" type="button"></span>分配客户经理</button>
+					      <button class="btn btn-default grid-unconfirm" type="button"></span>分配业务员</button>
+					      <button class="btn btn-default grid-useless" type="button"></span>认领</button>
+				    </div>
+					<div class="pad-t20 pad-b20">
+						<div class="formbox-a">
+							<div class="grid">
+								<div class="col_5">
+									<div class="form-group">
+										<label class="col_3 control-label right" for="username">客户ID：</label>
+										<div class="col_9 mag-t8"><b>135154720</b> <a><a href="#" data-opt={"id":"135154720"} class="op-grid"><span class="glyphicon glyphicon-tag"></span>重置密码</a></div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">登录手机：</label>
+										<div class="col_9 item-txt"><input type="text" class="form-control" name="phone" value="13478547844" validate="{required:'登录手机必须填写！',mobile:true}"/></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">客户地址：</label>
+										<div class="col_9 item-txt">
+											<select class="form-control input-sm w90 pad0 pad-r0" name="province">
+												<option value="">浙江省</option>
+											</select>
+											<select class="form-control input-sm w90 pad-l0 pad-r0" name="city">
+												<option value="">嘉兴市</option>
+											</select>
+											<select class="form-control input-sm w90 pad-l0 pad-r0" name="strict">
+												<option value="">南湖区</option>
+											</select>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">详细地址：</label>
+										<div class="col_9 item-txt"><input type="text" class="form-control" name="address" value="" /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">QQ：</label>
+										<div class="col_9 item-txt"><input type="text" class="form-control" name="QQ"  validate="{number:'QQ号码必须为数字'}" value="" /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">旺旺：</label>
+										<div class="col_9 item-txt"><input type="text" class="form-control" name="wangwang" value="" /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">微信：</label>
+										<div class="col_9 item-txt"><input type="text" class="form-control" name="weixin" value="" /></div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">发货单标记：</label>
+										<label class=" mag-l10"><input type="checkbox" class="chk" value="option1" name="">不打印麦动标志</label><label class=" mag-l10"><input type="checkbox" class="chk" value="option1" name="">不打印价格</label>
+									</div>
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">备注：</label>
+										<div class="col_9 item-txt"><textarea name="remarks" class="form-control" rows="2"></textarea></div>
+									</div>
+
+								</div>
+
+
+								<div class="col_5">
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="username">状态：</label>
+										<div class="col_9 mag-t8"><span class="mag-r20">待审核</span><span class="green">启用</span><!-- <span class="red">禁用</span> --></div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="username">客户分组：</label>
+										<div class="col_9 mag-t8"><span>未分组</span></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">公司名称：</label>
+										<div class="col_9 item-txt"><input type="text" class="form-control" name="companyName" value="" /></div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">代理商：</label>
+										<!-- <div class="col_9 item-txt"><input type="text" class="form-control" name="agent" value="" /></div> -->
+										<div class="col_9 item-txt mag-t8">麦动</div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">业务员：</label>
+										<div class="col_9 item-txt mag-t8">张三</div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">客户经理：</label>
+										<div class="col_9 item-txt mag-t8">李四</div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">身份证：</label>
+										<div class="col_9 item-txt"><button class="upload">上传</button> <a class="a-upload" href=""><span class="s-pic s-uploadPic">12334.jpg <img class="img-previewPic" src="images/demoPic-1.png" width="240" height="240" alt="" /></span><span class="glyphicon glyphicon-remove"></span></a></div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">营业执照：</label>
+										<div class="col_9 item-txt"><button class="upload">上传</button> <a class="a-upload" href=""><span class="s-pic s-uploadPic">12334.jpg <img class="img-previewPic" src="images/demoPic-2.png" width="240" height="240" alt="" /></span><span class="glyphicon glyphicon-remove"></span></a></div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">门头照片：</label>
+										<div class="col_9 item-txt"><button class="upload">上传</button> <a class="a-upload" href=""><span class="s-pic s-uploadPic">12334.jpg <img class="img-previewPic" src="images/demoPic-1.png" width="240" height="240" alt="" /></span><span class="glyphicon glyphicon-remove"></span></a></div>
+									</div>
+								</div>
+
+							</div>
+
+
+
+
+							<div class="grid">
+								<div class="col_5">
+
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">创建时间：</label>
+										<div class="col_9 item-txt mag-t8">2015-01-14 11:14:24</div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">修改人：</label>
+										<div class="col_9 item-txt mag-t8">李丁</div>
+									</div>
+								</div>
+
+								<div class="col_5">
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">最后下单时间：</label>
+										<div class="col_9 item-txt mag-t8">2015-01-14 11:14:24</div>
+									</div>
+									<div class="form-group">
+										<label class="col_3 control-label right" for="company">修改时间：</label>
+										<div class="col_9 item-txt mag-t8">2015-01-15 13:14:56</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+
+			  <div role="tabpanel" class="tab-pane" id="taba2">
+
+				<form role="form" class="form-horizontal form-valite" method="post" action="">
+					<div class="pad-l5 pad-t5 btn-group">
+						<input class="btn btn-primary" type="submit" value="保 存" />
+				    </div>
+					<div class="pad-t20 pad-b20">
+						<div class="grid">
+							<div class="col_5">
+								<div class="form-group">
+									<label class="col_3 control-label right" for="company">店铺简称：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="shopName" value="" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">店铺品类：</label>
+									<div class="col_9 item-txt">
+										<select class="form-control input-sm" name="shopKind">
+											<option value="0">请选择</option>
+											<option value="1">箱包</option>
+											<option value="2">女装</option>
+											<option value="3">男装</option>
+											<option value="4">鞋子</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">店铺小类：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="shopKindSub" validate="{required:'店铺小类必须填写！'}" value="" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">产品材质：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="material" value="" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col_4 control-label right" for="username">销售主力价位段：</label>
+									<div class="col_8 item-txt">
+										<select class="form-control input-sm" name="shopKind">
+											<option value="0">请选择</option>
+											<option value="1">0-200</option>
+											<option value="2">200-400</option>
+											<option value="3">400-600</option>
+											<option value="4">600-800</option>
+											<option value="5">800以上</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">店铺面积：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="shoopArea" value="" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">进货渠道：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="channel" value="" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">进货频次：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="frequency" value="" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">进货政策：</label>
+									<div class="col_9 item-txt"><input type="text" class="form-control" name="rule" value="" /></div>
+								</div>
+								<div class="form-group">
+									<label class="col_3 control-label right" for="username">月进货额：</label>
+									<div class="col_9 item-txt">
+										<select class="form-control input-sm" name="shopKind">
+											<option value="0">请选择</option>
+											<option value="1">0-1w</option>
+											<option value="2">1w-2w</option>
+											<option value="3">2w-5w</option>
+											<option value="4">5w-10w</option>
+											<option value="5">10w以上</option>
+										</select>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+
+			  <div role="tabpanel" class="tab-pane" id="taba3">
+				<div class="hisBookingTableGrid mag-t10">
+					<div id="hisBookingListGrid" data-options="border:false"></div>
+				</div>
+			</div>
+
+			  <div role="tabpanel" class="tab-pane" id="taba4">
+				<div class="mag-t10 mag-b10 mag-l5">
+					<span class="s-item mag-r20"><labe class="label-item">钱包余额：</label><b class="red">0</b> 元</span>
+					<span class="s-item mag-r20"><labe class="label-item">应收金额：</label><b class="red">700</b> 元</span>
+				</div>
+				<div class="payTableGrid mag-t10">
+					<div id="payListGrid" data-options="border:false"></div>
+				</div>
+			</div>
+
+			  <div role="tabpanel" class="tab-pane active" id="taba5">
+				<div class="form-group pad-t10 clearfix">
+					<label class="fl mag-r10">联系方式：</label>
+					<select class="form-control input-sm w120 pad0 pad-r0" name="chatStyle" id="chatStyle">
+						<option value="QQ">QQ</option>
+						<option value="电话">电话</option>
+						<option value="旺旺">旺旺</option>
+						<option value="微信">微信</option>
+						<option value="拜访">拜访</option>
+						<option value="会议">会议</option>
+						<option value="Email">Email</option>
+						<option value="微博">微博</option>
+						<option value="其他">其他</option>
+					</select>
+				</div>
+				<div class="form-group pad-b10 clearfix">
+					<label class="fl mag-r10">沟通内容：</label>
+					<textarea id="chatCont" name="chatCont" class="form-control fl w350 mag-r10" rows="3"></textarea>
+				</div>
+				<p class="form-group clearfix"><span class="mag-l120"><input class="btn btn-primary btn-saveNewServicesInfo" type="submit" value="提交" /></span></p>
+
+				<div class="servicesTableGrid">
+					<div id="servicesListGrid" data-options="border:false"></div>
+				</div>
+			</div>
+
+
+			  <div role="tabpanel" class="tab-pane" id="taba6">
+
+				<form role="form" class="form-horizontal form-valite" method="post" action="">
+					<div class="pad-l5 pad-t5 btn-group">
+						<button class="btn btn-default btn-addNewAddress" type="button"><span class="glyphicon glyphicon-plus"></span>新增</button>
+						<input class="btn btn-primary" type="submit" value="保 存" />
+				    </div>
+
+					<div class="pad-t5 pad-b5 autoAddOne addressInfoCont">
+						<ul class="ul-autoAdd">
+							<li class="li-title"><span class="w100 s-title">默认地址</span><span class="w100 s-title">省</span><span class="w90 s-title">市</span><span class="w90 s-title">区</span><span class="w200 s-title">详细地址</span><span class="w80 s-title">收货人姓名</span><span class="w110 s-title">收货人手机</span><span class="w70 s-title">操作</span></li>
+							<li class="li-one item-txt li-first">
+								<span class="w100 s-val item-txt"><b class="b-oneOp"><em class="em-def">默认地址</em><a href="#" class="a-removeDef"><em class="glyphicon glyphicon-remove"></em></a></b><a class="a-setDef none" href="#">设为默认</a></span>
+								<span class="w100 s-val item-txt"><input type="text" class="form-control" name="pr-0" value="浙江省" /></span>
+								<span class="w90 s-val item-txt"><input type="text" class="form-control" name="city-0" value="嘉兴市" /></span>
+								<span class="w90 s-val item-txt"><input type="text" class="form-control" name="dir-0" value="南湖区" /></span>
+								<span class="w200 s-val item-txt"><input type="text" class="form-control" name="addr-0" value="" /></span>
+								<span class="w80 s-val item-txt"><input type="text" class="form-control" name="receiver-0" value="" /></span>
+								<span class="w110 s-val item-txt"><input type="text" class="form-control" name="phone-0" value="" /></span>
+								<span class="w70 s-val item-txt"><a href="#" class="op-grid op-addressDel none"><span class="glyphicon glyphicon-remove"></span>删除</a></span>
+							</li>
+						</ul>
+					</div>
+
+				</form>
+
+			</div>
+
+
+
+			  <div role="tabpanel" class="tab-pane" id="taba7">
+
+				<div class="noteTableGrid mag-t10">
+					<div id="noteListGrid" data-options="border:false"></div>
+				</div>
+
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+	</div>
+
+
+</div>
+<!-- main end -->
+
+
+
+<div class="none">
+
+
+<!-- 25.订单修改数量记录 -->
+<div id="popWatchRNote">
+	<div class="popRNoteGrid">
+		<div id="popRNoteListGrid" data-options="border:false"></div>
+	</div>
+<!-- 	<p class="center">
+		<input class="btn btn-primary btn-closeWatchRNote" type="submit" value="确 定" />
+	</p> -->
+</div>
+
+
+	<!-- 27.发货记录 -->
+	<div id="popSendNote">
+		<div class="sendProTableGrid">
+			<div id="sendProListGrid" data-options="border:false"></div>
+		</div>
+	</div>
+
+	<!-- 27.订单到货计划 -->
+	<div id="popWatchPlan">
+		<div class="popPlaneGrid">
+			<div id="popPlanListGrid" data-options="border:false"></div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<script id="autoOneAddress" type="text/x-jsrender">
+<li class="li-one">
+	<span class="w100 s-val item-txt"><b class="b-oneOp none"><em class="em-def">默认地址</em><a href="#" class="a-removeDef"><em class="glyphicon glyphicon-remove"></em></a></b><a class="a-setDef" href="#">设为默认</a></span>
+	<span class="w100 s-val item-txt"><input type="text" class="form-control" name="pr-{{>index}}" value="" /></span>
+	<span class="w90 s-val item-txt"><input type="text" class="form-control" name="city-{{>index}}" value="" /></span>
+	<span class="w90 s-val item-txt"><input type="text" class="form-control" name="dir-{{>index}}" value="" /></span>
+	<span class="w200 s-val item-txt"><input type="text" class="form-control" name="addr-{{>index}}" value="" /></span>
+	<span class="w80 s-val item-txt"><input type="text" class="form-control" name="receiver-{{>index}}" value="" /></span>
+	<span class="w110 s-val item-txt"><input type="text" class="form-control" name="phone-{{>index}}" value="" /></span>
+	<span class="w70 s-val item-txt"><a href="#" class="op-grid op-addressDel"><span class="glyphicon glyphicon-remove"></span>删除</a></span>
+</li>
+</script>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/datagrid-detailview.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jsrender.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+
+
+
+var popWatchRNote ={//商品数量修改记录
+	init : function () {
+		var me = this;
+		//me.closePop();
+	},
+	popO : null,
+	// closePop : function () {
+	// 	var me = this;
+	// 	$('.btn-closeWatchRNote').click(function() {
+	// 		me.popO.removePop();
+	// 	});
+	// },
+	popE : function (data) {
+		var me = this;
+		me.popO = $.sobox.pop({
+			type : 'target',
+			target : '#popWatchRNote',
+			title : '修改商品数量记录',
+			width:920,height:410,
+			onPop : function () {
+				setTimeout(function () {
+					$('#popRNoteListGrid').datagrid({
+						//title:'DataGrid',
+						url:'js/datagrid_bookingPopRepairNum.json?no='+data.no,
+						 //url:'js/datagrid_data_empty.json',
+						method : 'get',//默认是post
+						pagination:false,
+						singleSelect : true,
+						height:350,
+						loadMsg : '玩命加载中...',
+						view: myview,
+						emptyMsg: '暂无数据...',
+						pageSize :25,
+						nowrap : false,
+						pageList :[25,50,100],
+						checkOnSelect : false,
+						columns:[[
+							{field:'pic',title:'SKU图片',width:70,align:'center',formatter : function (value,row,index) {
+								return '<img src="'+value+'" height="58" width="58" alt="" />';
+							//return value;
+							}},
+							{field:'skuNo',title:'SKU编号',width:100,align:'center'},
+							{field:'kind',title:'类别',width:105,align:'center'},
+							{field:'ohter',title:'颜色/尺码',width:80,align:'center',formatter:function (value,row,index) {
+								return row.color+'/'+row.size;
+							}},
+							{field:'beforeNumber',title:'修改前数量',width:60,align:'center'},
+							{field:'afterNumber',title:'修改后数量',width:60,align:'center'},
+							{field:'repairer',title:'修改人',width:65,align:'center'},
+							{field:'time',title:'修改时间',width:122,align:'center'},
+							{field:'remarks',title:'修改理由',width:140,align:'center'}
+					  	]]
+					});
+				},200);
+			}
+		});
+	}
+};
+
+var popWatchPlan ={//查看到货计划
+	init : function () {
+		var me = this;
+		//me.closePop();
+	},
+	popO : null,
+	// closePop : function () {
+	// 	var me = this;
+	// 	$('.btn-closeWatchPlan').click(function() {
+	// 		me.popO.removePop();
+	// 	});
+	// },
+	popE : function (data) {
+		var me = this;
+		me.popO = $.sobox.pop({
+			type : 'target',
+			target : '#popWatchPlan',
+			title : '到货计划',
+			width:680,height:410,
+			onPop : function () {
+				setTimeout(function () {
+					$('#popPlanListGrid').datagrid({
+						//title:'DataGrid',
+						url:'js/datagrid_bookingPopPlan.json?no='+data.no,
+						 //url:'js/datagrid_data_empty.json',
+						method : 'get',//默认是post
+						pagination:false,
+						//singleSelect : true,
+						height:350,
+						loadMsg : '玩命加载中...',
+						view: myview,
+						emptyMsg: '暂无数据...',
+						pageSize :25,
+						pageList :[25,50,100],
+						checkOnSelect : false,
+						columns:[[
+							{field:'pic',title:'SKU图片',width:70,align:'center',formatter : function (value,row,index) {
+								return '<img src="'+value+'" height="58" width="58" alt="" />';
+							//return value;
+							}},
+							{field:'skuNo',title:'SKU编号',width:110,align:'center'},
+							{field:'ohter',title:'颜色/尺码',width:80,align:'center',formatter:function (value,row,index) {
+								return row.color+'/'+row.size;
+							}},
+							{field:'time',title:'计划到货日期',width:140,align:'center'},
+							{field:'number',title:'到货数量',width:82,align:'center'},
+							{field:'buyer',title:'采购员',width:82,align:'center'}
+					  	]]
+					});
+				},200);
+			}
+		});
+	}
+}
+
+var popSendNote ={//发货记录
+	init : function () {
+		var me = this;
+		//me.closePop();
+	},
+	popO : null,
+	// closePop : function () {
+	// 	var me = this;
+	// 	$('.btn-closeWatchPlan').click(function() {
+	// 		me.popO.removePop();
+	// 	});
+	// },
+	popE : function (data) {
+		var me = this;
+		me.popO = $.sobox.pop({
+			type : 'target',
+			target : '#popSendNote',
+			title : '发货记录',
+			width:920,height:480,
+			onPop : function () {
+				setTimeout(function () {
+					$('#sendProListGrid').datagrid({
+						//title:'DataGrid',
+						url:'js/datagrid_bookingSend.json?no='+data.no,
+						 //url:'js/datagrid_data_empty.json',
+						method : 'get',//默认是post
+						//width:700,
+						 height:420,
+						//fitColumns:true,
+						pagination:false,
+						singleSelect : true,
+						pageSize:10,
+						loadMsg : '玩命加载中...',
+						emptyMsg: '暂无数据...',
+						nowrap : false,
+						pageSize :25,
+						pageList :[25,50,100],
+						checkOnSelect : false,
+						columns:[[
+							{field:'nodata',title:'操作',width:70,align:'center',formatter:function (value,row,index) {
+								var no = row.no;
+								return '<a class="op-grid op-cancelSend" data-opt={"no":'+no+'}><span class="glyphicon glyphicon-remove op-cancelSend"></span>取消</a>'
+							}},
+							{field:'no',title:'发货单号',width:110,align:'center'},
+							{field:'status',title:'发货单状态',width:90,align:'center'},
+							{field:'creatTime',title:'创建时间',width:125,align:'center'},
+							{field:'creater',title:'创建人',width:70,align:'center'},
+							{field:'skuNumber',title:'SKU数量',width:60,align:'center'},
+							{field:'sendInfo',title:'发货反馈',width:250,formatter:function (value,row,index) {
+								var rHtml = '';
+								if(value&&value.length){
+									$.each(value,function (i,v) {
+										rHtml += '<div><span class="s-name">'+v.name+'</span><a class="op-grid op-gridInNew" href="proDetails.html?no='+v.series+'"><span class="glyphicon glyphicon-search"></span>查看</a>； 物流公司 '+v.postNumber+' <a class="op-grid op-gridInNew" href="somelink.html?no='+v.postNumber+'"><span class="glyphicon glyphicon-search"></span>查询</a> </div>';
+									});
+								}
+								return rHtml;
+							}}
+						]],
+						view: detailview,
+						detailFormatter: function(rowIndex, rowData){
+							return '<div id="subSendDataBox-'+rowIndex+'" style="padding:2px;"><table class="subSendDataTable subSendDataTable-'+rowIndex +'"></table></div>';
+						},
+						onExpandRow:function(rowIndex,row){//展开子列
+							$('.subSendDataTable-'+rowIndex).addClass('subSendCont').attr('id','subSendData-'+rowIndex);
+					          $('#subSendData-'+rowIndex).datagrid({
+								url:'js/datagrid_bookingSendPro.json?id='+(row.no),
+								// fitColumns:true,
+								height:'auto',
+								pagination:false,
+								method : 'get',//默认是post
+								checkOnSelect : false,
+								columns:[[
+									//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+									{field:'pic',title:'SKU图片',width:80,align:'center',formatter : function (value,row,index) {
+										return '<img src="'+value+'" height="58" width="58" alt="" />';
+									//return value;
+									}},
+									{field:'no',title:'编号',width:80,align:'center'},
+									{field:'skuNo',title:'SKU编号',width:80,align:'center'},
+									{field:'skuNumber',title:'SKU数量',width:100,align:'center'},
+									{field:'color',title:'颜色/尺码',width:100,align:'center',formatter : function (value,row,index) {
+										return '<div>'+row.color+'</div>'+
+										'<div>'+row.size+'</div>';
+									}}
+								]],
+								onLoadSuccess : function (data) {
+									var $tableBox = $('#subSendDataBox-'+rowIndex);
+									$T.gridExpandAutoH($tableBox,rowIndex);//修复extend侧边展开行高度不自动的bug
+								}
+					          });
+					      },
+					      onLoadSuccess : function (data) {
+							var $tableBox = $('.sendProTableGrid');
+							$tableBox.find('.op-cancelSend').click(function () {
+								var no = $(this).data('opt').no;
+								var sendData = {no:no};
+								$.reqUrlEx({//异步提交
+									url : 'js/true.json',
+									//url : 'js/false.json',
+									data : sendData,
+									type : 'get',//默认不设置为post
+									msg : '你确定取消此记录吗？',
+									successMsg: '记录取消成功',
+									success : function (data) {
+									//data中需带success参数，判断是否请求成功，{success:true}
+									//{"success":false,"message":"提交失败！"}
+										window.console && console.log(data,'请求成功~');
+										me.popO.removePop();
+										$T.gridRefresh('#sendProListGrid');//$('#subData-'+rowIndex)
+									}
+								});
+								return false;
+							});
+					      	window.console && console.log(data);
+					      }
+
+					});
+				},100);
+			}
+		});
+	}
+}
+
+$('#tabtitle-hisBooking').click(function() {//历史订单
+	if ($('.hisBookingTableGrid').find('table').length==0) {
+		setTimeout(function () {
+			$('#hisBookingListGrid').datagrid({
+				//title:'DataGrid',
+				url:'js/datagrid_customerHisList.json',
+				 //url:'js/datagrid_data_empty.json',
+				method : 'get',//默认是post
+				//width:700,
+				// height:500,
+				//fitColumns:true,
+				pagination:false,
+				//singleSelect : true,
+				pageSize:10,
+				loadMsg : '玩命加载中...',
+				// view: myview,
+				// emptyMsg: '暂无数据...',
+				nowrap : false,
+				pageSize :25,
+				pageList :[25,50,100],
+				checkOnSelect : false,
+				columns:[[
+					//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+					{field:'no',title:'订单编号',width:120,align:'center',formatter :function (value,row,index) {
+						var no = row.no;
+						var tt = row.T;
+						var fast = row.fast?"<span class='red'>加急</span>":"";
+						return '<a target="_blank" href="bookingDetails.html?no='+no+'"><span class="s-jone">'+no+'</span></a><div><span class="blue">'+tt+'</span> '+fast+'</div>';
+					}},
+					{field:'bookingTime',title:'时间',width:120,align:'center',formatter:function (value,row,index) {
+						return '<span class="s-jone">下单：'+row.bookingTime+'</span><span class="s-jone">审核：'+row.checkTime+'</span>';
+					}},
+					{field:'bookingStatus',title:'状态',width:80,align:'center',formatter:function (value,row,index) {
+						return '<div>'+row.bookingStatus+'</div>'+
+						'<div><b>'+row.payStatus+'</b></div>';
+					}},
+					{field:'money',title:'金额',width:140,formatter:function (value,row,index) {
+						return '<div>总件数：'+row.bookingNumber+'</div>'+
+						'<div>总金额：<b>'+row.money+'</b></div>'+
+						'<div class="s-jone"><em class="grey">运费：'+row.postcost+'<em/> <em class="grey">'+row.postRemarks+'<em></div>';
+					}},
+					{field:'receiver',title:'收货人',width:220,formatter :function (value,row,index) {
+						return '<span class="glyphicon glyphicon-pencil curhand gridEditReceiver" data-opt={"no":"'+row.no+'","index":'+index+'}></span> <span class="s-jone">'+value.name+' '+value.phone+'</span>'+
+						'<span class="s-jone">'+value.provincial+'</span>'+
+						'<span class="s-jone grey">'+value.address+'</span>';
+					}},
+					{field:'note',title:'发货记录',width:85,align:'center',formatter:function (value,row,index) {
+						return '<div class="pad-b5"><span class="glyphicon glyphicon-search curhand gridShowPostNote" data-opt={"index":'+index+'}>发货记录</span></div>';
+					}}
+			  	]],
+				view: detailview,
+				detailFormatter: function(rowIndex, rowData){
+					return '<div id="subDataBox-'+rowIndex+'" style="padding:2px;"><table class="subDataTable subDataTable-'+rowIndex +'" style="height:200px;"></table></div>';
+				},
+				onExpandRow:function(rowIndex,row){//展开子列
+					$('.subDataTable-'+rowIndex).addClass('subDataCont').attr('id','subData-'+rowIndex);
+			          $('#subData-'+rowIndex).datagrid({
+						url:'js/datagrid_customerHisSubList.json?id='+(row.no),
+						// fitColumns:true,
+						height:'auto',
+						pagination:false,
+						method : 'get',//默认是post
+						checkOnSelect : false,
+						columns:[[
+							{field:'pic',title:'SKU图片',width:80,align:'center',formatter : function (value,row,index) {
+								return '<img src="'+value+'" height="58" width="58" alt="" />';
+							//return value;
+							}},
+							{field:'skuNo',title:'SKU编号',width:90,align:'center',formatter : function (value,row,index) {
+								// return '<div>'+row.no+'</div>'+
+								return '<div>'+row.skuNo+'</div>';
+							}},
+							{field:'kind',title:'类别',width:100,align:'center'},
+							{field:'color',title:'颜色/尺码',width:80,align:'center',formatter : function (value,row,index) {
+								return '<div>'+row.color+'</div>'+
+								'<div>'+row.size+'</div>';
+							}},
+							{field:'packagesNumber',title:'购买数量',width:76,align:'center',formatter : function (value,row,index) {
+								return '件数：<b>'+value+'</b>'+
+								'<div class="grey">原始：'+value+' <span class="glyphicon glyphicon-list-alt curhand gridRepairNote" title="数量修改记录" data-opt={"index":'+index+'}></span></div>';
+							}},
+							{field:'price',title:'单价',width:70,align:'center'},
+							{field:'sumprice',title:'小计金额',align:'center',width:70,formatter:function (value,row,index) {
+								return '<div>￥<span class="s-sumProPrice s-sumProPrice-'+index+'">'+row.sumPrice+'</span></div>';
+							}},
+							{field:'look',title:'查看',width:80,align:'center',formatter :function (value,row,index) {
+								return '<div class="pad-b5"><span class="glyphicon glyphicon-search curhand gridShowPlan" data-opt={"index":'+index+'}>到货计划</span></dvi>';
+							}},
+							{field:'note',title:'发货记录',width:85,align:'center',formatter:function (value,row,index) {
+								return '<div class="pad-b5"><span class="glyphicon glyphicon-search curhand gridShowPostNote" data-opt={"index":'+index+'}>发货记录</span></div>';
+							}}
+						]],
+						onLoadSuccess : function (data) {
+							window.console && console.log(data);
+							var $tableBox = $('#subDataBox-'+rowIndex);
+							//$T.gridExpandAutoH($tableBox,rowIndex);//修复extend侧边展开行高度不自动的bug
+
+							$tableBox.find('.gridShowPostNote').click(function() {//修改记录弹窗
+								var dataIndex= $(this).data('opt').index;
+								popSendNote.popE(data.rows[dataIndex]);
+							});
+
+							$tableBox.find('.gridRepairNote').click(function() {//修改记录弹窗
+								var dataIndex= $(this).data('opt').index;
+								popWatchRNote.popE(data.rows[dataIndex]);
+							});
+
+							$tableBox.find('.gridShowPlan').click(function() {//查看到货计划
+								var dataIndex= $(this).data('opt').index;
+								popWatchPlan.popE(data.rows[dataIndex]);
+							});
+						}
+			          });
+			      },
+				onLoadSuccess : function (data) {
+					var $tableBox = $('.hisBookingTableGrid');
+
+					$tableBox.find('.gridShowPostNote').click(function() {//修改记录弹窗
+						var dataIndex= $(this).data('opt').index;
+						popSendNote.popE(data.rows[dataIndex]);
+					});
+
+				}
+			});
+		},200);
+	}
+});
+
+
+$('#tabtitle-pay').click(function() {//支付记录
+	if ($('.payTableGrid').find('table').length==0) {
+		setTimeout(function () {
+			$('#payListGrid').datagrid({
+				//title:'DataGrid',
+				url:'js/datagrid_bookingPay.json',
+				 //url:'js/datagrid_data_empty.json',
+				method : 'get',//默认是post
+				//width:700,
+				// height:500,
+				//fitColumns:true,
+				pagination:false,
+				singleSelect : true,
+				pageSize:10,
+				loadMsg : '玩命加载中...',
+				view: myview,
+				emptyMsg: '暂无数据...',
+				nowrap : false,
+				pageSize :25,
+				pageList :[25,50,100],
+				checkOnSelect : false,
+				columns:[[
+					//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+					{field:'payTime',title:'付款日期',width:120,align:'center'},
+					{field:'style',title:'支付方式',width:120,align:'center'},
+					{field:'no',title:'支付单号',width:120,align:'center'},
+					{field:'payMoney',title:'付款金额',width:120,align:'center',formatter : function (value,row,index) {
+						return '￥'+value;
+					//return value;
+					}},
+					{field:'balanceMoney',title:'已结算金额',width:120,align:'center',formatter : function (value,row,index) {
+						return '￥'+value;
+					//return value;
+					}},
+					{field:'payman',title:'付款人',width:120,align:'center'},
+					{field:'checker',title:'审核人',width:120,align:'center'},
+					{field:'status',title:'状态',width:120,align:'center'}
+				]]
+			});
+		},100);
+	};
+});
+
+
+
+//$('#tabtitle-services').click(function() {//客服备注
+//	if ($('.servicesTableGrid').find('table').length==0) {
+//		setTimeout(function () {
+			$('#servicesListGrid').datagrid({
+				//title:'DataGrid',
+				url:'js/datagrid_customerServices.json',
+				 //url:'js/datagrid_data_empty.json',
+				method : 'get',//默认是post
+				//width:700,
+				// height:500,
+				//fitColumns:true,
+				pagination:false,
+				singleSelect : true,
+				pageSize:10,
+				loadMsg : '玩命加载中...',
+				view: myview,
+				emptyMsg: '暂无数据...',
+				nowrap : false,
+				pageSize :25,
+				pageList :[25,50,100],
+				checkOnSelect : false,
+				columns:[[
+					{field:'index',title:'序号',width:30,align:'center',formatter : function (value,row,index) {
+						return index+1;
+					//return value;
+					}},
+					{field:'customer',title:'联系人',width:140,align:'center'},
+					{field:'time',title:'联系时间',width:130,align:'center'},
+					{field:'phone',title:'联系方式',width:100,align:'center'},
+					{field:'chatcont',title:'沟通内容',width:400}
+				]]
+			});
+//		},100);
+//	};
+//});
+
+$('.btn-saveNewServicesInfo').click(function() {//添加新服务备注记录
+	var chatCont = $.trim($('#chatCont').val());
+	var chatStyle = $('#chatStyle').val();
+	var sendData = {};
+	if (chatCont!='') {
+		sendData.chatCont = chatCont;
+	}else{
+		$.sobox.alert('提示','请填写沟通内容！');
+		return false;
+	};
+	window.console && console.log(sendData);
+
+	$.reqUrlEx({//异步提交
+		url : 'js/true.json',
+		//url : 'js/false.json',
+		data : sendData,
+		type : 'get',//默认不设置为post
+		success : function (data) {
+		//data中需带success参数，判断是否请求成功，{success:true}
+		//{"success":false,"message":"提交失败！"}
+			window.console && console.log(data,'请求成功~');
+			$T.gridRefresh('#servicesListGrid');//$('#subData-'+rowIndex)
+		}
+	});
+	return false;
+
+});
+
+
+$('#tabtitle-note').click(function() {//操作记录
+	if ($('.noteTableGrid').find('table').length==0) {
+		setTimeout(function () {
+			$('#noteListGrid').datagrid({
+				//title:'DataGrid',
+				url:'js/datagrid_bookingNote.json',
+				 //url:'js/datagrid_data_empty.json',
+				method : 'get',//默认是post
+				//width:700,
+				// height:500,
+				//fitColumns:true,
+				pagination:false,
+				singleSelect : true,
+				pageSize:10,
+				loadMsg : '玩命加载中...',
+				view: myview,
+				emptyMsg: '暂无数据...',
+				nowrap : false,
+				pageSize :25,
+				pageList :[25,50,100],
+				checkOnSelect : false,
+				columns:[[
+					{field:'time',title:'时间',width:140,align:'center'},
+					{field:'person',title:'操作人',width:120,align:'center'},
+					{field:'behavior',title:'操作内容',width:620}
+				]]
+			});
+		},100);
+	};
+});
+
+var addressManage = {
+	init : function () {
+		var me = this;
+		$(me.parent).find('.li-one').each(function () {//绑定当前已有的每一行事件
+			me.bindOne($(this));
+		});
+		me.addNewOne();
+	},
+	index : 1,
+	parent : '.addressInfoCont',
+	addNewOne : function () {
+		var me = this;
+		$('.btn-addNewAddress').click(function() {
+			$(me.parent).find('.ul-autoAdd').append(
+				$('#autoOneAddress').render({index:me.index})
+			);
+			me.bindOne($(me.parent).find('.li-one:last'));
+			me.index++;
+		});
+	},
+	bindOne : function ($li) {
+		var me = this;
+		$li.find('.op-addressDel').click(function() {//移除当前行
+			var _self = $(this);
+			if ($(me.parent).find('.li-one').length==1) {//如果只剩一条地址了，那么不允许删除
+				$.sobox.alert('删除提示','对不起，请至少保留一条收货地址！');
+			}else{
+				$.sobox.confirm('提示','你确定删除此地址？',function () {
+					_self.parents('.li-one').remove();
+				});
+			};
+
+		});
+		$li.find('.a-removeDef').click(function() {//取消默认地址
+			$.sobox.confirm('提示','你确定取消此地址为默认？',function () {
+				$li.find('.op-addressDel').show();
+				$li.find('.a-setDef').show();
+				$li.find('.b-oneOp').hide();
+			});
+			return false;
+		});
+		$li.find('.a-setDef').click(function() {//设置为当前地址
+			var _self = $(this);
+			$.sobox.confirm('提示','你确定设此地址为默认？',function () {
+				$('.a-setDef').show();
+				_self.hide();
+				$('.op-addressDel').show();
+				$li.find('.op-addressDel').hide();
+				$('.b-oneOp').hide();
+				$li.find('.b-oneOp').show();
+			});
+			return false;
+		});
+	}
+};
+
+
+var $formA = $('.form-valite').soValidate({
+	inputPar:'.item-txt',
+	submit : function (form) {
+		window.console && console.log(form.serializeObject());
+		//alert('success');
+	},
+	fail : function (form,failInputs) {
+		window.console && console.log(failInputs);
+		var $failF = $(failInputs[0]);
+		$("html,body").stop().animate({'scrollTop': $failF.offset().top});//定位到第一个验证失败的对象
+		$failF.focus();
+	}
+});
+
+$('.txt-number').keyup(function() {//数字框只能输入数字
+	$T.setNumVal(this,null,0);
+})
+
+addressManage.init();//管理地址初始化
+</script>
+
+
+</body>
+</html>

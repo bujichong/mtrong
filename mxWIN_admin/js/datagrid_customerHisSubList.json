@@ -1,0 +1,28 @@
+{"total":46,
+"rows":[
+	{
+		"no" : "20150114578",
+		"skuNo":"14110841",
+		"pic":"images/demoPic-1.png",
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"蓝色",
+		"size":"XXL",
+		"kind":"箱包-女包",
+		"price" : 90,
+		"packagesNumber" : 8,
+		"sumPrice" : 720
+	},
+	{
+		"no" : "20150114578",
+		"skuNo":"14110147",
+		"pic":"images/demoPic-2.png",
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"蓝色",
+		"size":"XXL",
+		"kind":"箱包-女包",
+		"price" : 90,
+		"packagesNumber" : 8,
+		"sumPrice" : 720
+	}
+]
+}

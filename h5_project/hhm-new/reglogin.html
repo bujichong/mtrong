@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="bodybg-a">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>注册登录</title>
+</head>
+
+<body class="bodybg-a">
+
+<div class="all-main">
+    <header><div class="headLogo"><img id="logo" src="images/logo.png" height="42" width="324" alt="好.好卖 微终端管家" /></div></header>
+    <img class="img-auto" src="images/regbanner.jpg" height="239" width="640" alt="" />
+    <!-- <div class="toptip"><span class="s-toptip">谢谢！请填写预约信息</span> <a class="a-back" href="#">返回</a></div> -->
+    <div class="cont-a">
+        <p class="p-btn mar-t5"><a class="col_6 btn-a tabTitle tabTitleNow" href="#">登录</a><a class="col_6 btn-a tabTitle" href="#">注册</a>
+        </p>
+        <div class="formcont">
+            <form class="form-validate" action="test.html">
+                <input type="hidden" id="regloginType" class="txt" name="regloginType" value="1" />
+                <p class="p-item">
+                    <input type="text" class="txt" name="name" validate="{required:'请填写手机号',mobile:true}" placeholder="手机号码" />
+                </p>
+                <p class="p-item p-tab p-type0">
+                    <input type="password" class="txt require" name="password" validate="{required:'请输入密码'}" placeholder="登录密码" />
+                </p>
+                <p class="p-item p-tab p-type1 hide grid">
+                    <input type="text" class="txt col_7 require" name="identifyCode" validate="{required:'请输入验证码'}" placeholder="验证码" /><span class="btn-a col_5 requestCode">获取验证码</span>
+                </p>
+                <p class="p-item p-tab p-type1 hide">
+                    <input type="password" id="regPassword" class="txt require" name="regPassword" validate="{required:'请输入密码'}" placeholder="输入密码" />
+                </p>
+                <p class="p-item p-tab p-type1 hide">
+                    <input type="password" class="txt require" name="regAgainPassword" validate="{required:'请再次输入密码',equalTo:{opt:'#regPassword'}}" placeholder="再次输入密码" />
+                </p>
+                <p class="p-item p-tab p-type1 hide">
+                    <input type="text" id="inviteCode" class="txt require" name="inviteCode" placeholder="请输入邀请码 (如果没有请留空)" />
+                </p>
+                <p class="p-btn p-tab p-type0"><a class="btn-b bg-pink btnValidate btnLogin" href="#">登录</a></p>
+                <p class="p-btn p-tab p-type1 hide"><a class="btn-b bg-pink btnValidate btnReg" href="#">注册</a></p>
+                <p class="p-tip center p-tab mar-t20 lh16">如果遗忘密码，请用注册手机拨打 <br />400-100-3521</p>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+
+</html>

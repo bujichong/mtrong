@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>产品列表</title>
+</head>
+
+<body>
+
+<header>
+    <div class="logo imgauto"><img class="img-logo" src="images/headlogo.png" height="88" width="144" alt="" /></div>
+    <a href="#" class="a-headUser">用户信息</a>
+</header>
+
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li id="nav-index" class="wp3-1 li-nav li-now"><a href="#" class="a-nav">首页</a></li>
+        <li id="nav-cart" class="wp3-1 li-nav"><a href="#" class="a-nav">维修车</a></li>
+        <li id="nav-about" class="wp3-1 li-nav"><a href="#" class="a-nav">关于我们</a></li>
+    </ul>
+</nav>
+
+<div class="all-main">
+    <!-- ul-tab -->
+    <ul class="ul-tab">
+        <li class="wp3-1 li-tab li-now"><a class="a-tab" href="list.html">元器件</a></li>
+        <li class="wp3-1 li-tab"><a class="a-tab" href="list.html">整机</a></li>
+        <li class="wp3-1 li-tab"><a class="a-tab" href="list.html">服务承包</a></li>
+    </ul>
+    <div class="cont-a">
+
+        <ul class="ul-list lazybox">
+            <li class="li-list li-list-a">
+                <span class="imgauto s-thumb"><img src="images/blank.png" src2="images/demo/pic-1.jpg" height="150" width="150" alt="" /></span>
+                <div class="list-cont">
+                    <h4 class="h4-title">机器名称</h4>
+                    <p class="p-abs">文字描述文字描述文字描述文字描述文字描述文字文字描述</p>
+                    <p class="p-op p-listOp"><span class="s-some">产品规格：A002</span><a class="a-btn-a bg-green fn-details" href="#" rel="1245">加入维修车</a></p>
+                </div>
+            </li>
+
+            <li class="li-list li-list-a">
+                <span class="imgauto s-thumb"><img src="images/blank.png" src2="images/demo/pic-2.jpg" height="150" width="150" alt="" /></span>
+                <div class="list-cont">
+                    <h4 class="h4-title">机器名称</h4>
+                    <p class="p-abs">文字描述文字描述文字描述文字描述文字描述文字字描述文字描述</p>
+                    <p class="p-op p-listOp"><span class="s-some">产品规格：A002</span><a class="a-btn-a bg-green fn-details" href="#" rel="1245">加入维修车</a></p>
+                </div>
+            </li>
+
+            <li class="li-list li-list-a">
+                <span class="imgauto s-thumb"><img src="images/blank.png" src2="images/demo/pic-3.jpg" height="150" width="150" alt="" /></span>
+                <div class="list-cont">
+                    <h4 class="h4-title">机器名称</h4>
+                    <p class="p-abs">文字描述文字描述文字描述文字描述文字描述文字字描述文字描述</p>
+                    <p class="p-op p-listOp"><span class="s-some">产品规格：A002</span><a class="a-btn-a bg-green fn-details" href="#" rel="1245">加入维修车</a></p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+ <div class="proIntroBox" style="display:none;"><!-- 商品详情 -->
+    <div class="proIntroCont">
+  <!--      <div class="proInfoCont">
+            <input id="proId" type="hidden" value="1457" />
+           <span class="imgauto s-thumb"><img class="img-thumb" src="images/demo/pic-1.jpg" height="150" width="150" alt="" /></span>
+          <p class="p-abs">文字描述文字描述文字描述文字描述文字描述文字字描述文字描述</p>
+       </div>
+       <h3 class="h3-popWorker">请选择技师</h3>
+       <ul class="ul-workerList">
+           <li class="li-worker">
+                <label class="lab-sel">
+                  <span class="s-chkone"><input type="checkbox" class="chk chkone" name="chkWorker" /></span>
+                  <span class="s-no">1002</span>
+                  <span class="s-name">章程2<a href="#" class="a-workerDetails">查看详情</a></span>
+                  <span class="s-cost red">120.00元/小时</span>
+                </label>
+           </li>
+       </ul> -->
+    </div>
+    <p class="p-toCart"><a class="btn-b a-addToCart" href="#">加入维修车</a><span class="s-cancel">取消</span><a href="#" class="a-linkCart">维修车</a></p>
+
+ </div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jsrender.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+<script  id="proInfoTem" type="text/x-jsrender">
+     <div class="proInfoCont">
+        <input id="proId" type="hidden" value="{{>id}}" />
+         <span class="imgauto s-thumb"><img class="img-thumb" src="{{>src}}" height="150" width="150" alt="" /></span>
+        <p class="p-abs">{{>description}}</p>
+     </div>
+     <h3 class="h3-popWorker">请选择技师<span class="s-opTip selWorkerTip">您必须选择一名技师！</span></h3>
+     <ul class="ul-workerList">
+        {{for workerList}}
+         <li class="li-worker">
+              <label class="lab-sel">
+                <span class="s-chkone"><input type="radio" class="rad" name="radWorker" value="{{>no}}" /></span>
+                <span class="s-no">{{>no}}</span>
+                <span class="s-name">{{>name}} <a href="worker.html?id={{>no}}" class="a-workerDetails">查看详情</a></span>
+                <span class="s-cost red">{{>cost}}元/小时</span>
+              </label>
+         </li>
+         {{/for}}
+     </ul>
+</script>
+
+<script type="text/javascript">
+var proPop = null;
+$('.fn-details').click(function() {//点击显示详情
+    var id = $(this).attr('rel');//获取商品id
+    proPop = $.pop({
+      cls : 'proIntroPop',
+      target : '.proIntroBox',
+      widthPer : 1,
+      pos :'bottom',
+      height :360,
+      beforePop : function () {//弹出前异步请求加载产品信息
+        $.get('js/listDetails.json?id='+id,function (data) {
+          //window.console && console.log(data);
+            var $list = $('#proInfoTem').render(data);
+            $('.proIntroCont').html($list);
+        })
+      },
+      closePop : function  () {//关闭时清除ajax进来的内容
+        $('.proIntroCont').html('');
+      }
+    });
+    return false;
+});
+
+  $('.s-cancel').click(function() {
+    proPop.removePop();
+  });
+
+$('.a-addToCart').click(function() {
+    var $chkones = $('.ul-workerList').find('.rad:checked');
+    if ($chkones.length>0) {
+      var $chkedId = [];
+      $chkones.each(function (i,v) {
+          $chkedId.push(v.value);
+      });
+      window.console && console.log($chkedId);
+    }else{
+      $('.selWorkerTip').show();
+    };
+    return false;
+});
+
+</script>
+</body>
+</html>

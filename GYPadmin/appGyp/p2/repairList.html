@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>一品云管家for工程师 - 我的维修单</title>
+</head>
+
+<body>
+
+<header><h1 class="h1-title">我的维修单</h1></header>
+<nav class="fix-nav">
+    <ul class="ul-nav">
+        <li class="wp2-1 li-nav"><a href="derviceInfo.htnl" class="a-nav">最新消息</a></li>
+        <li class="wp2-1 li-nav li-now"><a href="check.html" class="a-nav">我的维修单</a></li>
+    </ul>
+</nav>
+
+<div class="all-main">
+    <div class="cont-a cont-c">
+
+        <dl class="dl-message">
+            <dt class="dt-message"><span class="s-date">2014年1月15日</span> <span class="s-new">已接单</span></dt>
+            <dd class="dd-info">
+                <p class="p-deviceInfo">奥突斯空压机</p>
+                <p class="p-deviceInfo"><span class="s-title">型号：</span>OTS-750-30L</p>
+            </dd>
+            <dd class="dd-fault">
+                <p class="p-checkInfo">故障描述： <br />
+                    空压机无法正常运行</p>
+                <p class="p-checkInfo">设备地址：余新镇余新工业区</p>
+            </dd>
+            <dd class="dd-op">
+                <a href="repairLog.html" class="wp2-1 btn-a a-link">维修日志</a><a href="repairResult.html" class="wp2-1 btn-a a-link">维修结果</a>
+            </dd>
+        </dl>
+
+        <dl class="dl-message">
+            <dt class="dt-message"><span class="s-date">2014年1月15日</span> <span class="s-new">已接单</span></dt>
+            <dd class="dd-info">
+                <p class="p-deviceInfo"><span class="s-title">设备编号：</span>1209983</p>
+                <p class="p-deviceInfo">奥突斯空压机</p>
+            </dd>
+            <dd class="dd-fault">
+                <p class="p-checkInfo">故障描述： <br />
+                    空压机无法正常运行</p>
+                <p class="p-checkInfo">设备地址：余新镇余新工业区</p>
+            </dd>
+            <dd class="dd-op">
+                <a href="repairLog.html" class="wp2-1 btn-a a-link">维修日志</a><a href="repairResult.html" class="wp2-1 btn-a a-link">维修结果</a>
+            </dd>
+        </dl>
+
+        <dl class="dl-message">
+            <dt class="dt-message"><span class="s-date">2014年1月15日</span> <span class="s-new">已接单</span></dt>
+            <dd class="dd-info">
+                <p class="p-deviceInfo"><span class="s-title">设备编号：</span>1209983</p>
+                <p class="p-deviceInfo">奥突斯空压机</p>
+            </dd>
+            <dd class="dd-fault">
+                <p class="p-checkInfo">故障描述： <br />
+                    空压机无法正常运行</p>
+                <p class="p-checkInfo">设备地址：余新镇余新工业区</p>
+            </dd>
+            <dd class="dd-op">
+                <a href="repairLog.html" class="wp2-1 btn-a a-link">维修日志</a><a href="repairResult.html" class="wp2-1 btn-a a-link">维修结果</a>
+            </dd>
+        </dl>
+
+    </div>
+    <p class="p-loadMore">点击加载更多</p>
+
+</div>
+
+<script id="messageTem" type="text/x-jsrender">
+    <dl class="dl-message">
+        <dt class="dt-message"><span class="s-date">{{time:createTime}}</span> {{taskS:task_status}}</dt>
+        <dd class="dd-info">
+            <p class="p-deviceInfo">{{>deviceName}}</p>
+            <p class="p-deviceInfo"><span class="s-title">型号：</span>{{>deviceType}}</p>
+        </dd>
+        <dd class="dd-fault">
+            <p class="p-checkInfo">故障描述： <br />
+                {{>faultDesc}}</p>
+            <p class="p-checkInfo">设备地址：{{>deviceAddress}}</p>
+        </dd>
+        <dd class="dd-op">
+            <a href="/repairLog.html?deviceSku={{>deviceSku}}&repairId={{>repairId}}&repairNo={{>repairNo}}" class="wp2-1 btn-a a-link">维修日志</a><a href="/repairResult.html?deviceSku={{>deviceSku}}&repairId={{>repairId}}" class="wp2-1 btn-a a-link">维修结果</a>
+        </dd>
+    </dl>
+</script>
+
+<script type="text/javascript">
+var loadOpt = {
+    url : 'js/message.json',
+    cellLen :3
+}
+</script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jsrender.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+</html>

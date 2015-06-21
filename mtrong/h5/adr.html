@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>填写收货地址</title>
+</head>
+
+	<body>
+	<!-- <body> -->
+
+<!-- header -->
+	<header>
+	    <h1 class="h1-siteInfo"><a class="a-logo" href="/html/item/showItemList.do?from=&uId="><img src="/images/img/logo.png" height="33" width="150" alt="麦动" title="麦动" /></a></h1>
+	    <p class="p-headQuick">
+	        <a href="/html/item/getCollection.do" class="a-quick a-quick-fav" title="收藏">收藏</a>
+	    </p>
+	</header>
+	<section class="st-subTo">
+	    <a class="a-subTo a-toKind" href="/html/category/itemClassify.do">分类 </a><a class="a-subTo a-toSearch" href="/html/item/searchEntity.do">搜索麦动商品或款式编号 </a><a class="a-subTo a-toHot" href="/html/Activity/noGroupActivity.do?id=1">爆款</a>
+	</section>
+
+<!-- section subnav -->
+<section class="st-kindsnav">
+    <h3 class="h3-headTitle"><span class="s-title">吉林省  长春市   绿园区  填写收货地址</span><a href="javascript:history.go(-1)" class="a-more">返回上页</a></h3>
+</section>
+
+<div>
+    <form class="form-validate" action="/html/address/getAddress.do"><!--form表单提交链接(会将form中的值当作参数传到后台，参数名为name如name="rname")-->
+        <div class="cont-a formcont-b">
+        	<p class="p-item"><label class="lab-item">收货人姓名</label>
+            	<span class="s-item"><input type="text" class="txt" name="rname" validate="{required:'请填写收货人姓名'}" placeholder="请填写真实姓名" value="叮咚"/></span>
+            </p>
+            <p class="p-item"><label class="lab-item">手机号码</label>
+                <span class="s-item"><input type="text" class="txt" maxlength=11 name="rmobile" validate="{required:'请填写手机号',mobile:true}" placeholder="收货人电话，11位手机号" value="15067172327"/></span>
+            </p>
+            <p class="p-item"><label class="lab-item">收货地址</label>
+                <input type="hidden" id="province" name="rprov" value="吉林省" /><!-- 地址有默认值则填写，否则3个隐藏域value都为空 -->
+            	<input type="hidden" id="city" name="rcity" value="长春市 "/>
+                <input type="hidden" id="district" name="rregion" value="绿园区 " />
+                <span class="s-item">
+                	<select class="fl drop wp49 drop-province" name="provId" validate="{required:'请选择省'}">
+                    	<option value="" selected="selected" >请选择省</option>
+                    </select>
+                    <select class="fr drop wp49 drop-city" name="cityId" validate="{required:'请选择省市'}">
+                    	<option value="" selected="selected">请选择市</option>
+                    </select>
+                </span>
+            </p>
+            <p class="p-item">
+            	<span class="s-item">
+                	<select class="fl drop wp100 drop-distinct" name="disId" validate="{required:'请选择地区'}">
+                    	<option value="" selected="selected">请选择区</option>
+                    </select>
+                </span>
+            </p>
+            <p class="p-item">
+                <span class="s-item"><textarea class="txta" name="raddr" validate="{required:'请填写详细的街道地址，以便我们联系您！'}" placeholder="路名或街道地址，门牌号" >111</textarea></span>
+            </p>
+			<p class="p-item"><!--isInsert:判断是插入操作还是保存操作,30344地址编号-->
+                <input type="hidden" id="isInsert" name="isInsert" value="1" />
+                <input type="hidden" id="receiverId" name="receiverId" value="30344" />
+            </p>
+        </div>
+        <div class="cont-c">
+            <p class="p-btn"><a class="bg-pink btn-b btnValidate borad4" href="">保存地址</a></p>
+            <p class="p-btn"><a class="bg-grey btn-c" href="javascript:history.go(-1)">取消返回</a></p>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/region.js?v=20150519"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+
+</body>
+</html>

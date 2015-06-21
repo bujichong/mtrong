@@ -1,0 +1,30 @@
+{"total":46,
+"rows":[
+	{
+		"no" : "20150114578",
+		"skuNo":"14110841",
+		"pic":"images/demoPic-1.png",
+		"bookingTime":"12-23 12:24",
+		"checkTime": "12-25 14:14",
+		"bookingNum":12,
+		"canNum":6,
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"蓝色",
+		"size":"XXL",
+		"stock" :[{"storehouse":"嘉兴仓","number":4},{"storehouse":"广州仓","number":5}]
+	},
+	{
+		"no" : "20150114514",
+		"skuNo":"14110842",
+		"pic":"images/demoPic-2.png",
+		"bookingTime":"12-24 12:24",
+		"checkTime": "12-27 14:14",
+		"bookingNum":21,
+		"canNum":3,
+		"name":"居家新款官网同步，双侧抽绳单肩斜挎包",
+		"color":"红色",
+		"size":"XL",
+		"stock" :[{"storehouse":"嘉兴仓","number":2},{"storehouse":"广州仓","number":4}]
+	}
+]
+}

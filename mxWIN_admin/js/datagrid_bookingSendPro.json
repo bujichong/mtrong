@@ -1,0 +1,20 @@
+﻿{"total":46,
+"rows":[
+	{
+		"no" : "20101245",
+		"skuNo":"14110841",
+		"pic":"images/demoPic-1.png",
+		"skuNumber": "5 / 5",
+		"color":"蓝色",
+		"size":"XXL"
+	},
+	{
+		"no" : "20101246",
+		"skuNo":"14110841",
+		"pic":"images/demoPic-2.png",
+		"skuNumber": "5 / <font color=red><B>4</B></font>",
+		"color":"红色",
+		"size":"XL"
+	}
+]
+}

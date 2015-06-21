@@ -1,0 +1,128 @@
+{
+    "daifahuo": "0",
+    "daishenhe": "5",
+    "fahuozhong": "1",
+    "from": "",
+    "pageHelper": {
+        "currentPageNum": 1,
+        "hasLeft": false,
+        "hasRight": false,
+        "leftPageNums": [],
+        "pageSize": 10,
+        "pageTotal": 1,
+        "rightPageNums": [],
+        "rowsCount": 8
+    },
+    "part_kefahuo": "1",
+    "quehuo": "1",
+    "quxiaoshibai": "0",
+    "quxiaozhong": "1",
+    "statueList": [
+        {
+            "amount": "4469.00",
+            "defaultValue": 1,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200088/2000880048/1.jpg",
+                "http://cdn.mtrong.com/2000/200088/2000880546/1.jpg",
+                "http://cdn.mtrong.com/2000/200068/2000680248/1.jpg",
+                "http://cdn.mtrong.com/2000/200068/2000680250/1.jpg"
+            ],
+            "orderId": "11001581",
+            "orderTime": 1430275265000,
+            "receiverName": "danzhu",
+            "status": "已取消"
+        },
+        {
+            "amount": "362.00",
+            "defaultValue": 0,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200068/2000680248/1.jpg",
+                "http://cdn.mtrong.com/2000/200068/2000680250/1.jpg",
+                "http://cdn.mtrong.com/2000/200057/2000572100/1.jpg"
+            ],
+            "orderId": "11001579",
+            "orderTime": 1430275167000,
+            "receiverName": "danzhu",
+            "status": "待审核"
+        },
+        {
+            "amount": "620.00",
+            "defaultValue": 0,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200068/2000680248/1.jpg",
+                "http://cdn.mtrong.com/2000/200068/2000680250/1.jpg",
+                "http://cdn.mtrong.com/2000/200056/2000562200/1.jpg"
+            ],
+            "orderId": "11001562",
+            "orderTime": 1430237396000,
+            "receiverName": "danzhu",
+            "status": "未发货"
+        },
+        {
+            "amount": "47.00",
+            "defaultValue": 0,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200068/2000680252/1.jpg",
+                "http://cdn.mtrong.com/2000/200068/2000680248/1.jpg",
+                "http://cdn.mtrong.com/2000/200068/2000680250/1.jpg",
+                "http://cdn.mtrong.com/2000/200067/2000670148/1.jpg",
+                "http://cdn.mtrong.com/2000/200067/2000670648/1.jpg",
+                "http://cdn.mtrong.com/2000/200067/2000670152/1.jpg",
+                "http://cdn.mtrong.com/2000/200067/2000670150/1.jpg"
+            ],
+            "orderId": "11001550",
+            "orderTime": 1430213478000,
+            "receiverName": "danzhu",
+            "status": "待审核"
+        },
+        {
+            "amount": "90.00",
+            "defaultValue": 0,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200098/2000980252/1.jpg"
+            ],
+            "orderId": "11001532",
+            "orderTime": 1430124783000,
+            "receiverName": "danzhu",
+            "status": "待审核"
+        },
+        {
+            "amount": "12.00",
+            "defaultValue": 0,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200098/2000980250/1.jpg",
+                "http://cdn.mtrong.com/2000/200098/2000980248/1.jpg"
+            ],
+            "orderId": "11001509",
+            "orderTime": 1429858316000,
+            "receiverName": "danzhu",
+            "status": "待审核"
+        },
+        {
+            "amount": "1554.00",
+            "defaultValue": 0,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200054/2000542100/1.jpg",
+                "http://cdn.mtrong.com/2000/200053/2000530000/1.jpg"
+            ],
+            "orderId": "11001359",
+            "orderTime": 1429522270000,
+            "receiverName": "haoran",
+            "status": "未发货"
+        },
+        {
+            "amount": "69.00",
+            "defaultValue": 0,
+            "imgUrlList": [
+                "http://cdn.mtrong.com/2000/200070/2000700700/1.jpg"
+            ],
+            "orderId": "11001357",
+            "orderTime": 1429514416000,
+            "receiverName": "haoran",
+            "status": "未发货"
+        }
+    ],
+    "totalCount": 8,
+    "totalNum": "0",
+    "uId": "10232"
+}

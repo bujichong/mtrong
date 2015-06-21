@@ -1,0 +1,24 @@
+﻿{"total":46,
+"rows":[
+	{
+		"no" : "201501100001",
+		"customerID":"1457",
+		"customerName":"张三",
+		"customerType":"KA客户",
+		"customerPhone":"18647841557",
+		"account":"18647841557@163.com",
+		"payMoney" :15984,
+		"walletMoney" : 820
+	},
+	{
+		"no" : "201501100002",
+		"customerID":"1450",
+		"customerType":"KA客户",
+		"customerName":"韩国名品",
+		"customerPhone":"13847851247",
+		"account":"13847851247@qq.com",
+		"payMoney" :1375,
+		"walletMoney" : 0
+	}
+]
+}

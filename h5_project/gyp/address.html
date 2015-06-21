@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>填写地址</title>
+</head>
+
+<body>
+
+<header>
+    <a href="#" class="a-headBack">返回</a>
+    <h1 class="h1-title">填写地址</h1>
+</header>
+
+<div class="all-main">
+
+    <form class="form-validate" action="xx">
+        <div class="formcont-b">
+                <p class="p-item"><input type="text" class="txt txt-le" name="txt" validate="{required:'请填写收货人姓名'}" placeholder="联系人" />
+                </p>
+                <p class="p-item"><input type="text" class="txt txt-le" name="txt" validate="{required:'请填写手机号',mobile:true}" placeholder="联系方式" />
+                </p>
+                <p class="p-item p-ssq">
+                    <input type="hidden" id="province" name="province" value="" /><!-- 地址有默认值则填写，否则3个隐藏域value都为空 -->
+                    <input type="hidden" id="city" name="city" value=""/>
+                    <input type="hidden" id="district" name="district" value="" />
+                    <span class="s-item">
+                        <select class="fl drop wp49 drop-province" name="drop" validate="{required:'请选择省'}">
+                            <option value="" selected="selected" >请选择省</option>
+                        </select>
+                        <select class="fr drop wp49 drop-city" name="drop" validate="{required:'请选择省市'}">
+                            <option value="" selected="selected">请选择市</option>
+                        </select>
+                    </span>
+                </p>
+                <p class="p-item p-ssq">
+                    <span class="s-item">
+                        <select class="fl drop wp100 drop-distinct" name="drop" validate="{required:'请选择地区'}">
+                            <option value="" selected="selected">请选择区</option>
+                        </select>
+                    </span>
+                </p>
+                <p class="p-item"><textarea class="txta txt-le" validate="{required:'请填写详细的街道地址，以便我们联系您！'}" placeholder="详细地址"></textarea>
+                </p>
+
+        </div>
+        <div class="grid wp90">
+            <p class="p-btn"><a class="btn-b btnValidate" href="#">保存地址</a></p>
+        </div>
+
+    </form>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/region.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</body>
+
+</html>

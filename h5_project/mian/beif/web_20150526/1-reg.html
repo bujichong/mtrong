@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="html-hasbg-a">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>注册</title>
+</head>
+
+<body class="body-reglogin">
+
+<div class="reglogin-main">
+
+    <div class="cont-hasbg">
+
+        <div class="imgauto reglogin-logo"><img id="logo" src="images/logo.png" height="200" width="204" alt="面" /></div>
+        <div class="formcont formcont-a">
+            <form class="form-validate" action="test.html">
+                <p class="p-item">
+                    <label class="lab-rl lab-user">称呼</label><span class="s-item"><input type="text" class="txt" name="name" validate="{required:'请填写手机号',mobile:true}" placeholder="称呼" /></span>
+                </p>
+                <p class="p-item">
+                    <label class="lab-rl lab-email">邮箱</label><span class="s-item"><input type="text" class="txt" name="name" validate="{required:'请填写邮箱',email:true}" placeholder="邮箱" /></span>
+                </p>
+                <p class="p-item">
+                    <label class="lab-rl lab-password">密码</label><span class="s-item"><input type="password" class="txt require" name="password" validate="{required:'请输入密码'}" placeholder="密码" /></span>
+                </p>
+    <!--                 <p class="p-item">
+                    <input type="password" class="txt require" name="regAgainPassword" validate="{required:'请再次输入密码',equalTo:{opt:'#regPassword'}}" placeholder="再次输入密码" />
+                </p> -->
+                <p class="p-smallTip">点击注册即表明你同意本<a href="#">服务条款</a>和<a href="#">隐私条款</a>。</p>
+                <p class="p-btn"><a class="btn-a btnValidate btnReg" href="#">注册并登录</a></p>
+                <p class="p-btn right"><a class="a-link" href="#">已注册用户登录</a></p>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="div-signByIn">
+        <p class="p-signByIn"><a href="#" class="a-signByIn">Sign in with LinkedIn</a></p>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+
+</html>

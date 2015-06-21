@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="bg-eee">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="email=no" name="format-detection" />
+    <!-- <link rel="shortcut icon" href="/images/i.ico"> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>资料填写</title>
+</head>
+
+<body>
+
+<header>
+    <h1 class="h1-title">资料填写</h1>
+    <a href="#" class="a-headHelp">帮助</a>
+</header>
+
+<div class="all-main bg-eee">
+    <form class="form-validate" action="test.html">
+        <p class="p-item">
+            <label class="lab-item">姓名</label><span class="s-item"><input type="text" class="txt" name="name" validate="{required:'请输入姓名'}" placeholder="输入姓名" /></span>
+        </p>
+        <p class="p-item">
+            <label class="lab-item">电话</label><span class="s-item"><input type="text" class="txt" name="name" validate="{required:'请输入手机号码',mobile:'请输入正确的手机号码'}" placeholder="输入手机号码" /></span>
+        </p>
+        <p class="p-item">
+            <label class="lab-item">地址</label><span class="s-item"><input type="text" class="txt" name="name" validate="{required:'请输入住址'}" placeholder="输入住址" /></span>
+        </p>
+        <p class="p-item">
+            <label class="lab-item">申请辅具</label><span class="s-item"><input type="text" class="txt" name="name" validate="{required:'请输入辅具名称'}" placeholder="你需要什么辅具？" /></span>
+        </p>
+
+
+        <p class="p-item p-item-nolab mar-10">
+           <textarea class="txta" name="txta" cols="30" rows="10" placeholder="描述(可以填写需要辅具的详细要求，或您自身的具体情况，需要达到什么目的)" validate="{required:'请填写辅具详细要求'}"></textarea>
+        </p>
+
+        <p class="p-btn"><a class="btn-b btnValidate" href="#">报名</a></p>
+    </form>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+</body>
+
+</html>

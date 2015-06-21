@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>官网管理 - 商品排序 - 后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/easyui-repair.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+
+<!-- head begin-->
+<div id="all-head">
+	<div class="headlogo"><img src="images/logo.png" height="40" width="200" alt="" /></div>
+	<div class="headtools">
+		<p class="p-tools">欢迎你，<strong class="strong-user">admin</strong> <span rel="form.html" class="s-tools a-userSetting">账号设置</span><span class="s-tools s-loginout">退出</span></p>
+		<div class="headmes">
+			<span class="s-message">消息<small class="small-num">3</small></span>
+			<ul class="ul-mesInfo">
+				<li class="li-sj">&nbsp;</li>
+				<li class="li-nomes">暂无新的消息！</li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="咨询处理">有1个咨询需要您处理。</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="订单发货">有2个订单需要您发货</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="结算订单">有2个新订单需要您结算</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- head end -->
+
+<!-- side begin -->
+<div id="all-side">
+	<div id="nav">
+		<ul class="ul-nav">
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="prolist.html">
+					<em class="em-icon"><img src="images/icon/stack-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">商品</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">商品管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="prolist.html">商品列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proDetails.html">商品新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="buylist.html">
+					<em class="em-icon"><img src="images/icon/shopping_cart-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">采购</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">采购管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needlist.html">采购需求</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needNotelist.html">采购跟催</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buylist.html">采购列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buyDetails.html">采购新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/layers-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">订单</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">订单管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookinglist.html">订单列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookingDetails.html">订单新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="manageIndex.html">
+					<em class="em-icon"><img src="images/icon/pawn-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">官网</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">官网管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="manageIndex.html">首页管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proShow.html">商品展示</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="proSorting.html">商品排序</a></li> -->
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="managePromotion.html">促销管理</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/group-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">客户</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">客户管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="customerlist.html">客户列表</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="customerDetails.html">客户新增</a></li> -->
+					</ul>
+				</div>
+			</li>
+
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="moneyImport.html">
+					<em class="em-icon"><img src="images/icon/wallet-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">资金</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">资金管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyClaim.html">收款认领</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyPay.html">支付列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCheckout.html">订单结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCancel.html">退货结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCost.html">其他结算</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="account.html">
+					<em class="em-icon"><img src="images/icon/settings-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">系统</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">系统管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="account.html">账号管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="role.html">角色管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="power.html">权限管理</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- side end -->
+<div class="crumb"><span class="s-title">官网管理 - 商品排序</span></div>
+
+<!-- 数据grid工具栏 -->
+<div class="navbar navbar-default searchbar listSearchbar">
+	<div class="fl pad-l10 pad-t5 btn-group">
+	      <button class="btn btn-default grid-setStyle" type="button"><span class="glyphicon glyphicon-tag"></span>类型</button>
+
+    </div>
+
+	<div class="fr pad-r10 pad-t5 search-keycont">
+		<form role="form" class="form-inline form-search">
+			<select class="form-control input-sm" name="proKind">
+				<option value="1">商品分类</option>
+			</select>
+
+			<select class="form-control input-sm" name="proStatus">
+				<option value="1">商品状态</option>
+			</select>
+
+			<input type="text" name="supplier" placeholder="商品编码" class="form-control input-sm">
+			<input type="text" name="prokeyword" placeholder="商品名称" class="form-control input-sm">
+
+			<input class="btn btn-sm btn-primary btn-gridListSearch" type="button" value="搜 索" />
+			<button type="button" class="btn btn-sm btn-default btn-showMoreSearch">高级搜索<span class="caret"></span></button>
+		</form>
+	</div>
+</div>
+
+<!-- 更多搜索选项 -->
+<div id="searchmoreCont" class="searchmore searchListMore none">
+	<div class="panel-body bg-warning">
+		<form class="form-moreSearch form-listMoreSearch">
+			<div class="grid pad-b5">
+				<div class="col_5">
+					<label class="control-label right">上架时间：</label><span><input type="text" name="creatStarttime" placeholder="" class="form-control input-sm hk-time"> - <input type="text" name="creatEndtime" placeholder="" class="form-control input-sm hk-time"></span>
+				</div>
+				<div class="col_4">
+					<label class="control-label right">成本价格：</label><span><input type="text" name="makeSPrice" class="form-control txt-number input-sm w80"> - <input type="text" name="makeEPrice" class="form-control txt-number input-sm w80"></span>
+				</div>
+				<div class="col_3">
+					<label class="control-label right">权重</label><span>
+						<select class="form-control input-sm w50" name="style">
+							<option value="1">&gt;</option>
+							<option value="1">&gt;=</option>
+							<option value="1">&lt;=</option>
+							<option value="2">&lt;</option>
+						</select>
+						<input type="text" name="name" placeholder="" class="form-control input-sm w120"></span>
+				</div>
+			</div>
+
+			<div class="grid pad-b5">
+				<div class="col_5">
+					<label class="control-label right">类型：</label>
+					<span>
+						<select class="form-control input-sm w120" name="style">
+							<option value="1">全部</option>
+							<option value="2">聚生产</option>
+							<option value="3">快定制</option>
+						</select>
+					</span>
+					 <label class="control-label right">是否清货：</label>
+					<span>
+						<select class="form-control input-sm w100" name="clearStocks">
+							<option value="1">全部</option>
+							<option value="2">是</option>
+							<option value="3">否</option>
+						</select>
+					</span>
+				</div>
+				<div class="col_4">
+					<label class="control-label right">销售价格：</label><span><input type="text" name="marketSPrice" placeholder="" class="form-control input-sm w80"> - <input type="text" name="marketEPrice" placeholder="" class="form-control input-sm w80"></span>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<!-- main begin -->
+<div id="page-mainBox">
+
+	<div id="mainLayoutBox" class="easyui-layout" style="overflow-y: hidden;"  fit="true" scroll="no">
+		<!-- 数据grid表格 -->
+		<div class="tableGridbox" data-options="region:'center'" border="false">
+			<div id="dataListGrid" data-options="border:false" fit="true"></div>
+		</div>
+
+	</div>
+
+</div>
+<!-- main end -->
+
+<div class="none">
+	<!-- 修改权重 -->
+	<div id="popRepairRank">
+		<form class="form-valite form-repairRank">
+			<div class="col_12">
+				<div class="form-group">
+					<label class="col_3 control-label right" for="username">SKU：</label>
+					<div class="col_8 pad-b10 item-txt" id="rank-sku"></div>
+				</div>
+				<div class="form-group">
+					<label class="col_3 control-label right" for="username">权重：</label>
+					<div class="col_8 pad-b10 item-txt">
+						<input type="text" class="form-control txt-number" id="txt-repairRank" name="repairRank" value="" />
+					</div>
+				</div>
+			</div>
+		</form>
+		<p class="center">
+			<input class="btn btn-primary btn-repairRank" type="button" value="提 交" />
+		</p>
+	</div>
+
+	<!-- 设置类型 -->
+	<div id="popSetStyle">
+		<form class="form-valite form-setStyle">
+			<div class="col_12">
+				<div class="form-group">
+					<label class="col_3 control-label right" for="username">权重：</label>
+					<div class="col_8 pad-b10 item-txt">
+						<label class="checkbox-inline mag-r20"><input type="checkbox" class="chk chk-style" value="ju" name="style">聚生产</label>
+						<label class="checkbox-inline"><input type="checkbox" class="chk chk-style" value="ding" name="style">快定制</label>
+					</div>
+				</div>
+			</div>
+		</form>
+		<p class="center">
+			<input class="btn btn-primary btn-setStyle" type="button" value="提 交" />
+		</p>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/datagrid-detailview.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+
+
+var popRepairRank ={
+	init : function () {
+		var me = this;
+		me.submitRepair();
+	},
+	popO : null,
+	parentData : null,
+	popE : function (data) {
+		var me = this;
+		me.parentData = data;
+		me.popO = $.sobox.pop({
+			type : 'target',
+			target : '#popRepairRank',
+			title : '编辑权重',
+			width:350,
+			beforePop : function  () {//弹窗前赋值表单
+				$('#rank-sku').text(data.no);
+				$('#txt-repairRank').val(data.rank);
+			},
+			closePop : function () {
+				$('.form-repairBookingNum').clearForm();//关闭弹窗清空样式和数值
+			}
+		});
+	},
+	submitRepair : function () {
+		var me = this;
+		$('.btn-repairRank').click(function() {
+			var sendData = {
+				no : me.parentData.no,
+				rank : $('#txt-repairRank').val()
+			};
+			window.console && console.log(sendData);
+			$.reqUrlEx({//异步提交
+				url : 'js/true.json',
+				//url : 'js/false.json',
+				data : sendData,
+				type : 'get',//默认不设置为post
+				success : function (data) {
+				//data中需带success参数，判断是否请求成功，{success:true}
+				//{"success":false,"message":"提交失败！"}
+					window.console && console.log(data,'请求成功~');
+					me.popO.removePop();
+					$T.gridRefresh('#dataListGrid');//$('#subData-'+rowIndex)
+				}
+			});
+			return false;
+		});
+	}
+}
+
+
+var popSetStyle ={
+	init : function () {
+		var me = this;
+		me.popE();
+		me.submitRepair();
+	},
+	popO : null,
+	checkData : null,
+	parentData : null,
+	popE : function (data) {
+		var me = this;
+		$('.grid-setStyle').click(function  () {
+			me.checkData = $('#dataListGrid').datagrid('getChecked');
+			if (me.checkData.length) {
+				me.popO = $.sobox.pop({
+					type : 'target',
+					target : '#popSetStyle',
+					title : '设置类型',
+					width:350,
+					closePop : function () {
+						$('.form-setStyle').clearForm();//关闭弹窗清空样式和数值
+					}
+				});
+			}else{
+				$.sobox.alert('提示','请选择需要设置类型的行！');
+			};
+		});
+
+	},
+	submitRepair : function () {
+		var me = this;
+		$('.btn-setStyle').click(function() {
+			var sendData = $('.form-setStyle').serializeObject();
+			sendData.no = [];
+			$.each(me.checkData,function  (i,v) {
+				sendData.no.push(v.no);
+			});
+			window.console && console.log(sendData);
+			$.reqUrlEx({//异步提交
+				url : 'js/true.json',
+				//url : 'js/false.json',
+				data : sendData,
+				type : 'get',//默认不设置为post
+				success : function (data) {
+				//data中需带success参数，判断是否请求成功，{success:true}
+				//{"success":false,"message":"提交失败！"}
+					window.console && console.log(data,'请求成功~');
+					me.popO.removePop();
+					$T.gridRefresh('#dataListGrid');//$('#subData-'+rowIndex)
+				}
+			});
+			return false;
+		});
+	}
+}
+
+$('#dataListGrid').datagrid({
+	//title:'DataGrid',
+	url:'js/datagrid_proList.json',
+	 //url:'js/datagrid_data_empty.json',
+	method : 'get',//默认是post
+	//width:700,
+	height:500,
+	nowrap : false,
+	//fitColumns:true,
+	pagination:true,
+	//singleSelect : true,
+	loadMsg : '玩命加载中...',
+	// view: myview,
+	// emptyMsg: '暂无数据...',
+	pageSize :25,
+	pageList :[25,50,100],
+	checkOnSelect : false,
+	frozenColumns :[[{field:'ck',checkbox:true}]],//开启多选框 必须：singleSelect : false
+	columns:[[
+		//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+		{field:'op',title:'操作',width:100,align:'center',formatter : function (value,row,index) {
+			var status = row.status;
+			var no = row.no;
+			return status+'<br /><a class="op-grid op-gridInNew" href="proDetails.html?no='+no+'"><span class="glyphicon glyphicon-search"></span>查看</a>';
+		//return value;
+		}},
+		{field:'pic',title:'款式图片',width:80,align:'center',formatter : function (value,row,index) {
+			return '<img src="'+value+'" height="58" width="58" alt="" />';
+		//return value;
+		}},
+		{field:'no',title:'款号',width:80,align:'center',formatter :function (value,row,index) {
+			var mark ="";
+			if(row.mark&&row.mark.length){
+				$.each(row.mark,function (i,v) {
+					mark += '<img src="/images/mark-'+v+'.png" alt="" /> '
+				});
+			}
+			return '<div>'+value+'</div>'+mark;
+		}},
+		{field:'name',title:'名称',width:200,align:'center'},
+		{field:'kindText',title:'类别',width:90,align:'center'},
+		{field:'number',title:'库存',width:50,align:'center'},
+		{field:'style',title:'类型',width:70,align:'center'},
+		// {field:'producter',title:'供应商',width:90,align:'center'},
+		// {field:'kno',title:'生产款号',width:100,align:'center'},
+		{field:'clearStocks',title:'清货',width:50,align:'center',formatter :function (value,row,index) {
+			return value?"是":"否";
+		}},
+		{field:'createPerson',title:'创建人',width:50,align:'center'},
+		{field:'upTime',title:'上架时间',width:130,align:'center'},
+		{field:'rank',title:'权重',width:130,align:'center',formatter :function (value,row,index) {
+			return value+'<a class="op-grid op-editRank" data-opt={"index":'+index+'} href="#"><span class="glyphicon glyphicon-pencil"></span></a>';
+		}}
+  	]],
+	onClickRow:function (rowIndex, rowData) {
+		//nowSel = rowData;
+	},
+	view: detailview,
+	detailFormatter: function(rowIndex, rowData){
+		return '<div id="subDataBox-'+rowIndex+'" style="padding:2px;"><table class="subDataTable subDataTable-'+rowIndex +'"></table></div>';
+	},
+	onExpandRow:function(rowIndex,row){//展开子列
+		$('.subDataTable-'+rowIndex).addClass('subDataCont').attr('id','subData-'+rowIndex);
+          $('#subData-'+rowIndex).datagrid({
+			url:'js/datagrid_proListSub.json?id='+(row.no),
+			// fitColumns:true,
+			height:'auto',
+			pagination:false,
+			method : 'get',//默认是post
+			frozenColumns :[[{field:'ck',checkbox:true}]],//开启多选框 必须：singleSelect : false
+			checkOnSelect : false,
+			columns:[[
+				//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+				{field:'status',title:'状态',width:100,align:'center'},
+				{field:'pic',title:'款式图片',width:80,align:'center',formatter : function (value,row,index) {
+					return '<img src="'+value+'" height="58" width="58" alt="" />';
+				//return value;
+				}},
+				{field:'no',title:'款号',width:80,align:'center',formatter :function (value,row,index) {
+					var mark ="";
+					if(row.mark&&row.mark.length){
+						$.each(row.mark,function (i,v) {
+							mark += '<img src="/images/mark-'+v+'.png" alt="" /> '
+						});
+					}
+					return '<div>'+value+'</div>'+mark;
+				}},
+				{field:'price',title:'价格',width:90,align:'center',formatter :function (value,row,index) {
+					return row.price1+'元 | '+row.price2+'元';
+				}},
+				{field:'kindText',title:'颜色/尺码',width:100,align:'center',formatter :function (value,row,index) {
+					return '<div>'+row.color+'/'+row.size+'</div>';
+				}},
+				{field:'number',title:'库存',width:50,align:'center'},
+				{field:'style',title:'类型',width:70,align:'center'},
+				{field:'clearStocks',title:'清货',width:50,align:'center',formatter :function (value,row,index) {
+					return value?"是":"否";
+				}},
+				{field:'createPerson',title:'创建人',width:50,align:'center'},
+				{field:'upTime',title:'上架时间',width:130,align:'center'},
+			]],
+			onLoadSuccess : function (data) {
+				var $tableBox = $('#subDataBox-'+rowIndex);
+				$T.gridExpandAutoH($tableBox,rowIndex);//修复extend侧边展开行高度不自动的bug
+			}
+          });
+      },
+      //check事件 start
+      onCheck : function (rowIndex, rowData) {
+      	if ($('#subData-'+rowIndex).length) {
+      		$('#subData-'+rowIndex).datagrid("selectAll");
+      	};
+      },
+      onUncheck : function (rowIndex, rowData) {
+      	if ($('#subData-'+rowIndex).length) {
+      		$('#subData-'+rowIndex).datagrid("unselectAll");
+      	};
+      },
+      onSelectAll : function () {
+      	if ($('.subDataCont').length) {
+      		$('.subDataCont').datagrid("selectAll");
+      	};
+      },
+      onUnselectAll : function () {
+      	if ($('.subDataCont').length) {
+      		$('.subDataCont').datagrid("unselectAll");
+      	};
+      },
+      //check事件 end
+	onLoadSuccess : function (data) {
+		var $tableBox = $('.tableGridbox');
+		$tableBox.find('.op-editRank').click(function() {
+			var dataIndex = $(this).data('opt').index;
+			popRepairRank.popE(data.rows[dataIndex]);
+			return false;
+		});
+	}
+});
+
+
+/* 增加 */
+$('.grid-addNew').click(function () {
+	window.location.href="proDetails.html";
+});
+
+$T.gridSearchAndMoreEvent({
+	moreSearchHeight:84
+});//初始化更多搜索
+
+popRepairRank.init();//编辑权重初始化
+popSetStyle.init();//设置类型初始化
+$('.txt-number').keyup(function() {//数字框只能输入数字
+	$T.setNumVal(this,null);
+})
+</script>
+
+</body>
+</html>

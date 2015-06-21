@@ -1,0 +1,38 @@
+{
+    "total": 46,
+    "rows": [{
+        "no": "14110841",
+        "mark":["new","hot"],
+        "pic": "images/demoPic-1.png",
+        "bigpic": "images/demoPic-1.png",
+        "name": "居家新款官网同步，双侧抽绳单肩斜挎包",
+        "kindText": "箱包-女包",
+        "style":"聚生产",
+        "stockNumber": 9,
+        "stock" :[{"storehouse":"嘉兴仓","number":4},{"storehouse":"广州仓","number":5}],
+        "producter": "MK",
+        "kno": "S2024",
+        "clearStocks": true,
+        "createPerson": "笃笃",
+        "upTime": "2014-12-20 15:45:36",
+        "status": "待上架",
+        "rank":2
+    }, {
+        "no": "14110338",
+        "mark":["bao"],
+        "pic": "images/demoPic-2.png",
+        "bigpic": "images/demoPic-2.png",
+        "name": "居家新款官网同步，双侧抽绳单肩斜挎包",
+        "kindText": "箱包-女包",
+        "style":"快定制",
+        "stockNumber": 6,
+        "stock" :[{"storehouse":"嘉兴仓","number":2},{"storehouse":"广州仓","number":4}],
+        "producter": "MK",
+        "kno": "S2024",
+        "clearStocks": false,
+        "createPerson": "笃笃",
+        "upTime": "2014-12-20 15:45:36",
+        "status": "部分上架",
+        "rank":1
+    }]
+}

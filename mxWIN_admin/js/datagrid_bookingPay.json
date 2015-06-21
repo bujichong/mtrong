@@ -1,0 +1,24 @@
+{"total":46,
+"rows":[
+	{
+		"payTime":"2014-12-15 12:14:24",
+		"style":"支付宝",
+		"no":"2014121512142401",
+		"payMoney" : 890,
+		"balanceMoney" : 890,
+		"payman" :"张三",
+		"checker" : "王二",
+		"status" : "成功"
+	},
+	{
+		"payTime":"2014-12-17 12:35:44",
+		"style":"工行付款",
+		"no":"2014121512142402",
+		"payMoney" : 890,
+		"balanceMoney" : 760,
+		"payman" :"",
+		"checker" : "",
+		"status" : ""
+	}
+]
+}

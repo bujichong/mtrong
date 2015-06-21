@@ -1,0 +1,91 @@
+/* yui reset.css version;2.5.2*/
+html{color: #000;background: #fff;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin: 0;padding: 0;}table{border-collapse: collapse;border-spacing: 0;}fieldset,img{border: 0;}address,caption,cite,code,dfn,em,strong,th,var{font-style: normal;font-weight: normal;}li{list-style: none;}caption,th{text-align: left;}h1,h2,h3,h4,h5,h6{font-size: 100%;}q: before,q: after{content: '';}abbr,acronym{border: 0;font-variant: normal;}sup{vertical-align: text-top;}sub{vertical-align: text-bottom;}input,textarea,select{font-family: inherit;font-size: inherit;font-weight: inherit;}input,textarea,select{*font-size: 100%;}legend{color: #333;}.clear{height: 0;font-size: 0;line-height: 0;clear: both;}
+a: focus, input:focus{outline-style: none;}
+input{outline: none;}
+/* end of reset.css*/
+
+/* scorllbar style webkit for chrome safari */
+: : -webkit-scrollbar{width: 6px;height: 6px;}
+: : -webkit-scrollbar-track-piece{background-color: #ccc;-webkit-border-radius: 2px;}
+: : -webkit-scrollbar-thumb: vertical{background-color: #999;-webkit-border-radius: 2px;}
+: : -webkit-scrollbar-thumb: horizontal{background-color: #999;-webkit-border-radius: 2px;}
+: : -webkit-scrollbar-thumb: vertical: hover, : : -webkit-scrollbar-thumb: horizontal: hover{background: #42475e;cursor: hand;cursor: pointer;}
+
+body {
+	font-size: 0.75em;
+	background: #fff;
+	font-family: Verdana, "微软雅黑", Tahoma, Arial, Helvetica, sans-serif;
+	*font-family: "微软雅黑";
+	color: #777;
+}
+
+
+a{text-decoration: none;color: #777;}
+a:hover{color:#5FAEE3;}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .clearfix, *:first-child+html .clearfix{zoom:1}
+
+
+/*--from now--*/
+.wrapper{width:970px;margin:0 auto;}
+
+
+/* header */
+.header{height:64px;overflow: hidden;zoom:1;}
+.a-logo{float: left;height:47px;padding:10px 0 0;width:200px;}
+.ul-mainnav{float: left;margin-left: 20px;display:inline;overflow: hidden;}
+.li-mainnav{float: left;}
+.a-mainnav{float: left;line-height: 63px;font-size: 1.33em;padding:0 25px;}
+
+.headerQuick{float: right;height:63px;line-height: 63px;}
+.a-toLogin{display: -moz-inline-stack;display:inline-block;*display:inline;*zoom:1;margin:0 15px;padding:0 10px;font-size: 1.18em;vertical-align: middle;}
+a.a-tobuyService{display: -moz-inline-stack;display:inline-block;*display:inline;*zoom:1;background-color: #FF9900;font-size: 1.18em;height:30px;line-height: 30px;color:#fff;padding:0 10px;vertical-align: middle;}
+a.a-tobuyService:hover{background-color: #F29200;}
+
+/* indexMain */
+.indexMain{position: relative;height:196px;padding-top:450px;background:url(../images/front/indexmainbg.jpg) no-repeat center;}
+.introbg{position: absolute;left:0px;right:0px;bottom:0px;height:196px;background-color: #1872B4;filter:alpha(opacity=60);opacity:0.6;}
+.indexIntro{position: relative;height:196px;}
+
+.ul-indexIntro{overflow: hidden;zoom:1;}
+.li-indexIntro{float: left;width:242px;height:196px;text-align: center;color:#fff;}
+.li-indexIntro a{color:#fff;}
+.li-indexIntro .s-i{display: block;padding:15px 0 10px;}
+.li-indexIntro .h4-title{font-size: 1.32em;}
+.li-indexIntro .p-intro{padding:6px 8px 0;line-height: 1.6em;text-align: left;}
+
+.footer{height:80px;overflow: hidden;zoom:1;}
+
+.p-quickNav{float: left;line-height: 70px;}
+.p-quickNav a{margin:0 10px;font-size: 1.18em;}
+.p-copyright{float: right;line-height: 70px;}
+
+
+/* login */
+.main-b{padding:25px 0 30px;background:#F2F2F2 url(../images/front/mainbbg.png) repeat-x ;}
+.loginMain .wrapper{position: relative;overflow: hidden;zoom: 1;}
+.regloginBanner{float:left;width:680px;}
+.loginCont{float: left;width:260px;padding:0 0 0 30px;margin:50px 0 0 0;}
+.loginCont .h2-title{height:25px;margin-bottom: 15px;background:url(../images/front/t-rl.png) no-repeat ;text-indent: -999em;overflow: hidden;}
+.loginCont .h2-title-reg{background-position: 0 0;}
+.loginCont .h2-title-login{background-position: 0 -25px;}
+.p-item{position: relative;padding:5px 0;}
+.p-item .txt{height:18px;line-height: 18px;padding:5px;border:2px solid #c6c6c6;width:220px;padding-left: 25px;vertical-align: middle;background:#fff url(../images/front/i-login.png) no-repeat;color:#999;font-size: 1.18em;}
+.p-item .lab-df{position: absolute;top:12px;left:26px;color:#999;font-size: 1.18em;}
+.p-item .txt-change{color:#333;}
+.p-item .txt-user{background-position: 4px 5px;}
+.p-item .txt-pass{background-position: 4px -46px;}
+.p-item .chk{vertical-align: middle;}
+.p-remLogin{overflow: hidden;zoom:1;}
+.p-remLogin .lab-chk{float: left;}
+.p-item .em-errMes{display: block;padding:5px 5px 4px 1px;margin:-1px 6px 0 0;/*border:1px solid #EF7369;background-color: #FDE4E3;*/color:#c00;white-space:nowrap;word-break: keep-all;font-size: 1.18em;}
+.p-errTip{color:#c00;}
+.p-remLogin a.a-forgetPass{float: right;color:#5FAEE3;}
+.p-remLogin a.a-forgetPass:hover{text-decoration: underline;}
+.loginCont .btn-submit{width:252px;background-color: #5FAEE3;color:#fff;padding:6px 0;border:0px;font-size: 1.18em;cursor:hand;cursor:pointer;}
+
+.p-toao{font-size: 1.18em;padding:10px 0 0 5px;}
+a.a-toao{color:#5FAEE3;text-decoration: underline;}
+a.a-toao:hover{text-decoration: none;}

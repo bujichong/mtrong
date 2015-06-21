@@ -1,0 +1,27 @@
+﻿{"total":46,
+"rows":[
+	{
+		"no" : "20150114578",
+		"status":"部分发货",
+		"sendStocks" : "嘉兴仓",
+		"creater":"张三<br>2015-01-01 10:20:35",
+		"skuNumber": "12 / 12",
+		"sendInfo" : [
+			{"name":"箱1","series":"11231","postNumber":"234746363"},
+			{"name":"箱2","series":"11232","postNumber":"234746363"},
+			{"name":"箱3","series":"11233","postNumber":"234746363"}
+		],
+		"other":"不打印麦动标志<br>不打印价格"
+			
+	},
+	{
+		"no" : "20150114579",
+		"status":"未发货",
+		"sendStocks" : "广州仓",
+		"creater":"李四<br>2015-01-02 13:25:39",
+		"skuNumber": "5 / <font color=red><B>4</B></font>",
+		"sendInfo" : [],
+		"other":"不打印麦动标志<br>不打印价格"
+	}
+]
+}

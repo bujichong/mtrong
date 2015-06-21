@@ -1,0 +1,50 @@
+﻿{"total":46,
+"rows":[
+	{
+		"no" : "13201",
+		"status":"待认领",
+		"type":"应付-线下退款",
+		"customerName":"张三",
+		"customerNo":"8904",
+		"account":{
+			"name":"叶子",
+			"bank":"中国银行",
+			"number":"625541455789914"
+		},
+		"remitStyle":"钱包",
+		"payMoney" :264,
+		"bookingNo" : "20151214154514",
+		"reason" : "产品质量问题",
+		"Remarks" : "支付宝账号： 22145524512"
+	},
+	{
+		"no" : "13202",
+		"status":"待审核",
+		"type":"应付-订单运费",
+		"customerName":"韩国名品",
+		"customerNo":"8906",
+		"account":{
+			"name":"花儿",
+			"bank":"支付宝",
+			"number":"13647854784"
+		},
+		"remitStyle":"支付宝",
+		"payMoney" :30,
+		"bookingNo" : "20151214154555",
+		"reason" : "",
+		"Remarks" : ""
+	},
+	{
+		"no" : "13203",
+		"status":"已完结",
+		"customerName":"张三",
+		"customerNo":"8908",
+		"account" : null,
+		"remitStyle":"支付宝",
+		"payMoney" :1000,
+		"bookingNo" : "20151214154594",
+		"reason" : "产品",
+		"Remarks" : "到帐请回复信息，谢谢"
+	}
+]
+}

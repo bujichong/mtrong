@@ -1,0 +1,645 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>官网管理 - 首页管理 - 后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/easyui-repair.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+</head>
+<body>
+
+<!-- head begin-->
+<div id="all-head">
+	<div class="headlogo"><img src="images/logo.png" height="40" width="200" alt="" /></div>
+	<div class="headtools">
+		<p class="p-tools">欢迎你，<strong class="strong-user">admin</strong> <span rel="form.html" class="s-tools a-userSetting">账号设置</span><span class="s-tools s-loginout">退出</span></p>
+		<div class="headmes">
+			<span class="s-message">消息<small class="small-num">3</small></span>
+			<ul class="ul-mesInfo">
+				<li class="li-sj">&nbsp;</li>
+				<li class="li-nomes">暂无新的消息！</li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="咨询处理">有1个咨询需要您处理。</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="订单发货">有2个订单需要您发货</span></li>
+				<li class="li-mes"><span class="s-newwin" rel="list.html" title="结算订单">有2个新订单需要您结算</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- head end -->
+
+<!-- side begin -->
+<div id="all-side">
+	<div id="nav">
+		<ul class="ul-nav">
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="prolist.html">
+					<em class="em-icon"><img src="images/icon/stack-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">商品</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">商品管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="prolist.html">商品列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proDetails.html">商品新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="buylist.html">
+					<em class="em-icon"><img src="images/icon/shopping_cart-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">采购</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">采购管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needlist.html">采购需求</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="needNotelist.html">采购跟催</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buylist.html">采购列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="buyDetails.html">采购新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/layers-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">订单</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">订单管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookinglist.html">订单列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="bookingDetails.html">订单新增</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="manageIndex.html">
+					<em class="em-icon"><img src="images/icon/pawn-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">官网</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">官网管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="manageIndex.html">首页管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="proShow.html">商品展示</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="proSorting.html">商品排序</a></li> -->
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="managePromotion.html">促销管理</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="bookinglist.html">
+					<em class="em-icon"><img src="images/icon/group-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">客户</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">客户管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="customerlist.html">客户列表</a></li>
+						<!-- <li class="li-subnav"><a class="s-subnav" target="_blank" href="customerDetails.html">客户新增</a></li> -->
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="moneyImport.html">
+					<em class="em-icon"><img src="images/icon/wallet-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">资金</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">资金管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyClaim.html">收款认领</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyPay.html">支付列表</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCheckout.html">订单结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCancel.html">退货结算</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="moneyCost.html">其他结算</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li class="li-nav">
+				<a class="s-nav" target="_blank" href="account.html">
+					<em class="em-icon"><img src="images/icon/settings-25.png" height="25" width="25" alt="" /></em>
+					<b class="b-nav">系统</b>
+				</a>
+				<div class="sidemenu">
+					<h5 class="h5-menu">系统管理</h5>
+					<ul class="ul-subnav">
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="account.html">账号管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="role.html">角色管理</a></li>
+						<li class="li-subnav"><a class="s-subnav" target="_blank" href="power.html">权限管理</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- side end -->
+<div class="crumb"><span class="s-title">官网管理 - 首页管理</span></div>
+
+<!-- 数据grid工具栏 -->
+<div class="navbar navbar-default searchbar listSearchbar">
+	<div class="fl pad-l10 pad-t5 btn-group">
+	      <button class="btn btn-default grid-addNewPro" type="button"><span class="glyphicon glyphicon-plus"></span>添加</button>
+	      <button class="btn btn-default grid-removePro" type="button"><span class="glyphicon glyphicon-remove"></span>取消</button>
+	      <button class="btn btn-default grid-setDownTime" type="button"><span class="glyphicon glyphicon-tag"></span>设置截止时间</button>
+    </div>
+
+	<div class="fr pad-r10 pad-t5 search-keycont">
+		<form role="form" class="form-inline form-search">
+			<select class="form-control input-sm" name="proKind">
+				<option value="1">商品分类</option>
+			</select>
+
+			<input type="text" name="supplier" placeholder="商品编码" class="form-control input-sm">
+			<input type="text" name="prokeyword" placeholder="商品名称" class="form-control input-sm">
+
+			<input class="btn btn-sm btn-primary btn-gridListSearch" type="button" value="搜 索" />
+			<button type="button" class="btn btn-sm btn-default btn-showMoreSearch">高级搜索<span class="caret"></span></button>
+		</form>
+	</div>
+</div>
+
+<!-- 更多搜索选项 -->
+<div id="searchmoreCont" class="searchmore searchListMore none">
+	<div class="panel-body bg-warning">
+		<form class="form-moreSearch form-listMoreSearch">
+			<div class="grid pad-b5">
+				<div class="col_5">
+					<label class="control-label right">上架时间：</label><span><input type="text" name="creatStarttime" placeholder="" class="form-control input-sm hk-time"> - <input type="text" name="creatEndtime" placeholder="" class="form-control input-sm hk-time"></span>
+				</div>
+				<div class="col_4">
+					<label class="control-label right">成本价格：</label><span><input type="text" name="makeSPrice" class="form-control txt-number input-sm w80"> - <input type="text" name="makeEPrice" class="form-control txt-number input-sm w80"></span>
+				</div>
+
+				<div class="col_3">
+					<label class="control-label right">销售价格：</label><span><input type="text" name="marketSPrice" placeholder="" class="form-control input-sm w80"> - <input type="text" name="marketEPrice" placeholder="" class="form-control input-sm w80"></span>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</div>
+
+
+<!-- main begin -->
+<div id="page-mainBox">
+
+	<div id="mainLayoutBox" class="easyui-layout" style="overflow-y: hidden;"  fit="true" scroll="no">
+		<!-- 数据grid表格 -->
+		<div class="tableGridbox" data-options="region:'center'" border="false">
+			<div id="dataListGrid" data-options="border:false" fit="true"></div>
+		</div>
+
+	</div>
+
+</div>
+<!-- main end -->
+
+<div class="none">
+
+	<!-- popProAdd -->
+	<div id="popProAdd">
+		<div id="searchbar" class="navbar navbar-default" >
+			<div class="pad10">
+				<form role="form" class="form-inline form-popSearch">
+					<p class="pad-b5">
+						　类型：<select class="form-control input-sm" name="proKind">
+							<option value="1">商品类型</option>
+						</select>
+						　编　码：<input type="text" name="no" class="form-control input-sm">
+						名称：<input type="text" name="proname" class="form-control input-sm">
+					</p>
+					<p class="pad-b5">
+						供应商：<select class="form-control input-sm" name="supplier">
+							<option value="1">供应商1</option>
+							<option value="2">供应商2</option>
+						</select>
+						 生产款号：<input type="text" name="kh" class="form-control input-sm">
+						<input class="btn btn-sm btn-primary btn-popSearch" type="button" value="搜 索" />
+					</p>
+				</form>
+			</div>
+		</div>
+
+		<div class="popTableGrid">
+			<div id="popProListGrid" data-options="border:false"></div>
+		</div>
+		<div class="col_12 center pad-b10">
+			<label class="control-label right">设置开始时间：</label><span><input type="text" id="pro-downTime" name="startTime" placeholder="" class="form-control input-sm hk-time"></span>
+			<label class="control-label right">设置截止时间：</label><span><input type="text" id="pro-downTime" name="downTime" placeholder="" class="form-control input-sm hk-time"></span>
+		</div>
+		<p class="center">
+			<input class="btn btn-primary btn-proSubmit" type="button" value="添 加" />
+			<input class="btn btn-default btn-popCancel" type="button" value="取 消" />
+		</p>
+	</div>
+
+
+<!-- 修改截止时间 -->
+<div id="popRepairDownTime">
+	<form class="form">
+		<div class="grid pad-b10">
+			<div class="col_12">
+				<div class="form-group">
+					<input type="hidden" class="txt" id="repairOneProId" name="repairOneProId" />
+					<label class="col_4 control-label right" for="username">截止时间：</label>
+					<div class="col_8"><input type="text" id="pro-repairDownTime" name="repairDownTime" placeholder="" class="form-control input-sm hk-time w180"></div>
+				</div>
+			</div>
+		</div>
+		<p class="center">
+			<input class="btn btn-primary btn-submitRepairTime" type="submit" value="提 交" />
+			<!-- <input class="btn btn-default btn-cancel" type="reset" value="取 消" /> -->
+		</p>
+	</form>
+</div>
+
+
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/datagrid-detailview.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.ext.js"></script>
+<script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/my97/WdatePicker.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+<script type="text/javascript" src="js/runing.js"></script>
+
+<script type="text/javascript">
+
+var addNewPro = {
+	init : function  () {
+		var me = this;
+		me.popE();
+		me.searchLoad();
+	},
+	popAdd : null,
+	popE : function  () {
+		var me = this;
+		$('.grid-addNewPro').click(function() {
+			me.popAdd = $.sobox.pop({
+				type : 'target',
+				target : '#popProAdd',
+				title : '增加首页展示商品',
+				width:700,height:560,
+				onPop : function () {
+					setTimeout(function () {
+
+					$('#popProListGrid').datagrid({
+						//title:'DataGrid',
+						url:'js/datagrid_manageIndexList.json',
+						 //url:'js/datagrid_data_empty.json',
+						method : 'get',//默认是post
+						pagination:true,
+						//singleSelect : true,
+						height:300,
+						loadMsg : '玩命加载中...',
+						view: myview,
+						emptyMsg: '暂无数据...',
+						pageSize :10,
+						nowrap :false,
+						pageList :[10,20,50],
+						checkOnSelect : false,
+						columns:[[
+							{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+							//{field:'no',title:"编号",hidden:true},
+							{field:'pic',title:'SKU图片',width:70,align:'center',formatter : function (value,row,index) {
+								return '<img src="'+value+'" height="58" width="58" alt="" />';
+							//return value;
+							}},
+							{field:'no',title:'款号',width:70,align:'center'},
+							{field:'name',title:'名称',width:115,align:'center'},
+							{field:'kindText',title:'类别',width:80,align:'center',formatter : function (value,row,index) {
+								return value+'<br /><span class="grey">'+row.status+'</span>';
+							}},
+							{field:'producter',title:'供应商',width:80,align:'center'},
+							{field:'stockNumber',title:'库存',width:70,align:'center',formatter :function (value,row,index) {
+								var rHtml = '<div><b>'+value+'</b></div>';
+								var stockInfo = row.stock;
+								if (stockInfo&&stockInfo.length) {
+									$.each(stockInfo,function (i,v) {
+										rHtml += '<div class="grey">'+v.storehouse+':'+v.number+'</div>';
+									});
+								};
+								return rHtml;
+							}},
+							{field:'upTime',title:'上架时间',width:70,align:'center'}
+					  	]],
+						onClickRow:function (rowIndex, rowData) {
+						},
+						//check事件 start
+						onCheck : function (rowIndex, rowData) {
+							$('.s-proAddRow-'+rowIndex).find('.txt').prop('disabled',false);
+						},
+						onUncheck : function (rowIndex, rowData) {
+							$('.s-proAddRow-'+rowIndex).find('.txt').prop('disabled',true);
+						},
+						onSelectAll : function () {
+							$('.s-proAddRow').find('.txt').prop('disabled',false);
+						},
+						onUnselectAll : function () {
+							$('.s-proAddRow').find('.txt').prop('disabled',true);
+						},
+						//check事件 end
+						onLoadSuccess : function () {
+							window.console && console.log($('.popTableGrid').find('.txt-number').length);
+							$('.popTableGrid').find('.txt-number').keyup(function () {//数字框只能输入数字
+								$T.setNumVal(this);
+							}).blur(function () {
+								var $parTr = $(this).parents('tr');
+								var price = $parTr.find('.txt-buyprice').val();
+								var number = $parTr.find('.txt-buynum').val();
+								var sumprice = price*number;
+								$parTr.find('.em-price').text(sumprice);
+							});
+						}
+					});
+
+
+					},200);
+				}
+			})
+		});
+
+		$('#popProAdd .btn-popCancel').click(function  () {
+			me.popAdd.removePop();
+		});
+
+		$('#popProAdd .btn-proSubmit').click(function  () {
+			var checkedO = $('#popProListGrid').datagrid('getChecked');
+			if(checkedO.length==0){
+				$.sobox.alert('提示','请勾选需要添加的商品！');
+				return false;
+			}
+			if ($('#pro-downTime').val()=='') {
+				$.sobox.alert('提示','请设置截止时间！');
+				return false;
+			};
+			var sendData = [];
+			var can = true;
+			$.each(checkedO,function (i,v) {//获取数据
+				var price = $('#buyPrice_'+v.no).val();
+				var number = $('#buyNumber_'+v.no).val();
+				if (price*number!=0) {
+					sendData.push({
+						no : v.no,
+						price : price,
+						number : number
+					});
+				}else{
+					can = false;
+					return false;
+				};
+			});
+			window.console && console.log(sendData);
+			if (can) {//如果所选择行数字都为非零则可以提交
+				$.reqUrlEx({//增加型ajax请求，带等待状态和成功提示框
+					url : 'js/true.json',
+					data : sendData,
+					//url : 'js/false.json',
+					type : 'get',//默认不设置为post
+					success : function (data) {
+					//data中需带success参数，判断是否请求成功，{success:true}
+					//{"success":false,"message":"无法删除此记录！"}
+						window.console && console.log(data,'请求成功~');
+						me.popAdd.removePop();
+						$T.gridRefresh('#dataListGrid');
+					}
+				});
+			}else{
+				$.sobox.alert('提示','所选行价格和数字都不能为零！');
+			};
+
+			// me.popAdd.removePop();
+			// $T.gridRefresh('#dataListGrid');
+
+		});
+
+	},
+	searchLoad : function () {
+		$('.btn-popSearch').click(function () {//搜索重新加载grid
+			$T.gridSearchReload('.form-popSearch','#popProListGrid');
+		});
+	}
+}
+
+
+var popRepairDownTime ={//订单修改运费事件
+	init : function () {
+		var me = this;
+		me.submitRepair();
+	},
+	popO : null,
+	popE : function (data) {//弹窗事件
+		var me = this;
+		me.popO = $.sobox.pop({
+			type : 'target',
+			target : '#popRepairDownTime',
+			title : '修改截止时间',
+			width:400,
+			beforePop : function  () {//弹窗前赋值表单
+				$('#repairOneProId').val(data.no);
+				$('#pro-repairDownTime').val(data.downTime);
+			}
+		});
+	},
+	submitRepair : function () {
+		var me = this;
+		$('.btn-submitRepairTime').click(function () {
+
+			var sendData = {
+				id : $('#repairOneProId').val(),
+				removeTime :  $('#pro-repairDownTime').val()
+			};
+			//window.console && console.log(cost);
+			//
+			$.reqUrlEx({//异步提交
+				url : 'js/true.json',
+				//url : 'js/false.json',
+				data : sendData,
+				type : 'get',//默认不设置为post
+				success : function (data) {
+				//data中需带success参数，判断是否请求成功，{success:true}
+				//{"success":false,"message":"提交失败！"}
+					window.console && console.log(data,'请求成功~');
+					me.popO.removePop();
+					$T.gridRefresh('#dataListGrid');
+				}
+			});
+			return false;
+		});
+	}
+}
+
+
+function mysort(index, type, gridname) {
+	window.console && console.log(index,type);
+    if ("up" == type) {
+        if (index != 0) {
+            var toup = $('#' + gridname).datagrid('getData').rows[index];
+            var todown = $('#' + gridname).datagrid('getData').rows[index - 1];
+            $('#' + gridname).datagrid('getData').rows[index] = todown;
+            $('#' + gridname).datagrid('getData').rows[index - 1] = toup;
+            $('#' + gridname).datagrid('refreshRow', index);
+            $('#' + gridname).datagrid('refreshRow', index - 1);
+            //$('#' + gridname).datagrid('selectRow', index - 1);
+        }
+    } else if ("down" == type) {
+        var rows = $('#' + gridname).datagrid('getRows').length;
+        if (index != rows - 1) {
+            var todown = $('#' + gridname).datagrid('getData').rows[index];
+            var toup = $('#' + gridname).datagrid('getData').rows[index + 1];
+            $('#' + gridname).datagrid('getData').rows[index + 1] = todown;
+            $('#' + gridname).datagrid('getData').rows[index] = toup;
+            $('#' + gridname).datagrid('refreshRow', index);
+            $('#' + gridname).datagrid('refreshRow', index + 1);
+            //$('#' + gridname).datagrid('selectRow', index + 1);
+        }
+    }
+	var $tableBox = $('.tableGridbox');
+	 $tableBox.find('.op-gridRowUp').unbind('click').click(function() {
+		var index = $(this).data('index');
+		mysort(index, 'up', 'dataListGrid');
+	});
+	$tableBox.find('.op-gridRowDown').unbind('click').click(function() {
+		var index = $(this).data('index');
+		mysort(index, 'down', 'dataListGrid');
+	});
+}
+
+
+$('#dataListGrid').datagrid({
+	//title:'DataGrid',
+	url:'js/datagrid_manageIndexList.json',
+	 //url:'js/datagrid_data_empty.json',
+	method : 'get',//默认是post
+	//width:700,
+	height:500,
+	nowrap : false,
+	//fitColumns:true,
+	pagination:true,
+	//singleSelect : true,
+	loadMsg : '玩命加载中...',
+	view: myview,
+	// emptyMsg: '暂无数据...',
+	pageSize :25,
+	pageList :[25,50,100],
+	checkOnSelect : false,
+	frozenColumns :[[{field:'ck',checkbox:true}]],//开启多选框 必须：singleSelect : false
+	columns:[[
+		//{field:'ck',checkbox:true}, //开启多选框 必须：singleSelect : false
+		{field:'op',title:'操作',width:145,align:'center',formatter : function (value,row,index) {
+			var no = row.no;
+			return '<a class="op-grid op-gridInNew" target="_blank" href="proDetails.html?no='+no+'"><span class="glyphicon glyphicon-search"></span>查看</a><a class="op-grid op-gridRowUp" data-index="'+index+'" href="#"><span class="glyphicon glyphicon-arrow-up"></span>上移</a><a class="op-grid op-gridRowDown" data-index="'+index+'" href="#"><span class="glyphicon glyphicon-arrow-down"></span>下移</a>';
+		//return value;
+		}},
+		{field:'pic',title:'款式图片',width:80,align:'center',formatter : function (value,row,index) {
+			return '<img src="'+value+'" height="58" width="58" alt="" />';
+		//return value;
+		}},
+		{field:'kindText',title:'类别',width:90,align:'center',formatter : function (value,row,index) {
+			return value+'<br /><span class="grey">'+row.status+'</span>';
+		}},
+		{field:'no',title:'款号',width:80,align:'center',formatter :function (value,row,index) {
+			var mark ="";
+			if(row.mark&&row.mark.length){
+				$.each(row.mark,function (i,v) {
+					mark += '<img src="/images/mark-'+v+'.png" alt="" /> '
+				});
+			}
+			return '<div>'+value+'</div>'+mark;
+		}},
+		{field:'price',title:'价格',width:60,align:'center',formatter : function (value,row,index) {
+			return '￥'+value;
+		}},
+		{field:'name',title:'名称',width:200,align:'center'},
+		{field:'stockNumber',title:'库存',width:80,align:'center',formatter :function (value,row,index) {
+			var rHtml = '<div><b>'+value+'</b></div>';
+			var stockInfo = row.stock;
+			if (stockInfo&&stockInfo.length) {
+				$.each(stockInfo,function (i,v) {
+					rHtml += '<div class="grey">'+v.storehouse+':'+v.number+'</div>';
+				});
+			};
+			return rHtml;
+		}},
+		{field:'diy',title:'快定制',width:50,align:'center',formatter :function (value,row,index) {
+			return value?"是":"否";
+		}},
+		{field:'clearStocks',title:'清货',width:50,align:'center',formatter :function (value,row,index) {
+			return value?"是":"否";
+		}},
+		{field:'upTime',title:'开始时间',width:130,align:'center'},
+		{field:'downTime',title:'截止时间',width:130,align:'center',formatter :function (value,row,index) {
+			return value+'<a class="op-grid op-editDownTime" data-opt={"index":'+index+'} href="#"><span class="glyphicon glyphicon-pencil"></span></a>';
+		}}
+  	]],
+	onClickRow:function (rowIndex, rowData) {
+		//nowSel = rowData;
+	},
+      //check事件 start
+      onCheck : function (rowIndex, rowData) {
+      	if ($('#subData-'+rowIndex).length) {
+      		$('#subData-'+rowIndex).datagrid("selectAll");
+      	};
+      },
+      onUncheck : function (rowIndex, rowData) {
+      	if ($('#subData-'+rowIndex).length) {
+      		$('#subData-'+rowIndex).datagrid("unselectAll");
+      	};
+      },
+      onSelectAll : function () {
+      	if ($('.subDataCont').length) {
+      		$('.subDataCont').datagrid("selectAll");
+      	};
+      },
+      onUnselectAll : function () {
+      	if ($('.subDataCont').length) {
+      		$('.subDataCont').datagrid("unselectAll");
+      	};
+      },
+      //check事件 end
+	onLoadSuccess : function (data) {
+		var $tableBox = $('.tableGridbox');
+		$tableBox.find('.op-editDownTime').click(function() {
+			var dataIndex = $(this).data('opt').index;
+			popRepairDownTime.popE(data.rows[dataIndex])
+		});
+		$tableBox.find('.op-gridRowUp').click(function() {
+			var index = $(this).data('index');
+			mysort(index, 'up', 'dataListGrid');
+		});
+		$tableBox.find('.op-gridRowDown').click(function() {
+			var index = $(this).data('index');
+			mysort(index, 'down', 'dataListGrid');
+		});
+	}
+});
+
+
+$T.gridSearchAndMoreEvent({
+	moreSearchHeight:49
+});//初始化更多搜索
+
+addNewPro.init();//添加新产品
+popRepairDownTime.init();//修改截止时间
+$('.txt-number').keyup(function() {//数字框只能输入数字
+	$T.setNumVal(this,null);
+})
+</script>
+
+</body>
+</html>
